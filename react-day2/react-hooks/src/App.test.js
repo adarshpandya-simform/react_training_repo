@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 
 test("should have correct color", () => {
@@ -13,6 +13,12 @@ test("should have correct initial text", () => {
   expect(buttonElement).toHaveTextContent("click for dark");
 });
 
-// test("should turn dark when clicked", () => {});
+test("should be clicked", () => {
+  render(<App />);
+  const buttonElement = screen.getByRole("button", { name: "click for dark" });
+  expect(buttonElement).toHaveClass("light-btn");
 
-// test("should change text when clicked", () => {});
+  fireEvent.click(buttonElement);
+  console.log(buttonElement.style);
+  console.log(buttonElement.textContent);
+});

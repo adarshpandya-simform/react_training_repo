@@ -28,6 +28,7 @@ function App() {
       {/* useContext Example */}
       <p>change theme with context (useContext)</p>
       <button
+        data-testid="button"
         className={theme === "light" ? "light-btn" : "dark-btn"}
         onClick={toggleTheme}
       >
