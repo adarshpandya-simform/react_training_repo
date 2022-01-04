@@ -4,6 +4,7 @@ import FunctionalComponent from "./FunctionalComponent/FunctionalComponent";
 import Purecomponent from "./PureComponent/PureComponent";
 import WithList from "./HigherOrderComponent/WithList";
 import List from "./HigherOrderComponent/List";
+import StatelessComponent from "./StatelessComponent/StatelessComponent";
 
 const WithListLoad = WithList(List);
 
@@ -27,6 +28,8 @@ export const App = () => {
 			<WithListLoad isLoading={isLoading} />
 			<p>Pure Component</p>
 			<Purecomponent />
+			<p>Stateless Component</p>
+			<StatelessComponent />
 		</>
 	);
 };
