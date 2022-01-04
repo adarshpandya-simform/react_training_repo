@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter/Counter";
+import Factorial from "./components/Factorial/Factorial";
+import FactorialWithMemo from "./components/Factorial/FactorialWithMemo";
 import Form from "./components/Form/Form";
 import { DarkThemeContext } from "./context/DarkMode";
 
@@ -35,6 +37,12 @@ function App() {
       <p>fill automatic data with (useRef)</p>
       {/* useRef Example with Form Component*/}
       <Form />
+      {/* useMemo example */}
+      <p>memoize expensive calculation with (useMemo)</p>
+      <small>without memo</small>
+      <Factorial />
+      <small>with memo</small>
+      <FactorialWithMemo />
     </div>
   );
 }
