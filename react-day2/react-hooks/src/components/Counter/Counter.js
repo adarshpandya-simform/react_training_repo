@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // useState hook demo
 const Counter = () => {
   const [counter, setCounter] = useState(0);
+
+  // useEffect hook with dependency
+  // will only run once the data of counter is changed
+  // because we've specified it in dependency array
+  useEffect(() => {
+    alert("counter changed");
+  }, [counter]);
 
   const increaseCount = () => {
     setCounter((prevCount) => prevCount + 1);
