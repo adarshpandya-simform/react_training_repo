@@ -11,6 +11,10 @@ const Counter = () => {
     alert("counter changed");
   }, [counter]);
 
+  useEffect(() => {
+    console.log("counter component mounted");
+  }, []);
+
   const increaseCount = () => {
     setCounter((prevCount) => prevCount + 1);
   };
