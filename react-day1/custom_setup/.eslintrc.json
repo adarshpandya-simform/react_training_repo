@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+				"node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+				"react-hooks"
+    ],
+    "rules": {
+
+			"react-hooks/rules-of-hooks":	"error",
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+				"no-console":"error",
+				"no-unused-vars":"warn",
+				"no-eval":"error"
+    },"ignorePatterns": ["build/*"]
+}
