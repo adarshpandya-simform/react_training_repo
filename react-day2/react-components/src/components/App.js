@@ -1,6 +1,7 @@
 import React from "react";
 import ClassComponent from "./ClassComponent/ClassComponent";
 import FunctionalComponent from "./FunctionalComponent/FunctionalComponent";
+import Purecomponent from "./PureComponent/PureComponent";
 // import styles from "./App.module.css";
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
 			<ClassComponent />
 			<p>HOC</p>
 			<p>Pure Component</p>
+			<Purecomponent />
 		</>
 	);
 };
