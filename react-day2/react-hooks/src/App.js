@@ -31,9 +31,7 @@ function App() {
         className={theme === "light" ? "light-btn" : "dark-btn"}
         onClick={toggleTheme}
       >
-        {theme === "light"
-          ? "click to apply dark theme"
-          : "click to apply light theme"}
+        {theme === "light" ? "click for dark" : "click for light"}
       </button>
       <p>fill automatic data with (useRef)</p>
       {/* useRef Example with Form Component*/}
@@ -46,6 +44,7 @@ function App() {
       <FactorialWithMemo />
       <p>Counter with (useReducer/dispatcher and actions)</p>
       <CounterReducer />
+      <button>click me</button>
     </div>
   );
 }

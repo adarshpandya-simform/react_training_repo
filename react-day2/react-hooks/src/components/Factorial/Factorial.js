@@ -24,7 +24,7 @@ const Factorial = () => {
 };
 
 const factorialOf = (num) => {
-  console.log("factorialOf(n) called!");
+  // console.log("factorialOf(n) called!");
   return num <= 0 ? 1 : num * factorialOf(num - 1);
 };
 
