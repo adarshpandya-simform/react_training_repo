@@ -5,6 +5,7 @@ import Purecomponent from "./PureComponent/PureComponent";
 import WithList from "./HigherOrderComponent/WithList";
 import List from "./HigherOrderComponent/List";
 import StatelessComponent from "./StatelessComponent/StatelessComponent";
+import ContainerComponent from "./ContainerComponent/ContainerComponent";
 
 const WithListLoad = WithList(List);
 
@@ -30,6 +31,8 @@ export const App = () => {
 			<Purecomponent />
 			<p>Stateless Component</p>
 			<StatelessComponent />
+			<p>container & presentational component</p>
+			<ContainerComponent />
 		</>
 	);
 };
