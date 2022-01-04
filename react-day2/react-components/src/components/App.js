@@ -21,16 +21,27 @@ export const App = () => {
 	return (
 		<>
 			<h4>four ways of creating components</h4>
+			<br />
 			<p>Funcional Component</p>
 			<FunctionalComponent />
+			<br />
+			<br />
 			<p>Class Component</p>
 			<ClassComponent />
+			<br />
+			<br />
 			<p>HOC</p>
 			<WithListLoad isLoading={isLoading} />
+			<br />
+			<br />
 			<p>Pure Component</p>
 			<Purecomponent />
+			<br />
+			<br />
 			<p>Stateless Component</p>
 			<StatelessComponent />
+			<br />
+			<br />
 			<p>container & presentational component</p>
 			<ContainerComponent />
 		</>
