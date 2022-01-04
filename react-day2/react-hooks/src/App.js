@@ -4,6 +4,7 @@ import Counter from "./components/Counter/Counter";
 import Factorial from "./components/Factorial/Factorial";
 import FactorialWithMemo from "./components/Factorial/FactorialWithMemo";
 import Form from "./components/Form/Form";
+import CounterReducer from "./components/CounterWithReducer/CounterReducer";
 import { DarkThemeContext } from "./context/DarkMode";
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
       <Factorial />
       <small>with memo</small>
       <FactorialWithMemo />
+      <p>Counter with (useReducer/dispatcher and actions)</p>
+      <CounterReducer />
     </div>
   );
 }

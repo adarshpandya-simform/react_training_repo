@@ -8,7 +8,7 @@ const Counter = () => {
   // will only run once the data of counter is changed
   // because we've specified it in dependency array
   useEffect(() => {
-    alert("counter changed");
+    // alert("counter changed");
   }, [counter]);
 
   useEffect(() => {
