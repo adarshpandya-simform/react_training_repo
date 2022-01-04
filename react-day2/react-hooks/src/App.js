@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter/Counter";
+import Form from "./components/Form/Form";
 import { DarkThemeContext } from "./context/DarkMode";
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
   return (
     <div>
       {/* useState and useEffect Example */}
+      <p>counter with useState and useEffect</p>
       {isLoading ? <p>fetching counter give me some time</p> : <Counter />}
       {/* useContext Example */}
-      <p>change theme with context</p>
+      <p>change theme with context (useContext)</p>
       <button
         className={theme === "light" ? "light-btn" : "dark-btn"}
         onClick={toggleTheme}
@@ -30,6 +32,9 @@ function App() {
           ? "click to apply dark theme"
           : "click to apply light theme"}
       </button>
+      <p>fill automatic data with (useRef)</p>
+      {/* useRef Example with Form Component*/}
+      <Form />
     </div>
   );
 }
