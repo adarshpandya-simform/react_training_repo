@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import ButtonWithCheckbox from "./components/ButtonWithCheckbox";
 import Counter from "./components/Counter";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       </button>
       <p> counter component</p>
       <Counter />
+      <p>button with checkbox</p>
+      <ButtonWithCheckbox />
     </div>
   );
 }
