@@ -38,5 +38,5 @@
 
 .todo-input-error-msg
 {
-	color:orangered;
+	color:var(--error-color);
 }
