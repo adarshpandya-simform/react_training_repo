@@ -13,7 +13,6 @@ const Header = ({ count }) => {
 			clearInterval(TimeId);
 		};
 	});
-
 	return (
 		<div className="todo-app-header">
 			<div className="todo-header">
@@ -23,7 +22,8 @@ const Header = ({ count }) => {
 			<div className="date-and-time">
 				<span>{date}</span>
 				<span>
-					{time.toLocaleTimeString().slice(0, 4)}{" "}
+					{time.toLocaleTimeString().split(":")[0]}:
+					{time.toLocaleTimeString().split(":")[1]}{" "}
 					{time.toLocaleTimeString().slice(-2)}
 				</span>
 			</div>
