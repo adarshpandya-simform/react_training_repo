@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import Counter from "./components/Counter";
 
 function App() {
   const [color, setColor] = useState("blue");
   return (
-    <div className="App">
+    <div>
       <button
         style={{ background: color }}
         onClick={() => {
@@ -13,6 +14,8 @@ function App() {
       >
         {color === "blue" ? "change to red" : "change to blue"}
       </button>
+      <p> counter component</p>
+      <Counter />
     </div>
   );
 }
