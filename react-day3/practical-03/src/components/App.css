@@ -1,3 +1,4 @@
+/* color variables */
 :root{
 	--bg-color:#eee;
 	--todo-container-color:#fff;
@@ -8,6 +9,7 @@
 	--error-color:orangered;
 }
 
+/* app-container styles */
 .app-container{
 	width: 100%;
 	height: 100vh;
@@ -18,6 +20,7 @@
 	flex-direction: column;
 }
 
+/* todo-parent container styles */
 .todo-parent{
 	background: var(--todo-container-color);
 	width: 30%;
@@ -28,6 +31,7 @@
 	flex-direction: column;
 }
 
+/* app-title styles */
 .app-title{
 	padding: 10px;
 	font-size: 2rem;

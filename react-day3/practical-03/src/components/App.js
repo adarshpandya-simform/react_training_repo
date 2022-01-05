@@ -5,14 +5,17 @@ import Input from "./Input/Input";
 import { getDate } from "../helpers/getDate";
 import "./App.css";
 
+// App component
 const App = () => {
 	const [todos, setTodos] = useState([]);
 
-	// useEffect to fetch todos on Load
+	// useEffect to fetch todos on Load (componentDidMount)
 	useEffect(() => {
 		let todayDate = localStorage.getItem("date");
 		let todosFromFetch = localStorage.getItem("todos");
+		// check if the date fetched is today's date
 		if (JSON.parse(todayDate) === getDate()) {
+			// fetch todos from localStorage
 			setTodos(JSON.parse(todosFromFetch));
 		} else {
 			setTodos([]);
@@ -23,6 +26,7 @@ const App = () => {
 
 	// useEffect to set todos in localStorage when they change
 	useEffect(() => {
+		// set item in localStorage every time todo updates
 		localStorage.setItem("todos", JSON.stringify(todos));
 	}, [todos]);
 
