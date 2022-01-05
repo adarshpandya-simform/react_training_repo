@@ -8,7 +8,16 @@
 	justify-content: center;
 }
 
-.todo-app-header p{
+.todo-header{
+	display: flex;
+	align-items: center;
+}
+
+.pending-task {
+	color: var(--primary-color);
+}
+
+.header-title{
 	font-size: 25px;
 	color: var(--secondary-color);
 	letter-spacing: 1px;
