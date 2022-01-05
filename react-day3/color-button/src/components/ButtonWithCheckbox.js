@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ButtonWithCheckbox = () => {
-  const [color, setColor] = useState("blue");
+  const [color, setColor] = useState("yellow");
   const [isDisabled, setIsDisabled] = useState(false);
   return (
     <div>
@@ -12,7 +12,7 @@ const ButtonWithCheckbox = () => {
           setColor((prevColor) => (prevColor === "blue" ? "red" : "blue"));
         }}
       >
-        {color === "blue" ? "change to red" : "change to blue"}
+        {color === "yellow" ? "change to green" : "change to yellow"}
       </button>
       <input
         type="checkbox"
