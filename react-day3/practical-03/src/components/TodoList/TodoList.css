@@ -1,3 +1,4 @@
+/* styles for main list container */
 .todo-app-list{
 	flex: 9;
 	scrollbar-width: none;
@@ -5,6 +6,7 @@
 	padding: 3px 15px;
 }
 
+/* style for each mapper todos */
 .todo-display{
 	background: var(--secondary-color);
 	border-radius: 5px;
@@ -14,6 +16,7 @@
 	font-weight: bold;
 }
 
+/* style for empt msg display */
 .empty-msg{
 	color: var(--muted-color);
 }
