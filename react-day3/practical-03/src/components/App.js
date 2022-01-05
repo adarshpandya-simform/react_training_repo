@@ -36,7 +36,7 @@ const App = () => {
 		<div className="app-container">
 			<div className="app-title">Todo App</div>
 			<div className="todo-parent">
-				<Header />
+				<Header count={todos.length} />
 				<TodoList todos={todos} />
 				<Input addTodo={addTodo} />
 			</div>
