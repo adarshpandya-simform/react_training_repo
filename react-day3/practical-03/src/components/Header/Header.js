@@ -19,7 +19,7 @@ const Header = () => {
 			<div className="date-and-time">
 				<span>{date}</span>
 				<span>
-					{time.toLocaleTimeString().slice(0, 5)}{" "}
+					{time.toLocaleTimeString().slice(0, 4)}{" "}
 					{time.toLocaleTimeString().slice(-2)}
 				</span>
 			</div>
