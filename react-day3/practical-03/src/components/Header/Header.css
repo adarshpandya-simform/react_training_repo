@@ -1,6 +1,22 @@
 .todo-app-header{
-	flex: 2;
-	background: var(--primary-color);
+	flex: 1.5;
 	border-top-left-radius: .3rem;
 	border-top-right-radius: .3rem;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.todo-app-header p{
+	font-size: 25px;
+	color: var(--secondary-color);
+	letter-spacing: 1px;
+	padding: 5px 0px;
+}
+
+.todo-app-header div{
+	color: var(--muted-color);
+	display: flex;
+	justify-content: space-between;
 }
