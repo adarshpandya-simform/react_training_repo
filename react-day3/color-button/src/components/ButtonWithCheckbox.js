@@ -9,7 +9,9 @@ const ButtonWithCheckbox = () => {
         style={{ background: color }}
         disabled={isDisabled}
         onClick={() => {
-          setColor((prevColor) => (prevColor === "blue" ? "red" : "blue"));
+          setColor((prevColor) =>
+            prevColor === "yellow" ? "green" : "yellow"
+          );
         }}
       >
         {color === "yellow" ? "change to green" : "change to yellow"}
