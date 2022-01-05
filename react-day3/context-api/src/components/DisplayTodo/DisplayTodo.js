@@ -3,8 +3,10 @@ import { CHECK_TODO, DELETE_TODO } from "../../context/todo.action";
 import { TodosContext } from "../../context/todo.context";
 
 const DisplayTodo = () => {
+  // using global state
   const { state, dispatch } = useContext(TodosContext);
 
+  // dispatching complete_todo action
   const checkHandler = (e, id) => {
     dispatch({
       type: CHECK_TODO,
@@ -12,6 +14,7 @@ const DisplayTodo = () => {
     });
   };
 
+  // dispatching delete action with id
   const deleteHandler = (id) => {
     dispatch({ type: DELETE_TODO, payload: { id } });
   };
@@ -19,7 +22,9 @@ const DisplayTodo = () => {
   return (
     <div>
       <p>todos</p>
+      {/* mapping through all todos */}
       {state.todos.map((todo) => (
+        // checkbox for marking todo complete/incomplete
         <div key={todo.id}>
           <input
             type="checkbox"
@@ -33,6 +38,7 @@ const DisplayTodo = () => {
           >
             {todo.title}
           </span>
+          {/* delete button */}
           <button
             onClick={() => {
               deleteHandler(todo.id);
