@@ -3,10 +3,13 @@ import { useContext } from "react";
 import { ADD_TODO } from "../../context/todo.action";
 import { TodosContext } from "../../context/todo.context";
 
+// adding todos using InputTodo component
 const InputTodo = () => {
+  // using global state
   const { dispatch } = useContext(TodosContext);
   const [todo, setTodo] = useState("");
 
+  // dispatching add_todo only when 'todo' is not empty
   const todoHandler = () => {
     if (todo !== "") {
       dispatch({ type: ADD_TODO, payload: { title: todo } });
@@ -16,6 +19,7 @@ const InputTodo = () => {
     }
   };
 
+  // handling enter key
   const handleKey = (e) => {
     if (e.key === "Enter") {
       todoHandler();
@@ -36,6 +40,7 @@ const InputTodo = () => {
         }}
         autoFocus
       />
+      {/* button to add todo in all other todos */}
       <button onClick={todoHandler}>add todo</button>
     </div>
   );
