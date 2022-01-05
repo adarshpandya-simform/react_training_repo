@@ -3,16 +3,20 @@ import { getDate } from "../../helpers/getDate";
 import PropTypes from "prop-types";
 import "./Header.css";
 
+// Header component which accepts 'count' as prop
 const Header = ({ count }) => {
 	const date = useMemo(() => getDate(), [date]);
 	const [time, setTime] = useState(new Date());
 
+	// useEffect for time update every second
 	useEffect(() => {
 		let TimeId = setInterval(() => setTime(new Date()), 1000);
+		// clean-up
 		return () => {
 			clearInterval(TimeId);
 		};
 	});
+
 	return (
 		<div className="todo-app-header">
 			<div className="todo-header">
@@ -31,6 +35,7 @@ const Header = ({ count }) => {
 	);
 };
 
+// defining propTypes for Header
 Header.propTypes = { count: PropTypes.number };
 
 export default Header;
