@@ -1,3 +1,4 @@
+/* style for main parent container */
 .todo-app-input{
 	flex: 1.5;
 	border-bottom-left-radius: .3rem;
@@ -8,6 +9,7 @@
 	padding: 10px;
 }
 
+/* style for component container */
 .todo-input-container{
 	display: flex;
 	flex-direction: column;
@@ -15,6 +17,7 @@
 	height: 100%;
 }
 
+/* styles for 'addTodo' button */
 .todo-app-add-button{
 	border: none;
 	background: var(--secondary-color);
@@ -25,6 +28,7 @@
 	border-radius: 3px;
 }
 
+/* styles for input tag */
 .todo-app-main-input{
 	border: none;
 	font-size: 25px;
@@ -36,6 +40,7 @@
 	caret-color: var(--secondary-color);
 }
 
+/* styles for error msg */
 .todo-input-error-msg
 {
 	color:var(--error-color);
