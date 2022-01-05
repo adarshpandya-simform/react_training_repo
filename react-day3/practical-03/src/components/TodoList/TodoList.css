@@ -1,0 +1,7 @@
+.todo-app-list{
+	flex: 8.5;
+	background: rebeccapurple;
+	scrollbar-width: none;
+	overflow: scroll;
+}
+
