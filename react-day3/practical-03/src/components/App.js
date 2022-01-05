@@ -27,7 +27,6 @@ const App = () => {
 	}, [todos]);
 
 	// add todo function
-
 	const addTodo = (todo) => {
 		setTodos((prevTodos) => [...prevTodos, todo]);
 	};
