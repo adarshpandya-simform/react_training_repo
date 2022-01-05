@@ -19,29 +19,31 @@ const IncompleteTodos = () => {
   return (
     <div>
       <p>incomplete todos</p>
-      {state.todos.map((todo) => (
-        <div key={todo.id}>
-          <input
-            type="checkbox"
-            onChange={(e) => {
-              checkHandler(e, todo.id);
-            }}
-            checked={todo.completed}
-          />
-          <span
-            style={todo.completed ? { textDecoration: "line-through" } : {}}
-          >
-            {todo.title}
-          </span>
-          <button
-            onClick={() => {
-              deleteHandler(todo.id);
-            }}
-          >
-            x
-          </button>
-        </div>
-      ))}
+      {state.todos
+        .filter((todo) => !todo.completed)
+        .map((todo) => (
+          <div key={todo.id}>
+            <input
+              type="checkbox"
+              onChange={(e) => {
+                checkHandler(e, todo.id);
+              }}
+              checked={todo.completed}
+            />
+            <span
+              style={todo.completed ? { textDecoration: "line-through" } : {}}
+            >
+              {todo.title}
+            </span>
+            <button
+              onClick={() => {
+                deleteHandler(todo.id);
+              }}
+            >
+              x
+            </button>
+          </div>
+        ))}
     </div>
   );
 };
