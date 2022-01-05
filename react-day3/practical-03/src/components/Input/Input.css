@@ -2,10 +2,17 @@
 	flex: 1.5;
 	border-bottom-left-radius: .3rem;
 	border-bottom-right-radius: .3rem;
-	padding: 10px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
+}
+
+.todo-input-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 
 .todo-app-add-button{
@@ -27,4 +34,9 @@
 	border-bottom: 2px solid var(--secondary-color);
 	color: var(--secondary-color);
 	caret-color: var(--secondary-color);
+}
+
+.todo-input-error-msg
+{
+	color:orangered;
 }
