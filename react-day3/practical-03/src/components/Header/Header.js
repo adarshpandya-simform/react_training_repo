@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { getDate } from "../../helpers/getDate";
+import PropTypes from "prop-types";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ count }) => {
 	const date = useMemo(() => getDate(), [date]);
 	const [time, setTime] = useState(new Date());
 
@@ -15,7 +16,10 @@ const Header = () => {
 
 	return (
 		<div className="todo-app-header">
-			<p>My Todos</p>
+			<div className="todo-header">
+				<span className="header-title">My Todos</span>
+				<span className="pending-task">Pending Task : {count}</span>
+			</div>
 			<div className="date-and-time">
 				<span>{date}</span>
 				<span>
@@ -26,5 +30,7 @@ const Header = () => {
 		</div>
 	);
 };
+
+Header.propTypes = { count: PropTypes.number };
 
 export default Header;
