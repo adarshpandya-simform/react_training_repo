@@ -1,7 +1,19 @@
 .todo-app-list{
-	flex: 8.5;
-	background: rebeccapurple;
+	flex: 9;
 	scrollbar-width: none;
 	overflow: scroll;
+	padding: 3px 15px;
 }
 
+.todo-display{
+	background: var(--secondary-color);
+	border-radius: 5px;
+	padding: 9px;
+	margin: 5px 0px;
+	color: white;
+	font-weight: bold;
+}
+
+.empty-msg{
+	color: var(--muted-color);
+}
