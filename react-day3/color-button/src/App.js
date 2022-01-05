@@ -3,6 +3,10 @@ import "./App.css";
 import ButtonWithCheckbox from "./components/ButtonWithCheckbox";
 import Counter from "./components/Counter";
 
+// example function to test
+export const removeCamelCase = (colorName) =>
+  colorName.replace(/\B([A-Z])\B/g, " $1");
+
 function App() {
   const [color, setColor] = useState("blue");
   return (
