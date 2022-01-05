@@ -2,15 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-	const [count, setCount] = useState(0);
 	return (
-		<div
-			className="app-container"
-			onClick={() => {
-				setCount((c) => c + 1);
-			}}
-		>
-			simple app {count}
+		<div className="app-container">
+			<div className="app-title">Todo App</div>
+			<div className="todo-parent"></div>
 		</div>
 	);
 };
