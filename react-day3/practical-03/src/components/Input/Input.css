@@ -1,0 +1,6 @@
+.todo-app-input{
+	flex: 1.5;
+	border-bottom-left-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+	background: var(--secondary-color);
+}

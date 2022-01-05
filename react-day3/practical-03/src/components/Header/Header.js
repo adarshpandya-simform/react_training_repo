@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-	return <div>header</div>;
+	return <div className="todo-app-header">header</div>;
 };
 
 export default Header;
