@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./Input.css";
 
-const Input = () => {
+const Input = ({ addTodo }) => {
 	const [toggleInput, setToggleInput] = useState(false);
 	const [todo, setTodo] = useState("");
 
@@ -11,7 +12,7 @@ const Input = () => {
 
 	const handleKey = (event) => {
 		if (event.key === "Enter") {
-			//logic to add todo in localStorage
+			addTodo(todo);
 			setTodo("");
 		}
 		if (event.key === "Escape") {
@@ -42,5 +43,7 @@ const Input = () => {
 		</div>
 	);
 };
+
+Input.propTypes = { addTodo: PropTypes.func };
 
 export default Input;
