@@ -1,3 +1,4 @@
+//  a helper function for getting current date (forms closure)
 export const getDate = (() => {
 	const monthNames = [
 		"January",
