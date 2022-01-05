@@ -22,7 +22,7 @@ export const reducer = (state, action) => {
         todos: [
           ...state.todos.map((todo) => {
             if (todo.id === action.payload.id) {
-              todo.completed = !todo.completed;
+              todo.completed = action.payload.completed;
             }
             return todo;
           }),
