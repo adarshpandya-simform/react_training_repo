@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUserName] = useState("");
@@ -43,6 +43,9 @@ const Login = () => {
       />{" "}
       <br />
       <button onClick={handleSubmit}>login</button>
+      <br />
+      <br />
+      <Link to={"/"}>go back to home</Link>
     </div>
   );
 };
