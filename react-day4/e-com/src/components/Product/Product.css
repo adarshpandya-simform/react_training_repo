@@ -1,0 +1,38 @@
+.single-product-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+}
+
+.single-product-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.single-product-name{
+    font-style: 20px;
+    font-weight: bold;
+}
+
+.single-product-description{
+    color: rgb(93, 93, 93);
+}
+
+.single-product-price{
+    text-decoration: line-through;
+    color: green;
+}
+
+.single-product-discount{
+    color: red;
+}
+
+.single-product-final-price{
+    color: orangered;
+}
+
+.single-product-availability{
+    color: blue;
+}
