@@ -29,6 +29,9 @@ const ProductsPage = () => {
             </div>
           </Link>
         ))}
+        <br />
+        <br />
+        <Link to={"/"}>go back to home</Link>
       </div>
     </div>
   );
