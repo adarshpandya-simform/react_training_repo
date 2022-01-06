@@ -1,5 +1,5 @@
 import { products } from "../../utils/data";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./ProductsPage.css";
 
 const ProductsPage = () => {
@@ -32,6 +32,8 @@ const ProductsPage = () => {
         <br />
         <br />
         <Link to={"/"}>go back to home</Link>
+        <br />
+        <Link to={"/products/1"}> go to first product </Link>
       </div>
     </div>
   );
