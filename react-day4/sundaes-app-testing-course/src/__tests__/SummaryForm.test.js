@@ -1,5 +1,6 @@
-import { screen, fireEvent, render } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import SummaryForm from "../components/SummaryForm";
+import userEvent from "@testing-library/user-event";
 
 test("should render button and checkbox on screen", () => {
   render(<SummaryForm />);
@@ -26,12 +27,12 @@ test("should enable button when checking checkbox", () => {
   expect(checkboxElem).not.toBeChecked();
 
   // first click
-  fireEvent.click(checkboxElem);
+  userEvent.click(checkboxElem);
   expect(buttonElem).toBeEnabled();
   expect(checkboxElem).toBeChecked();
 
   // second click
-  fireEvent.click(checkboxElem);
+  userEvent.click(checkboxElem);
   expect(buttonElem).toBeDisabled();
   expect(checkboxElem).not.toBeChecked();
 });
