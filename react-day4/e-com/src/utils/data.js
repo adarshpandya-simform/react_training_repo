@@ -1,4 +1,8 @@
 import { v4 } from "uuid";
+import product1 from "../assets/p1.webp";
+import product2 from "../assets/p2.webp";
+import product3 from "../assets/p3.webp";
+import product4 from "../assets/p4.webp";
 
 export const products = [
   {
@@ -9,7 +13,7 @@ export const products = [
     price: 500,
     discount: 10,
     isAvailable: true,
-    image_url: "../assets/p1.webp",
+    image: product1,
   },
   {
     id: v4(),
@@ -19,7 +23,7 @@ export const products = [
     price: 800,
     discount: 15,
     isAvailable: true,
-    image_url: "../assets/p2.webp",
+    image: product2,
   },
   {
     id: v4(),
@@ -29,7 +33,7 @@ export const products = [
     price: 650,
     discount: 20,
     isAvailable: true,
-    image_url: "../assets/p3.webp",
+    image: product3,
   },
   {
     id: v4(),
@@ -39,6 +43,6 @@ export const products = [
     price: 1000,
     discount: 5,
     isAvailable: false,
-    image_url: "../assets/p4.webp",
+    image: product4,
   },
 ];
