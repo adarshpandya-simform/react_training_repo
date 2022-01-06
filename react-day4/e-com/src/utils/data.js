@@ -6,7 +6,7 @@ import product4 from "../assets/p4.webp";
 
 export const products = [
   {
-    id: v4(),
+    id: 1,
     name: "nike shoes",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor officiis eos impedit numquam repellendus quos ea autem quia laudantium aperiam? Reiciendis sunt id sit vero alias obcaecati quo, dolorum reprehenderit!",
@@ -16,7 +16,7 @@ export const products = [
     image: product1,
   },
   {
-    id: v4(),
+    id: 2,
     name: "reebok shoes",
     description:
       "P2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor officiis eos impedit numquam repellendus quos ea autem quia laudantium aperiam? Reiciendis sunt id sit vero alias obcaecati quo, dolorum reprehenderit!",
@@ -26,7 +26,7 @@ export const products = [
     image: product2,
   },
   {
-    id: v4(),
+    id: 3,
     name: "sparx shoes",
     description:
       "P3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor officiis eos impedit numquam repellendus quos ea autem quia laudantium aperiam? Reiciendis sunt id sit vero alias obcaecati quo, dolorum reprehenderit!",
@@ -36,7 +36,7 @@ export const products = [
     image: product3,
   },
   {
-    id: v4(),
+    id: 4,
     name: "woodland shoes",
     description:
       "P4 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor officiis eos impedit numquam repellendus quos ea autem quia laudantium aperiam? Reiciendis sunt id sit vero alias obcaecati quo, dolorum reprehenderit!",
