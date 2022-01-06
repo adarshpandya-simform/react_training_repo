@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 import product1 from "../assets/p1.webp";
 import product2 from "../assets/p2.webp";
 import product3 from "../assets/p3.webp";
