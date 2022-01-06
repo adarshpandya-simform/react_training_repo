@@ -19,6 +19,7 @@ const SummaryForm = () => {
           checked={tcChecked}
           onChange={(e) => setTcChecked(e.target.checked)}
           label={checkboxLabel}
+          name="terms and conditions"
         />
       </Form.Group>
       <Button variant="primary" type="submit" disabled={!tcChecked}>
