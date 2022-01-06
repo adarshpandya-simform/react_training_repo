@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { products } from "../../utils/data";
 import "./Product.css";
 
@@ -56,6 +56,11 @@ const Product = () => {
           {product === null && <p>no product found</p>}
         </div>
       )}
+      <br />
+      <br />
+      <Link to={"/products"}>go back to products</Link>
+      <br />
+      <Link to={"/"}>go back to home</Link>
     </div>
   );
 };
