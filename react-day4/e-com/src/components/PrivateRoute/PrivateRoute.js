@@ -1,12 +1,18 @@
-import { Route, Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
-const PrivateRoute = (props) => {
+const PrivateRoute = ({ children }) => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
   const key = localStorage.getItem("key");
-  if (JSON.parse(isLoggedIn) === "true" && JSON.parse(key) === "1232") {
-    return <Route {...props} />;
+  const location = useLocation();
+  if (isLoggedIn !== "" && key !== "") {
+    if (isLoggedIn === "true" && key === "1232") {
+      console.log("there");
+      return children;
+    } else {
+      return <Navigate to={"/login"} />;
+    }
   } else {
-    return <Navigate to={"/login"} />;
+    return <Navigate to={"/login"} state={location} />;
   }
 };
 
