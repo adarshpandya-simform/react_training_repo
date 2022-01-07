@@ -1,8 +1,8 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 import "./index.css";
 
-const App = () => <h1>hela</h1>;
 const root = document.getElementById("root");
 
 ReactDOM.render(

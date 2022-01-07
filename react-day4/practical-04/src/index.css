@@ -3,6 +3,7 @@
 	--todo-app-color:#FFFFFF;
 	--primary-color:#52E4A6;
 	--primary-color-dark:#42b684;
+	--shadow-color:rgba(0,0,0,.2);
 }
 
 *{
@@ -20,4 +21,5 @@ body{
 	justify-content: center;
 	align-items: center;
 	font-family: sans-serif;
+	background: var(--bg-color);
 }
