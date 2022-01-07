@@ -1,3 +1,4 @@
+/* defining color variables */
 :root{
 	--bg-color: #F0EFE9;
 	--todo-app-color:#FFFFFF;
@@ -10,6 +11,8 @@
 	--input-hover-color:#cccccc;
 	--checkbox-indicator:#e6e6e6;
 }
+
+/* global styles */
 
 *{
 	box-sizing: border-box;

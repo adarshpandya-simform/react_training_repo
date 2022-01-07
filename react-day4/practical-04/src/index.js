@@ -6,6 +6,8 @@ import "./index.css";
 
 const root = document.getElementById("root");
 
+// importing and wrapping the global context around
+// <App/> component
 ReactDOM.render(
 	<StrictMode>
 		<TodoProvider>
