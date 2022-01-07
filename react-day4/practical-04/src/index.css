@@ -1,3 +1,10 @@
+:root{
+	--bg-color: #F0EFE9;
+	--todo-app-color:#FFFFFF;
+	--primary-color:#52E4A6;
+	--primary-color-dark:#42b684;
+}
+
 *{
 	box-sizing: border-box;
 	margin: 0;
