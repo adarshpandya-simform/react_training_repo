@@ -1,3 +1,4 @@
+/* styles for parent container */
 .add-todo-parent{
 	width: 100%;
 	flex: 1;
@@ -6,6 +7,7 @@
 	align-items: center;
 }
 
+/* styles for add button */
 .add-todo-button{
 	border: none;
 	color: var(--primary-color-dark);
@@ -20,6 +22,7 @@
 	top: 50%;
 }
 
+/* customizing input tag with styles */
 .add-todo-input{
 	width: 100%;
 	border: none;

@@ -6,12 +6,15 @@ import "./AddTodo.css";
 const AddTodo = () => {
 	const [isInputVisible, setIsInputVisible] = useState(false);
 	const [todo, setTodo] = useState("");
+	// using global state's dispatcher
 	const { dispatch } = useContext(TodoContext);
 
+	// handling the toggle functionality
 	const handleToggle = () => {
 		setIsInputVisible((prevVisibility) => !prevVisibility);
 	};
 
+	// handling 'Enter' and 'Escape' keypress
 	const handleKeyInput = (e) => {
 		if (e.key === "Enter") {
 			if (todo !== "") {
@@ -28,6 +31,7 @@ const AddTodo = () => {
 
 	return (
 		<div className="add-todo-parent">
+			{/* using conditional rendering to render either input or button */}
 			{isInputVisible && (
 				<input
 					className="add-todo-input"
