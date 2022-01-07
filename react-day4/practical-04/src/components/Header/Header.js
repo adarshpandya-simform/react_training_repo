@@ -3,9 +3,12 @@ import { getDate } from "../../helpers/getDate";
 import { getDayName } from "../../helpers/getDay";
 import "./Header.css";
 
+// Header component
 const Header = () => {
+	// extracting details from getDate() and getDayName()
 	const { day: date, month, year } = getDate();
 	const day = getDayName();
+
 	return (
 		<div className="header-parent">
 			<div className="header-details">

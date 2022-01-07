@@ -1,3 +1,4 @@
+/* styles for header parent div */
 .header-parent{
 	width: 100%;
 	flex: 1.5;
@@ -7,12 +8,15 @@
 	padding: 10px 0px;
 }
 
+/* style for header-details */
 .header-details{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+
+/* styles for different details */
 .header-month-year{
 	display: flex;
 	flex-direction: column;
