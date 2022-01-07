@@ -1,3 +1,29 @@
 .add-todo-parent{
-	background: teal;
+	width: 100%;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.add-todo-button{
+	border: none;
+	color: var(--primary-color-dark);
+	background: var(--primary-color);
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	font-size: 35px;
+	font-weight: 500;
+	box-shadow: 0px 0px 7px var(--shadow-color);
+	position: relative;
+	top: 50%;
+}
+
+.add-todo-input{
+	width: 100%;
+	border: none;
+	padding: 3px;
+	outline: none;
+	font-size: 17px;
 }
