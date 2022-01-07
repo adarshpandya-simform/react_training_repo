@@ -22,10 +22,6 @@
 	"rules": {
 
 		"react-hooks/rules-of-hooks":	"error",
-			"indent": [
-					"error",
-					"tab"
-			],
 			"quotes": [
 					"error",
 					"double"
