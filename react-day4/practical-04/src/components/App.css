@@ -1,0 +1,5 @@
+.todo-app-container{
+	background: var(--todo-app-color);
+	box-shadow: 0px 0px 8px var(--shadow-color);
+	padding: 10px;
+}
