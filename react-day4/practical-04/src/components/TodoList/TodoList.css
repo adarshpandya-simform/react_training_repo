@@ -1,3 +1,4 @@
+/* styles for todo-list parent div */
 .todo-list-parent{
 	width: 100%;
 	flex: 9.5;
@@ -6,11 +7,13 @@
 	user-select: none;
 }
 
+/* styles for showcasing empty todos */
 .empty-msg{
 	color: var(--muted-color);
 	font-size: 15px;
 }
 
+/* style for each todo container div */
 .todo-msg-parent{
 	width: 100%;
 	display: flex;
@@ -18,6 +21,7 @@
 	cursor: pointer;
 }
 
+/* style for todo-msg */
 .todo-msg{
 	color: var(--secondary-color);
 	font-size: 22px;
@@ -26,6 +30,7 @@
 	flex:11;
 }
 
+/* style for completed todo */
 .completed{
 	color: var(--todo-muted-color);
 }
