@@ -1,3 +1,4 @@
+/* style for todo-app-container div */
 .todo-app-container{
 	background: var(--todo-app-color);
 	box-shadow: 0px 0px 8px var(--shadow-color);
@@ -9,6 +10,7 @@
 	width: 370px;
 }
 
+/* style for inner div (todo-main-app-container) */
 .todo-main-app-container{
 	padding: 0px 40px;
 	display: flex;

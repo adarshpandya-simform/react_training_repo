@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import TodoList from "./TodoList/TodoList";
 import AddTodo from "./AddTodo/AddTodo";
 
+// rendering all components in <App/> component
 const App = () => {
 	return (
 		<div className="todo-app-container">
