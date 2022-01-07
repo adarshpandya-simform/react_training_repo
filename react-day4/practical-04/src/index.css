@@ -6,6 +6,7 @@
 	--shadow-color:rgba(0,0,0,.2);
 	--secondary-color:#3d3d3d;
 	--muted-color:#464646e7;
+	--todo-muted-color: gainsboro;
 }
 
 *{
