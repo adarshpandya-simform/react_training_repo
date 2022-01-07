@@ -1,6 +1,7 @@
 import { ADD_TODO, CHECK_TODO, DELETE_TODO } from "./todo.actions";
 import { v4 } from "uuid";
 
+// defining a reducer with multiple actions for todos
 export const reducer = (state, action) => {
 	switch (action.type) {
 		case ADD_TODO:
