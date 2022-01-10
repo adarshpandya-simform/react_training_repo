@@ -6,12 +6,10 @@ import { OrderDetailsProvider } from "./contexts/order.context";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <OrderDetailsProvider>
-        <SummaryForm />
-        {/* <Options optionType={"scoops"} />
-        <Options optionType={"toppings"} /> */}
         <OrderEntry />
+        <SummaryForm />
       </OrderDetailsProvider>
     </div>
   );
