@@ -1,0 +1,47 @@
+/* style for main parent container */
+.todo-app-input{
+	flex: 1.5;
+	border-bottom-left-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+/* style for component container */
+.todo-input-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+/* styles for 'addTodo' button */
+.todo-app-add-button{
+	border: none;
+	background: var(--secondary-color);
+	color: white;
+	font-size: 35px;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+
+/* styles for input tag */
+.todo-app-main-input{
+	border: none;
+	font-size: 25px;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-bottom: 2px solid var(--secondary-color);
+	color: var(--secondary-color);
+	caret-color: var(--secondary-color);
+}
+
+/* styles for error msg */
+.todo-input-error-msg
+{
+	color:var(--error-color);
+}
