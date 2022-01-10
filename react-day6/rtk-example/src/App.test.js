@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import reducers from "./features/counter/counterSlice";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("reducers", () => {
+  let state;
+  state = reducers(undefined, {});
+  console.log(state);
+  expect(state).toEqual({ value: 0 });
 });
