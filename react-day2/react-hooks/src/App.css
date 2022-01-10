@@ -1,0 +1,15 @@
+.light-btn{
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.dark-btn{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
