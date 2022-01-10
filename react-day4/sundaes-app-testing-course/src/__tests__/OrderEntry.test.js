@@ -1,8 +1,7 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "../test-utils/testing-library-utils";
 import OrderEntry from "../components/OrderEntry";
 import { rest } from "msw";
 import { server } from "../mocks/server";
-import { OrderDetailsProvider } from "../contexts/order.context";
 
 test.only("should handle error for scoop and toppings route", async () => {
   // reset handlers
@@ -16,7 +15,7 @@ test.only("should handle error for scoop and toppings route", async () => {
   );
 
   // render component
-  render(<OrderEntry />, { wrapper: OrderDetailsProvider });
+  render(<OrderEntry />);
 
   await waitFor(async () => {
     const alert = await screen.findAllByRole("alert");
