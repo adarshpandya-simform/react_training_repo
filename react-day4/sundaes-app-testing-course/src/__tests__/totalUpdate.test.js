@@ -27,3 +27,27 @@ test("should update scoop subtotal when scoops change", async () => {
   userEvent.type(chocolateInput, "2");
   expect(scoopTotal).toHaveTextContent("6.00");
 });
+
+test("should toppings subtotal when change", async () => {
+  render(<Options optionType={"toppings"} />);
+  const subTotal = screen.getByText("Toppings total: $", { exact: false });
+  expect(subTotal).toHaveTextContent("0.00");
+
+  const cherriesCheckbox = await screen.findByRole("checkbox", {
+    name: "Cherries",
+  });
+  userEvent.click(cherriesCheckbox);
+  expect(subTotal).toHaveTextContent("1.50");
+
+  const hotfudgeCheckbox = await screen.findByRole("checkbox", {
+    name: "Hot Fudge",
+  });
+
+  // add topping
+  userEvent.click(hotfudgeCheckbox);
+  expect(subTotal).toHaveTextContent("3.00");
+
+  // remove topping
+  userEvent.click(hotfudgeCheckbox);
+  expect(subTotal).toHaveTextContent("1.50");
+});
