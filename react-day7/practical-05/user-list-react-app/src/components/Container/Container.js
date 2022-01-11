@@ -7,6 +7,10 @@ import "./Container.css";
 const Container = () => {
   const [userData, setUserData] = useState([]);
 
+  const handleUserHover = (user) => {
+    console.log(user);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       await axios
@@ -22,7 +26,7 @@ const Container = () => {
 
   return (
     <div className="container">
-      <UserList userData={userData} />
+      <UserList userData={userData} handleUserHover={handleUserHover} />
       <UserProfile />
     </div>
   );
