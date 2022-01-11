@@ -8,7 +8,7 @@
 }
 
 .header-name{
-    flex: 4.5;
+    flex: 5;
 }
 
 .header-info{
@@ -18,5 +18,5 @@
 }
 
 .user-access-header{
-    margin-right: 233px;
+    margin-right: 221px;
 }
