@@ -7,8 +7,8 @@ const UserListHeader = () => {
         <span>Name</span>
       </div>
       <div className="header-info">
-        <span>Status</span>
-        <span>Access</span>
+        <span className="user-access-status">Status</span>
+        <span className="user-access-header">Access</span>
       </div>
     </div>
   );

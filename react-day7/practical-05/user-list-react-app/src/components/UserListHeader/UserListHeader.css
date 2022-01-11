@@ -14,5 +14,9 @@
 .header-info{
     flex: 7;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.user-access-header{
+    margin-right: 80px;
 }
