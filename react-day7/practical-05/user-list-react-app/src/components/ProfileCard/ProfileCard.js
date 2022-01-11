@@ -1,7 +1,7 @@
 import "./ProfileCard.css";
 
 const ProfileCard = () => {
-  return <div className="profile-card">this is profile card</div>;
+  return <div className="profile-card"></div>;
 };
 
 export default ProfileCard;
