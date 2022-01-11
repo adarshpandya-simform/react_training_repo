@@ -1,3 +1,13 @@
+:root{
+  --bg-color:#D9DCE6;
+  --bg-app-color:#fff;
+  --bg-font-color:#262626;
+  --icon-color:gray;
+  --primary-color:#FEB24B;
+  --secondary-color:#27ae60;
+  --bg-shadow:rgba(0, 0, 0, 0.219);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,4 +15,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
