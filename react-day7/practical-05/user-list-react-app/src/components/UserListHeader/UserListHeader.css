@@ -1,0 +1,18 @@
+.user-list-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: var(--bg-font-color);
+}
+
+.header-name{
+    flex: 5;
+}
+
+.header-info{
+    flex: 7;
+    display: flex;
+    justify-content: space-around;
+}
