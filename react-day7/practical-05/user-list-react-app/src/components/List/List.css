@@ -45,7 +45,7 @@
 }
 
 .user-email{
-    color: #262626af;
+    color: var(--user-email);
     font-size: 14px;
 }
 
@@ -59,11 +59,11 @@
 .user-status-select{
     height: 100%;
     width: 90px;
-    background: #e9e9e96c;
+    background: var(--select-bg);
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.219);
+    border: 1px solid var(--select-shadow);
 }
 
 .user-access{
@@ -74,8 +74,16 @@
 
 .user-access-auth{
     flex: 1;
-    color: rgba(128, 128, 128, 0.425);
+    color: var(--icon-color);
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.first-user-status,.first-user-access{
+    font-weight: bold;
+}
+
+.first-user-status{
+    color: var(--secondary-color);
 }
