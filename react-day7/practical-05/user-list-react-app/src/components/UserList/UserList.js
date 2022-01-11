@@ -2,11 +2,11 @@ import List from "../List/List";
 import UserListHeader from "../UserListHeader/UserListHeader";
 import "./UserList.css";
 
-const UserList = () => {
+const UserList = ({ userData }) => {
   return (
     <div className="user-list-parent">
       <UserListHeader />
-      <List />
+      <List userData={userData} />
     </div>
   );
 };
