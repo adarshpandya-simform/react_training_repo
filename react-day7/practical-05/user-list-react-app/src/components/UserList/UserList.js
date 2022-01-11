@@ -1,7 +1,12 @@
+import UserListHeader from "../UserListHeader/UserListHeader";
 import "./UserList.css";
 
 const UserList = () => {
-  return <div className="user-list-parent">the list component</div>;
+  return (
+    <div className="user-list-parent">
+      <UserListHeader />
+    </div>
+  );
 };
 
 export default UserList;
