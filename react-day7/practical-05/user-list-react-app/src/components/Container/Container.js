@@ -6,9 +6,10 @@ import "./Container.css";
 
 const Container = () => {
   const [userData, setUserData] = useState([]);
+  const [user, setUser] = useState(null);
 
   const handleUserHover = (user) => {
-    console.log(user);
+    setUser(user);
   };
 
   useEffect(() => {
@@ -27,7 +28,7 @@ const Container = () => {
   return (
     <div className="container">
       <UserList userData={userData} handleUserHover={handleUserHover} />
-      <UserProfile />
+      <UserProfile user={user} />
     </div>
   );
 };
