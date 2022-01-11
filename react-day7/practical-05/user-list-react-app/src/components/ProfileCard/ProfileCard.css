@@ -1,11 +1,135 @@
 .profile-card{
     border-radius: 35px;
     height: 370px;
-    min-width: 230px;
+    min-width: 240px;
     position: relative;
-    left: 50%;
-    background: white;
+    left: 95%;
+    background: var(--bg-app-color);
     box-shadow: 10px 20px 35px var(--bg-shadow-color);
+    padding: 20px;
     transition: all 300ms ease-in-out;
 }
 
+.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hide{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.card-user-details{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-dot{
+    background: var(--secondary-color);
+    width: 8px;
+    height:8px;
+    border-radius: 100%;
+    margin-left: 3px;
+}
+
+.card-user-profile-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-user-profile-img img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.card-user-info{
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-user-profile-button button{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: var(--bg-app-color);
+    background: var(--primary-color);
+}
+
+.card-user-profile-email span{
+    font-size: 13px;
+    color: var(--user-email);
+
+}
+
+.plan-validity{
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background: var(--primary-color-light);
+}
+
+.current-validity{
+    width:60%;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.card-user-profile-plan span{
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+.card-plan-uses span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-user-details-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.card-clicks{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.card-clicks-viewed
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-right: 1px solid var(--icon-color);
+}
+
+.card-clicks-monthly{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;   
+}
+
+.click-amount{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.click-desc{
+    font-size: 13px;
+    font-weight: thin;
+    color: var(--user-email);
+}
