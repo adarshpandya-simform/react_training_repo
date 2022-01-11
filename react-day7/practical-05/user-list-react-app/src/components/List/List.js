@@ -1,16 +1,22 @@
 import { Lock, Trash2 } from "react-feather";
 import "./List.css";
 
+// List component to display list of users
+// accepts userData, handleUserHover as props
 const List = ({ userData, handleUserHover }) => {
   return (
     <div>
+      {/* showing appropriate msg on 0 length*/}
       {userData.length === 0 && <p>loading...</p>}
+      {/* mapping and rendering users */}
       {userData &&
         userData.map((user, index) => (
           <>
+            {/* checking first user */}
             {index === 0 && (
               <div key={user.phone} className="list">
                 <div
+                  // handlers for mouseEnter and leave events
                   onMouseEnter={() => {
                     handleUserHover(user);
                   }}
@@ -29,6 +35,7 @@ const List = ({ userData, handleUserHover }) => {
                     </div>
                   </div>
                 </div>
+                {/* markup for user in first row (as per instruction) */}
                 <div className="user-info">
                   <div className="user-status">
                     <span className="first-user-status">Active</span>
@@ -42,10 +49,12 @@ const List = ({ userData, handleUserHover }) => {
                 </div>
               </div>
             )}
+            {/* conditinally rendering other users */}
             {index !== 0 && (
               <>
                 <div key={user.phone} className="list">
                   <div
+                    // event handlers for mouse hover and mouse leave
                     onMouseEnter={() => {
                       handleUserHover(user);
                     }}

@@ -1,5 +1,6 @@
 import "./UserListHeader.css";
 
+// UserListHeader component to render header
 const UserListHeader = () => {
   return (
     <div className="user-list-header">

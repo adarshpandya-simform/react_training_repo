@@ -1,3 +1,5 @@
+
+/* setting all the needed colors */
 :root{
   --bg-color:#D9DCE6;
   --bg-app-color:#fff;
@@ -12,6 +14,7 @@
   --user-email:#262626af;
 }
 
+/* styles for body */
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +29,3 @@ body {
   justify-content: center;
 }
 
-.card-user-profile-name{
-  font-weight: bold;
-}

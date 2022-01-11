@@ -1,10 +1,15 @@
 import "./ProfileCard.css";
 
+// Profile card component for rendering dynamic card
+// accepts 'user' as prop
 const ProfileCard = ({ user }) => {
   return (
+    // conditionally applying show/hide class
     <div className={`profile-card ${user !== null ? "show" : "hide"}`}>
+      {/* checking if user[] is not null */}
       {user !== null && (
         <>
+          {/* rendering markup with flexbox approach */}
           <div className="card-user-details">
             <div className="card-user-details-container">
               <div className="card-user-info">

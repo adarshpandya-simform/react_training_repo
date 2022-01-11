@@ -1,3 +1,4 @@
+/* style for user-list-header */
 .user-list-header{
     display: flex;
     justify-content: space-between;
@@ -7,16 +8,19 @@
     color: var(--bg-font-color);
 }
 
+/* styles for 'name' tab */
 .header-name{
     flex: 5;
 }
 
+/* style for 'info' tab */
 .header-info{
     flex: 7;
     display: flex;
     justify-content: space-between;
 }
 
+/* style for 'access' */
 .user-access-header{
     margin-right: 221px;
 }
