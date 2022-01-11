@@ -1,10 +1,10 @@
 import ProfileCard from "../ProfileCard/ProfileCard";
 import "./UserProfile.css";
 
-const UserProfile = () => {
+const UserProfile = ({ user }) => {
   return (
     <div className="user-profile-parent">
-      <ProfileCard />
+      <ProfileCard user={user} />
     </div>
   );
 };
