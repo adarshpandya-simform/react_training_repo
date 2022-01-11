@@ -1,6 +1,7 @@
 .user-profile-parent{
-    flex: 3;
+    flex: .5;
     display: flex;
     justify-content: right;
     align-items: center;
+    max-width: 100px;
 }
