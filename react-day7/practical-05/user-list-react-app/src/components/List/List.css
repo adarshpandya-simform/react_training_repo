@@ -4,7 +4,7 @@
 }
 
 .user-details{
-    flex: 4.5;
+    flex: 5;
     display: flex;
     align-items: center;
 }
@@ -17,6 +17,7 @@
 .user-details-container{
     display: flex;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .user-profile-img{
@@ -58,11 +59,11 @@
 .user-status-select{
     height: 100%;
     width: 90px;
-    background: #e9e9e9;
+    background: #e9e9e96c;
     border: none;
     border-radius: 5px;
     font-size: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.466);
+    border: 1px solid rgba(128, 128, 128, 0.219);
 }
 
 .user-access{
@@ -76,4 +77,5 @@
     color: rgba(128, 128, 128, 0.425);
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
