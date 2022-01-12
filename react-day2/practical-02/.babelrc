@@ -1,3 +1,4 @@
+// custom babel file to configure for compiling react
 {
     "presets": [
         "@babel/env","@babel/react"

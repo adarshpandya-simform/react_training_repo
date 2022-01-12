@@ -1,3 +1,4 @@
+// setting rules for eslint
 {
 	"env": {
 			"browser": true,

@@ -1,3 +1,4 @@
+// configuration for jest
 module.export = {
 	roots: ["<rootDir>/src"],
 	transform: {
