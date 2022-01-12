@@ -18,4 +18,7 @@ export const handlers = [
       ])
     );
   }),
+  rest.post("http://localhost:3030/order", (req, res, context) => {
+    return res(context.json({ orderNumber: 19238091283 }));
+  }),
 ];
