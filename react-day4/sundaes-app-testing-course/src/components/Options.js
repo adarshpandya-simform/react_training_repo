@@ -22,6 +22,9 @@ const Options = ({ optionType }) => {
           setError(true);
         });
     })();
+    return () => {
+      setItems([]);
+    };
   }, [optionType]);
 
   if (error) {
