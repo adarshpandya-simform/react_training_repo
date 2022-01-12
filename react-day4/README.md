@@ -1,7 +1,7 @@
-# React Course Day4 (Jan-06,Jan-07)
+# React Course Day4 (Jan-06,Jan-07,jan-12)
 
 <hr>
-Started on : 06-01-2022,07-01-2022<br>
+Started on : 06-01-2022,07-01-2022,12-02-2022<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -36,3 +36,16 @@ updated for 07-jan: <br>
     - implemented successfull context api test
     - started with redux
     - read blogs on redux
+
+updates for 12-jan: <br>
+
+    - added mock handlers
+    - used msw to intercept network calls
+    - mocked the props function with jest.fn()
+    - tested happy path (the application flow)
+    - added mock handler for post request and get request
+    - learnt different assertions
+    - learnt about how to wrap context for all the components without doing it manually
+    - wrote tests for successfull updates on order
+    - completed the course
+    - sent PR to review
