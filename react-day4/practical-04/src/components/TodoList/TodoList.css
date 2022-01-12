@@ -1,0 +1,92 @@
+/* styles for todo-list parent div */
+.todo-list-parent{
+	width: 100%;
+	flex: 9.5;
+	overflow: scroll;
+	scrollbar-width: none;
+	user-select: none;
+}
+
+/* styles for showcasing empty todos */
+.empty-msg{
+	color: var(--muted-color);
+	font-size: 15px;
+}
+
+/* style for each todo container div */
+.todo-msg-parent{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+/* style for todo-msg */
+.todo-msg{
+	color: var(--secondary-color);
+	font-size: 22px;
+	margin: 5px 0px;
+	font-weight: 500;
+	flex:11;
+}
+
+/* style for completed todo */
+.completed{
+	color: var(--todo-muted-color);
+}
+
+/* checkbox styles */
+.control {
+	flex: 1;
+	cursor: pointer;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+	height: 20px;
+	width: 20px;
+	background: var(--checkbox-indicator);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+	background: var(--input-hover-color);
+}
+
+.control input:checked ~ .control_indicator {
+	background: var(--primary-color);
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+	background: var(--primary-color);
+}
+
+.control_indicator:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.control-checkbox .control_indicator:after {
+	width: 10px;
+	height: 10px;
+	background: var(--todo-app-color);
+	border-radius: 100%;
+}

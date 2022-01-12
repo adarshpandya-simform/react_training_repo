@@ -1,0 +1,22 @@
+/* style for todo-app-container div */
+.todo-app-container{
+	background: var(--todo-app-color);
+	box-shadow: 0px 0px 8px var(--shadow-color);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 500px;
+	width: 370px;
+}
+
+/* style for inner div (todo-main-app-container) */
+.todo-main-app-container{
+	padding: 0px 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
