@@ -4,7 +4,7 @@ import { checkTodo, deleteTodo } from "../../features/todoSlice";
 const DisplayTodo = () => {
   const dispatch = useDispatch();
   const { todos } = useSelector((state) => state.todos);
-  console.log(todos);
+
   const handleDelete = (id) => {
     dispatch(deleteTodo({ id }));
   };
