@@ -3,6 +3,7 @@ import Hello from "./Hello";
 import styles from "./App.module.css";
 import logo from "../assets/logo.svg";
 
+// App components
 export const App = () => {
 	const [counter, setCounter] = useState(0);
 

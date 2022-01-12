@@ -1,5 +1,6 @@
 import React from "react";
 
+// Hello component
 const Hello = () => {
 	return (
 		<div>
