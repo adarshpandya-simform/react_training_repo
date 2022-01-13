@@ -8,3 +8,10 @@ export const store = createStore(
   reducer,
   applyMiddleware(logger, crashReporter)
 );
+
+// subscribed to state updates
+console.log(
+  store.subscribe(() => {
+    console.log(store.getState());
+  })
+);
