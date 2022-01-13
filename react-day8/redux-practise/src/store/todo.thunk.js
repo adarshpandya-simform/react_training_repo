@@ -1,18 +1,5 @@
 import axios from "axios";
-import { LOAD_TODO, SET_TODO } from "./todo.actions";
-
-export const loadTodos = () => {
-  return {
-    type: LOAD_TODO,
-  };
-};
-
-export const setTodos = (todos) => {
-  return {
-    type: SET_TODO,
-    payload: todos,
-  };
-};
+import { loadTodos, setTodos, addTodo } from "./todos.helper";
 
 // async fetch todos thunk
 export const fetchTodos = () => async (dispatch, getState) => {
@@ -22,4 +9,26 @@ export const fetchTodos = () => async (dispatch, getState) => {
     .then((res) => res.data);
   console.log("thunk: ", todos);
   dispatch(setTodos(todos));
+};
+
+// thunk for adding todo
+export const addTodoThunk = (title) => async (dispatch, getState) => {
+  dispatch(loadTodos);
+  const todo = await axios
+    .post(
+      "https://jsonplaceholder.typicode.com/todos",
+      {
+        userId: 1,
+        id: 122,
+        title,
+        completed: true,
+      },
+      {
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      }
+    )
+    .then((res) => res.data);
+  dispatch(addTodo(todo));
 };
