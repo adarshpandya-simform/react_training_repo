@@ -2,22 +2,28 @@ import { useEffect, useState } from "react";
 import { useTodos } from "../../store/todos.helper";
 
 const Todos = () => {
-  const { todos, loading, fetchTodosThunk, addNewTodoThunk } = useTodos();
+  const { todos, loading, fetchTodos, addNewTodo, deleteTodo } = useTodos();
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    fetchTodosThunk();
+    fetchTodos();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleAddClick = () => {
     if (title !== "") {
-      addNewTodoThunk(title);
+      addNewTodo(title);
       setTitle("");
     } else {
       alert("please enter something and then add");
     }
   };
+
+  const handleDelete = (id) => {
+    deleteTodo(id);
+  };
+
+  const handleChecked = async (id, completed) => {};
 
   return (
     <div>
@@ -26,7 +32,17 @@ const Todos = () => {
       {todos.length !== 0 &&
         !loading &&
         todos.map((todo) => (
-          <div key={todo.id}>
+          <div
+            onClick={() => {
+              handleDelete(todo.id);
+            }}
+            key={todo.id}
+          >
+            <input
+              type={"checkbox"}
+              checked={todo.completed}
+              onChange={(e) => handleChecked(todo.id, e.target.checked)}
+            />
             <p>{todo.title}</p>
           </div>
         ))}
