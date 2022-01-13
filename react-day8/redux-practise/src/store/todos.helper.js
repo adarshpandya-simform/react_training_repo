@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_TODO, LOAD_TODO, SET_TODO } from "./todo.actions";
-import { addTodoThunk, fetchTodos } from "./todo.thunk";
+import { ADD_TODO, DELETE_TODO, LOAD_TODO, SET_TODO } from "./todo.actions";
+import { addTodoThunk, deleteTodoThunk, fetchTodosThunk } from "./todo.thunk";
 
 // todo action helper function
 export const loadTodos = () => {
@@ -23,18 +23,29 @@ export const addTodo = (todo) => {
   };
 };
 
+export const deleteTodo = (id) => {
+  return {
+    type: DELETE_TODO,
+    payload: id,
+  };
+};
+
 // custom hook for todos
 export const useTodos = () => {
   const { todos, loading } = useSelector((state) => state.todos);
   const dispatch = useDispatch();
 
-  const fetchTodosThunk = () => {
-    dispatch(fetchTodos());
+  const fetchTodos = () => {
+    dispatch(fetchTodosThunk());
   };
 
-  const addNewTodoThunk = (title) => {
+  const addNewTodo = (title) => {
     dispatch(addTodoThunk(title));
   };
 
-  return { todos, loading, fetchTodosThunk, addNewTodoThunk };
+  const deleteTodo = (id) => {
+    dispatch(deleteTodoThunk(id));
+  };
+
+  return { todos, loading, fetchTodos, addNewTodo, deleteTodo };
 };
