@@ -1,5 +1,11 @@
 import axios from "axios";
-import { loadTodos, setTodos, addTodo, deleteTodo } from "./todos.helper";
+import {
+  loadTodos,
+  setTodos,
+  addTodo,
+  deleteTodo,
+  checkTodo,
+} from "./todos.helper";
 
 // async fetch todos thunk
 export const fetchTodosThunk = () => async (dispatch, getState) => {
@@ -44,4 +50,7 @@ export const deleteTodoThunk = (id) => async (dispatch, getState) => {
   }
 };
 
-export const checkTodo = (id, completed) => {};
+export const checkTodoThunk = (id, completed) => (dispatch, getState) => {
+  dispatch(loadTodos());
+  dispatch(checkTodo(id, completed));
+};
