@@ -1,5 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_TODO, DELETE_TODO, LOAD_TODO, SET_TODO } from "./todo.actions";
+import {
+  ADD_TODO,
+  CHECk_TODO,
+  DELETE_TODO,
+  LOAD_TODO,
+  SET_TODO,
+} from "./todo.actions";
 import { addTodoThunk, deleteTodoThunk, fetchTodosThunk } from "./todo.thunk";
 
 // todo action helper function
@@ -27,6 +33,13 @@ export const deleteTodo = (id) => {
   return {
     type: DELETE_TODO,
     payload: id,
+  };
+};
+
+export const checkTodo = (id, completed) => {
+  return {
+    type: CHECk_TODO,
+    payload: { id, completed },
   };
 };
 
