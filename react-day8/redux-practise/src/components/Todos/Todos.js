@@ -1,15 +1,23 @@
-import { fetchTodos } from "../../store/todo.thunk";
+import { useEffect, useState } from "react";
 import { useTodos } from "../../store/todos.helper";
 
 const Todos = () => {
-  const { todos, loading, dispatch } = useTodos();
-  console.log(todos, loading);
+  const { todos, loading, fetchTodosThunk, addNewTodoThunk } = useTodos();
+  const [title, setTitle] = useState("");
 
-  const handleClick = () => {
-    dispatch(fetchTodos());
+  useEffect(() => {
+    fetchTodosThunk();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleAddClick = () => {
+    if (title !== "") {
+      addNewTodoThunk(title);
+      setTitle("");
+    } else {
+      alert("please enter something and then add");
+    }
   };
-
-  const handleAddClick = async () => {};
 
   return (
     <div>
@@ -22,7 +30,14 @@ const Todos = () => {
             <p>{todo.title}</p>
           </div>
         ))}
-      <button onClick={handleClick}>load todos</button>
+      <input
+        type={"text"}
+        placeholder="enter todo..."
+        value={title}
+        onChange={(e) => {
+          setTitle(e.target.value);
+        }}
+      />
       <button onClick={handleAddClick}>add todo</button>
     </div>
   );
