@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useTodos } from "../../store/todos.helper";
 
 const Todos = () => {
-  const { todos, loading, fetchTodos, addNewTodo, deleteTodo } = useTodos();
+  const { todos, loading, fetchTodos, addNewTodo, deleteTodo, checkTodo } =
+    useTodos();
   const [title, setTitle] = useState("");
 
   useEffect(() => {
@@ -23,7 +24,9 @@ const Todos = () => {
     deleteTodo(id);
   };
 
-  const handleChecked = async (id, completed) => {};
+  const handleChecked = async (id, completed) => {
+    checkTodo(id, completed);
+  };
 
   return (
     <div>
@@ -32,18 +35,20 @@ const Todos = () => {
       {todos.length !== 0 &&
         !loading &&
         todos.map((todo) => (
-          <div
-            onClick={() => {
-              handleDelete(todo.id);
-            }}
-            key={todo.id}
-          >
+          <div key={todo.id}>
             <input
               type={"checkbox"}
               checked={todo.completed}
               onChange={(e) => handleChecked(todo.id, e.target.checked)}
             />
-            <p>{todo.title}</p>
+            <span
+              onClick={() => {
+                handleDelete(todo.id);
+              }}
+              style={todo.completed ? { textDecoration: "line-through" } : {}}
+            >
+              {todo.title}
+            </span>
           </div>
         ))}
       <input
