@@ -17,14 +17,14 @@ export const resetCount = () => {
 // creating a custom hook for counter
 export const useCounter = () => {
   const count = useSelector((state) => state.count);
-  const next = useDispatch();
+  const dispatch = useDispatch();
 
-  // created a middleware to log the state
-  const dispatch = (action) => {
-    console.log("dispatching action: ", JSON.stringify(action));
-    // actual dispatcher
-    return next(action);
-  };
+  // // created a middleware to log the state
+  // const dispatch = (action) => {
+  //   console.log("dispatching action: ", JSON.stringify(action));
+  //   // actual dispatcher
+  //   return next(action);
+  // };
 
   return {
     count,
