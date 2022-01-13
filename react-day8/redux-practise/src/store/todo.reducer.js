@@ -1,6 +1,6 @@
 // creating and exporting reducer for todo
 
-import { LOAD_TODO, SET_TODO } from "./todo.actions";
+import { ADD_TODO, LOAD_TODO, SET_TODO } from "./todo.actions";
 
 let initialState = { todos: [], loading: false };
 
@@ -10,6 +10,8 @@ export const reducer = (state = initialState, { type, payload }) => {
       return { ...state, loading: true };
     case SET_TODO:
       return { ...state, todos: payload, loading: false };
+    case ADD_TODO:
+      return { ...state, todos: [...state.todos, payload], loading: false };
     default:
       return state;
   }
