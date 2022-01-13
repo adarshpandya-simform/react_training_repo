@@ -6,7 +6,12 @@ import {
   LOAD_TODO,
   SET_TODO,
 } from "./todo.actions";
-import { addTodoThunk, deleteTodoThunk, fetchTodosThunk } from "./todo.thunk";
+import {
+  addTodoThunk,
+  checkTodoThunk,
+  deleteTodoThunk,
+  fetchTodosThunk,
+} from "./todo.thunk";
 
 // todo action helper function
 export const loadTodos = () => {
@@ -60,5 +65,9 @@ export const useTodos = () => {
     dispatch(deleteTodoThunk(id));
   };
 
-  return { todos, loading, fetchTodos, addNewTodo, deleteTodo };
+  const checkTodo = (id, completed) => {
+    dispatch(checkTodoThunk(id, completed));
+  };
+
+  return { todos, loading, fetchTodos, addNewTodo, deleteTodo, checkTodo };
 };
