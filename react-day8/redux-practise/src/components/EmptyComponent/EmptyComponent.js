@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+// Empty Component just to check re renders of different component
 const EmptyComponent = () => {
   useEffect(() => {
     console.log("empty component rendered");

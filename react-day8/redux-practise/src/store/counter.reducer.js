@@ -1,9 +1,9 @@
-// creating and exporting reducer for counter
-
 import { DECREMENT, INCREMENT, RESET } from "./counter.actions";
 
+// initial state
 let initialState = { count: 0 };
 
+// creating and exporting reducer for counter
 export const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case INCREMENT:

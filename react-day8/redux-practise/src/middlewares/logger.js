@@ -1,5 +1,4 @@
 // exporting logger middleware
-
 export const logger = (store) => (next) => (action) => {
   console.log("logger");
   console.log("===================");

@@ -1,5 +1,4 @@
 // exporting crash report middleware
-
 export const crashReporter = (store) => (next) => (action) => {
   console.log("crashReport");
   console.log("===================");

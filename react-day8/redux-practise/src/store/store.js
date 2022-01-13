@@ -11,7 +11,7 @@ const rootReducer = combineReducers({
   todos: todoReducer,
 });
 
-// creating store for counter
+// creating store for counter and todos
 export const store = createStore(
   rootReducer,
   applyMiddleware(logger, crashReporter, thunk)

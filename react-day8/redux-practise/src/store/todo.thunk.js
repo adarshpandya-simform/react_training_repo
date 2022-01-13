@@ -50,6 +50,7 @@ export const deleteTodoThunk = (id) => async (dispatch, getState) => {
   }
 };
 
+// thunk for checking todo
 export const checkTodoThunk = (id, completed) => (dispatch, getState) => {
   dispatch(loadTodos());
   dispatch(checkTodo(id, completed));

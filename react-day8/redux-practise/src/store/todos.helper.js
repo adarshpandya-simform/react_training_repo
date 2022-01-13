@@ -13,7 +13,8 @@ import {
   fetchTodosThunk,
 } from "./todo.thunk";
 
-// todo action helper function
+// todo action helper functions
+
 export const loadTodos = () => {
   return {
     type: LOAD_TODO,
@@ -48,7 +49,7 @@ export const checkTodo = (id, completed) => {
   };
 };
 
-// custom hook for todos
+// creating a custom hook for todos
 export const useTodos = () => {
   const { todos, loading } = useSelector((state) => state.todos);
   const dispatch = useDispatch();

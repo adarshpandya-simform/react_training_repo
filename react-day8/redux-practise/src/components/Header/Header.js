@@ -1,5 +1,6 @@
 import { useCounter } from "../../store/counter.helper";
 
+// Header component to show the count/ uses useCounter()
 const Header = () => {
   const { count } = useCounter();
   return (

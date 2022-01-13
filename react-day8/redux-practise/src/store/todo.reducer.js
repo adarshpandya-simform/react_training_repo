@@ -1,5 +1,3 @@
-// creating and exporting reducer for todo
-
 import {
   ADD_TODO,
   CHECk_TODO,
@@ -8,8 +6,10 @@ import {
   SET_TODO,
 } from "./todo.actions";
 
+// initial state
 let initialState = { todos: [], loading: false };
 
+// creating and exporting reducer for todo
 export const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case LOAD_TODO:

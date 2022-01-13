@@ -1,13 +1,15 @@
 import { DECREMENT, INCREMENT } from "../store/counter.actions";
 import { reducer } from "../store/counter.reducer";
 
+// initial test
 test("should render count 0", () => {
   let state = reducer(undefined, {});
   console.log(state);
   expect(state).toEqual({ count: 0 });
 });
 
-test("should increment the count on clicking +", () => {
+// test for button press count change
+test("should change the count when clicked on buttons", () => {
   let state;
   state = reducer({ count: 3 }, { type: INCREMENT });
   expect(state).toEqual({ count: 4 });
