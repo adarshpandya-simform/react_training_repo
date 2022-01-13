@@ -1,8 +1,8 @@
 import axios from "axios";
-import { loadTodos, setTodos, addTodo } from "./todos.helper";
+import { loadTodos, setTodos, addTodo, deleteTodo } from "./todos.helper";
 
 // async fetch todos thunk
-export const fetchTodos = () => async (dispatch, getState) => {
+export const fetchTodosThunk = () => async (dispatch, getState) => {
   dispatch(loadTodos());
   const todos = await axios
     .get("https://jsonplaceholder.typicode.com/users/1/todos")
@@ -32,3 +32,16 @@ export const addTodoThunk = (title) => async (dispatch, getState) => {
     .then((res) => res.data);
   dispatch(addTodo(todo));
 };
+
+// thunk for deleting a todo
+export const deleteTodoThunk = (id) => async (dispatch, getState) => {
+  dispatch(loadTodos());
+  const status = await axios
+    .delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+    .then((res) => res.status);
+  if (status === 200) {
+    dispatch(deleteTodo(id));
+  }
+};
+
+export const checkTodo = (id, completed) => {};
