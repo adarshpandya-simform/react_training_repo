@@ -11,10 +11,10 @@ const List = ({ userData, handleUserHover }) => {
       {/* mapping and rendering users */}
       {userData &&
         userData.map((user, index) => (
-          <>
+          <div key={user.id}>
             {/* checking first user */}
             {index === 0 && (
-              <div key={user.phone} className="list">
+              <div key={user.id} className="list">
                 <div
                   // handlers for mouseEnter and leave events
                   onMouseEnter={() => {
@@ -27,10 +27,10 @@ const List = ({ userData, handleUserHover }) => {
                 >
                   <div className="user-details-container">
                     <div className="user-profile-img">
-                      <img src={user.picture.large} alt="user-profile" />
+                      <img src={user.avatar} alt="user-profile" />
                     </div>
                     <div className="user-profile-data">
-                      <span className="user-name">{`${user.name.first} ${user.name.last}`}</span>
+                      <span className="user-name">{`${user.first_name} ${user.last_name}`}</span>
                       <span className="user-email">{user.email}</span>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ const List = ({ userData, handleUserHover }) => {
             {/* conditinally rendering other users */}
             {index !== 0 && (
               <>
-                <div key={user.phone} className="list">
+                <div key={user.id} className="list">
                   <div
                     // event handlers for mouse hover and mouse leave
                     onMouseEnter={() => {
@@ -65,10 +65,10 @@ const List = ({ userData, handleUserHover }) => {
                   >
                     <div className="user-details-container">
                       <div className="user-profile-img">
-                        <img src={user.picture.large} alt="user-profile" />
+                        <img src={user.avatar} alt="user-profile" />
                       </div>
                       <div className="user-profile-data">
-                        <span className="user-name">{`${user.name.first} ${user.name.last}`}</span>
+                        <span className="user-name">{`${user.first_name} ${user.last_name}`}</span>
                         <span className="user-email">{user.email}</span>
                       </div>
                     </div>
@@ -95,7 +95,7 @@ const List = ({ userData, handleUserHover }) => {
                 </div>
               </>
             )}
-          </>
+          </div>
         ))}
     </div>
   );
