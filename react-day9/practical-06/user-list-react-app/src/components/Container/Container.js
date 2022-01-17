@@ -4,6 +4,9 @@ import UserList from "../UserList/UserList";
 import UserProfile from "../UserProfile/UserProfile";
 import "./Container.css";
 
+// memoize user
+const data = {};
+
 // Container component
 const Container = () => {
   // for users
@@ -20,8 +23,11 @@ const Container = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get("https://randomuser.me/api/?results=7")
-        .then((res) => setUserData(res.data.results))
+        .get("https://reqres.in/api/users?page=1")
+        .then((res) => {
+          setUserData(res.data.data);
+          data["page1"] = res.data.data;
+        })
         .catch((error) => {
           setUserData([]);
           console.log(error);
@@ -30,10 +36,31 @@ const Container = () => {
     fetchData();
   }, []);
 
+  const fetchDataByPage = async (page) => {
+    if (`page${page}` in data) {
+      setUserData(data[`page${page}`]);
+    } else {
+      await axios
+        .get(`https://reqres.in/api/users?page=${page}`)
+        .then((res) => {
+          setUserData(res.data.data);
+          data[`page${page}`] = res.data.data;
+        })
+        .catch((error) => {
+          setUserData([]);
+          console.log(error);
+        });
+    }
+  };
+
   return (
     <div className="container">
       {/* passing userData and handleUserHover as prop */}
-      <UserList userData={userData} handleUserHover={handleUserHover} />
+      <UserList
+        userData={userData}
+        handleUserHover={handleUserHover}
+        fetchDataByPage={fetchDataByPage}
+      />
       {/* passing the current hovered user as prop */}
       <UserProfile user={user} />
     </div>
