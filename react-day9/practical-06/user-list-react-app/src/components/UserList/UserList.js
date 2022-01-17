@@ -4,10 +4,12 @@ import UserListHeader from "../UserListHeader/UserListHeader";
 import "./UserList.css";
 
 // UserList component
-// accepts userData and handleUserHover as prop
+// accepts userData and handleUserHover and fetchDataByPage as prop
 const UserList = ({ userData, handleUserHover, fetchDataByPage }) => {
+  // setting page1 as default
   const [page, setPage] = useState(1);
 
+  // helper function to handle pagination
   const handlePagination = (page) => {
     fetchDataByPage(String(page));
     setPage(page);

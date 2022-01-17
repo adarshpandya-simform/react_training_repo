@@ -26,6 +26,7 @@ const Container = () => {
         .get("https://reqres.in/api/users?page=1")
         .then((res) => {
           setUserData(res.data.data);
+          // storing page 1 data
           data["page1"] = res.data.data;
         })
         .catch((error) => {
@@ -36,14 +37,18 @@ const Container = () => {
     fetchData();
   }, []);
 
+  // function to fetch data according to page clicked
   const fetchDataByPage = async (page) => {
+    // checking if data is available in memoization
     if (`page${page}` in data) {
+      // setting the pre-fetched data
       setUserData(data[`page${page}`]);
     } else {
       await axios
         .get(`https://reqres.in/api/users?page=${page}`)
         .then((res) => {
           setUserData(res.data.data);
+          // setting fetched data in memoized form
           data[`page${page}`] = res.data.data;
         })
         .catch((error) => {
@@ -56,6 +61,7 @@ const Container = () => {
   return (
     <div className="container">
       {/* passing userData and handleUserHover as prop */}
+      {/* passing fetchDataByPage as a prop */}
       <UserList
         userData={userData}
         handleUserHover={handleUserHover}
