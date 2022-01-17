@@ -14,10 +14,10 @@ const ProfileCard = ({ user }) => {
             <div className="card-user-details-container">
               <div className="card-user-info">
                 <div className="card-user-profile-img">
-                  <img src={user.picture.large} alt="profile-img" />
+                  <img src={user.avatar} alt="profile-img" />
                 </div>
                 <div className="card-user-profile-name">
-                  <span>{`${user.name.first} ${user.name.last}`}</span>
+                  <span>{`${user.first_name} ${user.last_name}`}</span>
                   <div className="status-dot"></div>
                 </div>
                 <div className="card-user-profile-email">
