@@ -2,3 +2,36 @@
 .user-list-parent{
     flex: 11.5;
 }
+
+.pagination-keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pagination-keys button{
+    padding: 10px;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color: var(--primary-color) ;
+    background: var(--bg-app-color) ;
+    border: 1px solid var(--primary-color) ;
+}
+
+.pagination-keys button:hover{
+    background: var(--primary-color-light);
+    color: var(--primary-color);
+}
+
+.active-page{
+    border: none !important;
+    background: var(--primary-color) !important;
+    color: var(--bg-app-color) !important;
+}
