@@ -9,5 +9,5 @@
 }
 
 .active{
-    background: rgb(31, 133, 0);
+    background: rgb(31, 133, 0) !important;
 }
