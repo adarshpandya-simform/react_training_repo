@@ -1,7 +1,7 @@
-# React Course Day9 (Jan-17)
+# React Course Day9 (Jan-17,18)
 
 <hr>
-Started on : 17-jan<br>
+Started on : 17-jan,18-jan<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -15,3 +15,11 @@ updates for 17-jan: <br>
     - fetched dynamic data from 'https://reqres.in/'
     - completed practical-06
     - sent PR for review
+
+updates for 18-jan: <br>
+
+    - completed deployment module
+    - read blogs around deployment
+    - read documentation
+    - saw and tried different deployments
+    - generated staging and production builds
