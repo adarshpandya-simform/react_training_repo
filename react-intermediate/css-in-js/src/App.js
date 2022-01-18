@@ -6,6 +6,7 @@ import StyleModulesApproach from "./components/StyleModulesApproach/StyleModules
 import ClsxApproach from "./components/ClsxApproach/ClsxApproach";
 import ClassnameApproach from "./components/ClassnameApproach/ClassnameApproach";
 import StyledComponentsApproach from "./components/StyledComponentsApproach/StyledComponentsApproach";
+import EmotionApproach from "./components/EmotionApproach/EmotionApproach";
 
 // CSS in JS with different approaches
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [active5, setActive5] = useState(false);
   const [active6, setActive6] = useState(false);
   const [active7, setActive7] = useState(false);
+
   return (
     <div className="App">
       <TraditionalApproach isActive={active1} setActive={setActive1} />
@@ -24,6 +26,7 @@ function App() {
       <ClsxApproach isActive={active4} setActive={setActive4} />
       <ClassnameApproach isActive={active5} setActive={setActive5} />
       <StyledComponentsApproach isActive={active6} setActive={setActive6} />
+      <EmotionApproach isActive={active7} setActive={setActive7} />
     </div>
   );
 }
