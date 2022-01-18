@@ -16,8 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:staging": "env-cmd -f .env.staging npm run build",
+    "eject": "react-scripts eject",  
+    "build:staging": "env-cmd -f .env.staging npm run build", 
     "build:production": "env-cmd -f .env.production npm run build"
   },
   "eslintConfig": {
