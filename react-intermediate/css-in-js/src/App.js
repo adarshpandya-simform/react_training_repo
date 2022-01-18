@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TraditionalApproach from "./components/TraditionalApproach/TraditionalApproach";
 import "./App.css";
+import StyleAttributeApproach from "./components/StyleAttributeApproach/StyleAttributeApproach";
 
 // CSS in JS with different approaches
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <TraditionalApproach isActive={active1} setActive={setActive1} />
+      <StyleAttributeApproach isActive={active2} setActive={setActive2} />
     </div>
   );
 }
