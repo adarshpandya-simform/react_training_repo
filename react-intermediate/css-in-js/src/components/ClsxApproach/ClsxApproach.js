@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import "./ClsxApproach.css";
 
 const ClsxApproach = ({ isActive, setActive }) => {
   return (

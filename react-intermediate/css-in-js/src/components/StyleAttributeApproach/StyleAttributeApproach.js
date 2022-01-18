@@ -1,5 +1,3 @@
-import "./StyleAttributeApproach.css";
-
 const StyleAttributeApproach = ({ isActive, setActive }) => {
   return (
     <div>

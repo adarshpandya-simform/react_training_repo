@@ -1,5 +1,3 @@
-import "./TraditionalApproach.css";
-
 const TraditionalApproach = ({ isActive, setActive }) => {
   return (
     <div>
