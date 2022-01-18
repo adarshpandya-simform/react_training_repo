@@ -1,7 +1,9 @@
-import Dashboard from "./components/Dashboard/Dashboard";
-import EmojiPicker from "./components/EmojiPicker/EmojiPicker";
 import Home from "./components/Home/Home";
 import { Routes, Route, Link } from "react-router-dom";
+import { lazy, Suspense } from "react";
+
+const Dashboard = lazy(() => import("./components/Dashboard/Dashboard"));
+const EmojiPicker = lazy(() => import("./components/EmojiPicker/EmojiPicker"));
 
 function App() {
   return (
@@ -12,11 +14,13 @@ function App() {
       <br />
       <Link to={"/dashboard"}>Dashboard</Link>
       <br />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/emoji" element={<EmojiPicker />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+      <Suspense fallback={<p>loading...</p>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/emoji" element={<EmojiPicker />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }
