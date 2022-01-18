@@ -12,9 +12,11 @@ function App() {
       <br />
       <Link to={"/dashboard"}>Dashboard</Link>
       <br />
-      <Home />
-      <EmojiPicker />
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/emoji" element={<EmojiPicker />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
