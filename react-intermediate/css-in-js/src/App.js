@@ -5,6 +5,7 @@ import StyleAttributeApproach from "./components/StyleAttributeApproach/StyleAtt
 import StyleModulesApproach from "./components/StyleModulesApproach/StyleModulesApproach";
 import ClsxApproach from "./components/ClsxApproach/ClsxApproach";
 import ClassnameApproach from "./components/ClassnameApproach/ClassnameApproach";
+import StyledComponentsApproach from "./components/StyledComponentsApproach/StyledComponentsApproach";
 
 // CSS in JS with different approaches
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <StyleModulesApproach isActive={active3} setActive={setActive3} />
       <ClsxApproach isActive={active4} setActive={setActive4} />
       <ClassnameApproach isActive={active5} setActive={setActive5} />
+      <StyledComponentsApproach isActive={active6} setActive={setActive6} />
     </div>
   );
 }
