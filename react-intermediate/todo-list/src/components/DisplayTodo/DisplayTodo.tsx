@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { useTodos } from "../../context";
-import "./DisplayTodo.css";
 
 const DisplayTodo: FC = () => {
   const { deleteTodo, checkTodo, todos } = useTodos();
