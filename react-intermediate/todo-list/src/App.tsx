@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { FC } from "react";
+import { DisplayTodo, InputTodo } from "./components";
 
-
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      hello react ts
+    <div className="todo-app-container">
+      <div className="todo-app-input">
+        <InputTodo />
+      </div>
+      <div className="todo-app-display">
+        <DisplayTodo />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
