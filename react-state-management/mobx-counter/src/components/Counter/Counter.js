@@ -1,6 +1,8 @@
 import { observer } from "mobx-react";
 import React, { useState } from "react";
 
+// accepting counterStore as prop and using it
+// for dispatching actions in Counter component
 const Counter = observer(({ counterStore }) => {
   const [amount, setAmount] = useState(0);
   return (

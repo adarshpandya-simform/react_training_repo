@@ -1,6 +1,6 @@
 import { observable, action } from "mobx";
 
-// creating a store with actions
+// creating a store with actions (using observable)
 export const counterStore = observable({
   count: 0,
   increment: action("inc", () => {
