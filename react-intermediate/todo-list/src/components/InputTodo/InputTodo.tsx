@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import { useTodos } from "../../context";
-import "./InputTodo.css";
 
 const InputTodo: FC = () => {
   const [title, setTitle] = useState<string>("");
