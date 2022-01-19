@@ -13,10 +13,10 @@ export const addTodoAction = (
 
 export const deleteTodoAction = (
   id: string
-): { type: string; payload: string } => {
+): { type: string; payload: { id: string } } => {
   return {
     type: DELETE_TODO,
-    payload: id,
+    payload: { id },
   };
 };
 
@@ -37,6 +37,7 @@ export const useTodos = (): {
   checkTodo: (id: string, completed: boolean) => void;
 } => {
   const { state, dispatch } = useContext(TodoContext);
+
   let todos: Array<Todo> = state.todos;
 
   const addTodo = (title: string): void => {
