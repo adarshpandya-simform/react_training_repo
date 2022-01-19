@@ -1,7 +1,6 @@
 import styles from "./StyleModulesApproach.module.css";
 
 const StyleModulesApproach = ({ isActive, setActive }) => {
-  console.log(styles.button);
   return (
     <div>
       <button

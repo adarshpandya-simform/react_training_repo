@@ -19,6 +19,4 @@ test("should be clicked", () => {
   expect(buttonElement).toHaveClass("light-btn");
 
   fireEvent.click(buttonElement);
-  console.log(buttonElement.style);
-  console.log(buttonElement.textContent);
 });

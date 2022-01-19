@@ -24,7 +24,6 @@ const FactorialWithMemo = () => {
 };
 
 const factorialOf = (num) => {
-  // console.log("factorialOf(n) with 'memo' called!");
   return num <= 0 ? 1 : num * factorialOf(num - 1);
 };
 

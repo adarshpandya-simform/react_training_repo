@@ -3,7 +3,6 @@ import reducers from "./features/counter/counterSlice";
 test("reducers", () => {
   let state;
   state = reducers(undefined, {});
-  console.log(state);
   expect(state).toEqual({ value: 0 });
 });
 
@@ -14,6 +13,4 @@ test("should increment the value on clicking +", () => {
   state = reducers(state, { type: "counter/decrement" });
   state = reducers(state, { type: "counter/decrement" });
   expect(state).toEqual({ value: 2 });
-
-  console.log(state);
 });
