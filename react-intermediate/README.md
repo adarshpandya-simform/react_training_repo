@@ -1,7 +1,7 @@
-# React Intermediate (Jan-18)
+# React Intermediate (Jan-18,19)
 
 <hr>
-Started on : 18-jan<br>
+Started on : 18-jan,19-jan<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -25,3 +25,18 @@ updates for 18-jan: <br>
     - watched tutoial on SSR
     - implemented basic SSR 
     - sent PR for review
+
+updates for 19-jan: <br>
+
+    - read more blogs around SSR
+    - read documentation around SSR
+    - read testing recipes in react docs
+    - got familiar with testing tools and approaches
+    - learnt how to create react typescript project
+    - read blog around how to use typescript in react app
+    - read cheatsheet and docs for using typescript with react
+    - implemented a todo app with context in typescript
+    - enabled and used strict type checking for no loose types in app
+    - created custom hooks for reusability
+    - refactored old code
+    - sent PR for review 
