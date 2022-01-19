@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import { useTodos } from "../../context";
+import "./InputTodo.css";
 
 const InputTodo: FC = () => {
   const [title, setTitle] = useState<string>("");
@@ -21,7 +22,7 @@ const InputTodo: FC = () => {
   };
 
   return (
-    <div>
+    <div className="input-container">
       <input
         type={"text"}
         placeholder="Enter todo"
