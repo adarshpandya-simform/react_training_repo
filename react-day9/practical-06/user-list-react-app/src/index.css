@@ -1,0 +1,31 @@
+
+/* setting all the needed colors */
+:root{
+  --bg-color:#D9DCE6;
+  --bg-app-color:#fff;
+  --bg-font-color:#262626;
+  --icon-color:gainsboro;
+  --primary-color:#FEB24B;
+  --primary-color-light:#feb34b3b;
+  --secondary-color:#27ae60;
+  --bg-shadow-color:rgba(0, 0, 0, 0.219);
+  --select-shadow:rgba(128, 128, 128, 0.219);
+  --select-bg:#e9e9e96c;
+  --user-email:#262626af;
+}
+
+/* styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
