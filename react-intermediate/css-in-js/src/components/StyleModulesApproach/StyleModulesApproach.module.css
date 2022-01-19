@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .button{
+    color: white;
+    background: rgb(212, 0, 255);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+  
+  .active{
+    background: rgb(9, 161, 207) !important;
+  }

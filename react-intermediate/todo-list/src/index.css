@@ -1,0 +1,40 @@
+/* basic styles for body and html */
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+/* styles for button and input */
+button{
+  border: none;
+  padding: 5px 20px;
+  font-size: 10px;
+  color: white;
+  background: teal;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+input[type="text"]{
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid teal;
+  margin-right: 20px;
+  width: 75%;
+}

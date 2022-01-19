@@ -19,13 +19,6 @@ export const useCounter = () => {
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
 
-  // // created a middleware to log the state
-  // const dispatch = (action) => {
-  //   console.log("dispatching action: ", JSON.stringify(action));
-  //   // actual dispatcher
-  //   return next(action);
-  // };
-
   return {
     count,
     increment: () => {

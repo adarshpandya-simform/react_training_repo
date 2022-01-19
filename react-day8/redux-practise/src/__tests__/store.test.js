@@ -4,7 +4,6 @@ import { reducer } from "../store/counter.reducer";
 // initial test
 test("should render count 0", () => {
   let state = reducer(undefined, {});
-  console.log(state);
   expect(state).toEqual({ count: 0 });
 });
 
@@ -16,5 +15,4 @@ test("should change the count when clicked on buttons", () => {
   state = reducer(state, { type: DECREMENT });
   state = reducer(state, { type: DECREMENT });
   expect(state).toEqual({ count: 2 });
-  console.log(state);
 });

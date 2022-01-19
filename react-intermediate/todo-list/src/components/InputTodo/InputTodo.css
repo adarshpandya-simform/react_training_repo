@@ -1,0 +1,6 @@
+/* style for the container of component */
+.input-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

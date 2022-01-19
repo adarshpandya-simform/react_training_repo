@@ -13,7 +13,6 @@ export const fetchTodosThunk = () => async (dispatch, getState) => {
   const todos = await axios
     .get("https://jsonplaceholder.typicode.com/users/1/todos")
     .then((res) => res.data);
-  console.log("thunk: ", todos);
   dispatch(setTodos(todos));
 };
 
