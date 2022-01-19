@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { DisplayTodo, InputTodo } from "./components";
+import "./App.css";
 
 const App: FC = () => {
   return (
