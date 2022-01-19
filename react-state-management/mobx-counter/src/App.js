@@ -1,7 +1,14 @@
+import { observer } from "mobx-react";
 import "./App.css";
+import Counter from "./components/Counter/Counter";
 
-const App = () => {
-  return <div className="App">hello</div>;
-};
+const App = observer(({ counterStore }) => {
+  return (
+    <div className="App">
+      <p>current count : {counterStore.count}</p>
+      <Counter counterStore={counterStore} />
+    </div>
+  );
+});
 
 export default App;
