@@ -1,3 +1,4 @@
+/* styles for todo app container */
 .todo-app-container{
     width: 500px;
     height: 400px;
@@ -8,6 +9,7 @@
     flex-direction: column;
 }
 
+/* styles for input container */
 .todo-app-input{
     width: 100%;
     flex: 1;
@@ -19,6 +21,7 @@
     border-top-left-radius: 5px;
 }
 
+/* styles for display container */
 .todo-app-display{
     width: 100%;
     flex: 11;

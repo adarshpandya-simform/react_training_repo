@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { TodoProvider } from "./context/todo.context";
 
+// wrapped App inside TodoProvide and rendered App
 ReactDOM.render(
   <React.StrictMode>
     <TodoProvider>

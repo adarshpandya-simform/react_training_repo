@@ -2,6 +2,7 @@ import { ADD_TODO, DELETE_TODO, CHECK_TODO } from "./todo.action";
 import { nanoid } from "nanoid";
 import { Todo, TodoReducerType } from "./todo.context";
 
+// creating a reducer for todo (add,delete,toggle(check))
 export const todoReducer: TodoReducerType = (state, action) => {
   switch (action.type) {
     case ADD_TODO:

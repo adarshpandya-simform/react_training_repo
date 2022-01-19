@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ADD_TODO, CHECK_TODO, DELETE_TODO } from "./todo.action";
 import { Todo, TodoContext } from "./todo.context";
 
+// defining a helper action for addTodo
 export const addTodoAction = (
   title: string
 ): { type: string; payload: string } => {
@@ -11,6 +12,7 @@ export const addTodoAction = (
   };
 };
 
+// defining a helper action for deleteTodo
 export const deleteTodoAction = (
   id: string
 ): { type: string; payload: { id: string } } => {
@@ -20,6 +22,7 @@ export const deleteTodoAction = (
   };
 };
 
+// defining a helper action for checkTodo
 export const checkTodoAcion = (
   id: string,
   completed: boolean
@@ -30,6 +33,7 @@ export const checkTodoAcion = (
   };
 };
 
+// creating a custom hook for todos
 export const useTodos = (): {
   todos: Array<Todo>;
   addTodo: (title: string) => void;
