@@ -1,11 +1,12 @@
 import { nanoid } from "nanoid";
-import { makeAutoObservable, runInAction } from "mobx";
+import { makeAutoObservable, runInAction, autorun } from "mobx";
 import axios from "axios";
 
 class TodoList {
   // state
   todos = [];
   isLoading = false;
+  todoCount = 0;
 
   constructor() {
     makeAutoObservable(this);
@@ -25,16 +26,19 @@ class TodoList {
         runInAction(() => {
           this.todos = res.data;
           this.isLoading = false;
+          this.todoCount = this.todos.length;
         });
       });
   };
 
   addTodo = (title) => {
     this.todos.push({ id: nanoid(), title, completed: false });
+    this.todoCount = this.todos.length;
   };
 
   deleteTodo = (id) => {
     this.todos = this.todos.filter((todo) => todo.id !== id);
+    this.todoCount = this.todos.length;
   };
 
   checkTodo = (id) => {
@@ -56,4 +60,15 @@ class TodoList {
   }
 }
 
-export default new TodoList();
+const todoStore = new TodoList();
+
+// reactions
+autorun(() => {
+  console.log("updated todos count: " + todoStore.todoCount);
+});
+
+autorun(() => {
+  console.log("loading state: " + todoStore.isLoading);
+});
+
+export default todoStore;
