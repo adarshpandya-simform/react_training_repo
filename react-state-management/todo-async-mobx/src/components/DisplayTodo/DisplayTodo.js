@@ -2,11 +2,16 @@ import { useObserver } from "mobx-react";
 import { useState } from "react";
 import { useTodos } from "../../context/todo.context";
 
+// DisplayTodo component
 const DisplayTodo = () => {
+  // todoStore access
   const todoStore = useTodos();
+  // choice state for all/completed/uncompleted choice
   const [choice, setChoice] = useState("All");
 
+  // useObserver for obsering the state
   return useObserver(() => {
+    // extracting all needed states,computed props and actions from todoStore
     const { deleteTodo, checkTodo, todos, finishedTodos, unfinishedTodos } =
       todoStore;
 
@@ -37,6 +42,7 @@ const DisplayTodo = () => {
         </button>
         <br />
         <br />
+        {/* conditionally checking and passing array for rendering */}
         {(choice === "All"
           ? todos
           : choice === "Completed"

@@ -2,10 +2,14 @@ import { useObserver } from "mobx-react";
 import { useState } from "react";
 import { useTodos } from "../../context/todo.context";
 
+// InputTodo component
 const InputTodo = () => {
+  // extracting addTodo from useTodos
   const { addTodo } = useTodos();
+  // title state for input tag
   const [title, setTitle] = useState("");
 
+  // helper for adding todo
   const handleSubmit = () => {
     if (title !== "") {
       addTodo(title);
@@ -15,6 +19,7 @@ const InputTodo = () => {
     }
   };
 
+  // useObserver for state changes reflections
   return useObserver(() => {
     return (
       <>

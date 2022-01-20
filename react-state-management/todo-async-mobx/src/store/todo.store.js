@@ -2,12 +2,14 @@ import { nanoid } from "nanoid";
 import { makeAutoObservable, runInAction, autorun } from "mobx";
 import axios from "axios";
 
+// TodoStore
 class TodoList {
   // state
   todos = [];
   isLoading = false;
   todoCount = 0;
 
+  // constructor
   constructor() {
     makeAutoObservable(this);
   }
