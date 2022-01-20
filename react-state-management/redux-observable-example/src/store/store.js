@@ -3,6 +3,7 @@ import { createEpicMiddleware } from "redux-observable";
 import { reducer } from "../reducers/pingpong.reducer";
 import { pingEpic } from "../epics/pingpong.epics";
 
+// create epic middleware
 const epicMiddleware = createEpicMiddleware();
 
 // enabling redux devtools automatically
