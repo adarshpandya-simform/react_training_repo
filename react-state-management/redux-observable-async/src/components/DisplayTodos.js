@@ -1,12 +1,16 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+// DisplayTodo component
 const DisplayTodos = () => {
+  // extracting todos and loading state from selector
   const { todos, isLoading } = useSelector((state) => state);
 
   return (
     <div>
+      {/* checking if data is loading */}
       {isLoading === true && <p>loading...</p>}
+      {/* conditionally checking todo length and mapping */}
       {todos.length !== 0 && (
         <table border={1}>
           <thead style={{ textAlign: "left" }}>
@@ -18,6 +22,7 @@ const DisplayTodos = () => {
             </tr>
           </thead>
           <tbody>
+            {/* iterating over todos */}
             {todos.map((todo) => (
               <tr key={todo.id}>
                 <td>{todo.id}</td>
