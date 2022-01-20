@@ -1,9 +1,11 @@
 import { useContext, createContext } from "react";
 import { createTodoStore } from "../store/todo.store";
-import { useLocalObservable, useLocalStore } from "mobx-react";
+import { useLocalObservable } from "mobx-react";
 
+// defining context for todo
 const TodoContext = createContext([]);
 
+// defining context provider for todo
 export const TodoProvider = ({ children }) => {
   const todoStore = useLocalObservable(createTodoStore);
   return (
@@ -11,4 +13,5 @@ export const TodoProvider = ({ children }) => {
   );
 };
 
+// creating custom hook for todos
 export const useTodoStore = () => useContext(TodoContext);

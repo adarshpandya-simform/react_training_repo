@@ -5,6 +5,7 @@ import InputTodo from "./components/InputTodo/InputTodo";
 const App = () => {
   return (
     <div>
+      {/* rendering components */}
       <InputTodo />
       <DisplayTodo />
     </div>

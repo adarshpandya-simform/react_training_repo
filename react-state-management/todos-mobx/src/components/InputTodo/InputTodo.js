@@ -3,8 +3,10 @@ import { useTodoStore } from "../../context/todo.context";
 
 const InputTodo = () => {
   const [title, setTitle] = useState("");
+  // fetching addTodo from custom hook
   const { addTodo } = useTodoStore();
 
+  // helper function for adding todo
   const handleAddTodo = () => {
     if (title !== "") {
       addTodo(title);
@@ -24,6 +26,7 @@ const InputTodo = () => {
           setTitle(e.target.value);
         }}
       />
+      {/* attaching on click handler */}
       <button onClick={handleAddTodo}>add todo</button>
     </div>
   );
