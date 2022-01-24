@@ -30,6 +30,8 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+				"no-alert":"error",
+				"no-console":"error"
     }
 }
