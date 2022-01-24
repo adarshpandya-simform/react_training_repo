@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// initial state for userData
 const initialState = {
 	userData: {
 		name: "",
@@ -11,10 +12,12 @@ const initialState = {
 	isLoggedIn: false,
 };
 
+// a slice with initial state and reducers
 const userSlice = createSlice({
 	name: "users",
 	initialState,
 	reducers: {
+		// actions
 		resetUserData: (state) => {
 			state.userData = {
 				name: "",
@@ -32,5 +35,6 @@ const userSlice = createSlice({
 	},
 });
 
+// exporting actions and reducer
 export const { resetUserData, setUserData } = userSlice.actions;
 export default userSlice.reducer;

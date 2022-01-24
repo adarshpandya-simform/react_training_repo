@@ -1,6 +1,8 @@
 import * as Yup from "yup";
 import "yup-phone";
 
+// a helper function for validating
+// formik schema using Yup and Yup-phone
 export const validationSchema = () => {
 	return Yup.object().shape({
 		name: Yup.string().trim().min(15).required("Name is required!!!"),

@@ -6,6 +6,8 @@ import { store } from "./app/store";
 import { Provider } from "react-redux";
 import "./index.css";
 
+// Wrapping App component inside Provider
+// to use global state
 ReactDOM.render(
 	<React.StrictMode>
 		<Provider store={store}>

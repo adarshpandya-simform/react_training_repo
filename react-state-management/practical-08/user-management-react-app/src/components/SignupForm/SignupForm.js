@@ -5,10 +5,15 @@ import { validationSchema } from "../../helper/form-validation.helper";
 import { useNavigate } from "react-router-dom";
 import "./SignupForm.css";
 
+// Signup Form component
 const SignupForm = () => {
+	// extracting dispatcher from useUser
 	const { dispatchSetUserData } = useUser();
+	// useNavigate for navigation
 	const navigate = useNavigate();
 
+	// extracting formik helper functions and values
+	// from useFormik
 	const {
 		handleChange,
 		handleReset,
@@ -29,7 +34,9 @@ const SignupForm = () => {
 			password: "",
 			confirm_password: "",
 		},
+		// onSubmit handler
 		onSubmit: (values, { resetForm }) => {
+			// dispatching setUser
 			dispatchSetUserData({
 				name: values.name,
 				profile: URL.createObjectURL(values.profile),
@@ -37,15 +44,20 @@ const SignupForm = () => {
 				contact: values.contact,
 				password: values.password,
 			});
+			// clearign ref
 			fileRef.current.value = "";
+			// reseting form
 			resetForm();
+			// redirecting to /home
 			navigate("/home");
 		},
+		// to validagte schema
 		validationSchema,
 	});
 
 	const fileRef = useRef();
 
+	// checking errors
 	const checkErrors = () => {
 		return errors.confirm_password &&
 			errors.password &&
@@ -59,13 +71,17 @@ const SignupForm = () => {
 
 	return (
 		<div
+			// conditional styling
 			className={
 				checkErrors() ? "form-container" : "form-container  form-center"
 			}
 		>
 			<h3 className="form-header">SignUp</h3>
+			{/* formik form with validation */}
 			<div className="main-form">
+				{/* form submit handler */}
 				<form onSubmit={handleSubmit}>
+					{/* user-profile */}
 					<label className="form-label" htmlFor="profile">
 						Photo+{" "}
 					</label>
@@ -80,9 +96,13 @@ const SignupForm = () => {
 						name="profile"
 						className={"file"}
 					/>
+					{/* user-profile error show */}
 					{errors.profile && touched.profile && (
 						<div className="input-feedback">{errors.profile}</div>
 					)}
+					{/* !user-profile */}
+
+					{/* user - name */}
 					<label className="form-label" htmlFor="name">
 						Name
 					</label>
@@ -97,9 +117,13 @@ const SignupForm = () => {
 								: "form-control"
 						}
 					/>
+					{/* user - name error show */}
 					{errors.name && touched.name && (
 						<div className="input-feedback">{errors.name}</div>
 					)}
+					{/* !user - name */}
+
+					{/* user - email */}
 					<label className="form-label" htmlFor="email">
 						Email
 					</label>
@@ -114,9 +138,13 @@ const SignupForm = () => {
 								: "form-control"
 						}
 					/>
+					{/* user - email error show */}
 					{errors.email && touched.email && (
 						<div className="input-feedback">{errors.email}</div>
 					)}
+					{/* !user - email */}
+
+					{/* user - contact */}
 					<label className="form-label" htmlFor="contact">
 						PhoneNo
 					</label>
@@ -131,9 +159,14 @@ const SignupForm = () => {
 								: "form-control"
 						}
 					/>
+
+					{/* user - contact error show */}
 					{errors.contact && touched.contact && (
 						<div className="input-feedback">{errors.contact}</div>
 					)}
+					{/* !user - contact */}
+
+					{/* user - password */}
 					<label className="form-label" htmlFor="password">
 						Password
 					</label>
@@ -148,9 +181,14 @@ const SignupForm = () => {
 								: "form-control"
 						}
 					/>
+
+					{/* user - password error show */}
 					{errors.password && touched.password && (
 						<div className="input-feedback">{errors.password}</div>
 					)}
+					{/* !user - password */}
+
+					{/* user - confirm password */}
 					<label className="form-label" htmlFor="confirm_password">
 						Confirm Password
 					</label>
@@ -165,10 +203,14 @@ const SignupForm = () => {
 								: "form-control"
 						}
 					/>
+					{/* user - confirm password error show*/}
 					{errors.confirm_password && touched.confirm_password && (
 						<div className="input-feedback">{errors.confirm_password}</div>
 					)}
+					{/* !user - confirm password */}
+
 					<br />
+					{/* submit and reset buttons */}
 					<button
 						type="button"
 						className="btn btn-primary"
