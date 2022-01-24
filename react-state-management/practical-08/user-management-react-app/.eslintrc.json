@@ -33,5 +33,11 @@
         ],
 				"no-alert":"error",
 				"no-console":"error"
-    },"ignorePatterns": ["build/*"]
+    },
+		"ignorePatterns": ["build/*"],
+		"settings": {
+			"react":{
+				"version":"detect"
+			}
+		}
 }
