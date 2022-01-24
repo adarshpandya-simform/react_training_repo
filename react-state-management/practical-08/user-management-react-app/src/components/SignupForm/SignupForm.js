@@ -1,9 +1,14 @@
 import React, { useRef } from "react";
+import { useUser } from "../../hooks/useUser";
 import { useFormik } from "formik";
 import { validationSchema } from "../../helper/form-validation.helper";
+import { useNavigate } from "react-router-dom";
 import "./SignupForm.css";
 
 const SignupForm = () => {
+	const { dispatchSetUserData } = useUser();
+	const navigate = useNavigate();
+
 	const {
 		handleChange,
 		handleReset,
@@ -25,13 +30,20 @@ const SignupForm = () => {
 			confirm_password: "",
 		},
 		onSubmit: (values, { resetForm }) => {
-			// save values to store here
-			// end
+			dispatchSetUserData({
+				name: values.name,
+				profile: URL.createObjectURL(values.profile),
+				email: values.email,
+				contact: values.contact,
+				password: values.password,
+			});
 			fileRef.current.value = "";
 			resetForm();
+			navigate("/home");
 		},
 		validationSchema,
 	});
+
 	const fileRef = useRef();
 
 	const checkErrors = () => {
