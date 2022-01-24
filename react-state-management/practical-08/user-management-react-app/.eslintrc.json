@@ -33,5 +33,5 @@
         ],
 				"no-alert":"error",
 				"no-console":"error"
-    }
+    },"ignorePatterns": ["build/*"]
 }
