@@ -49,6 +49,13 @@ const UserProfile = () => {
 							/>
 						</div>
 						<div className="user-info">
+							{/* welcome msg */}
+							<p>
+								<b>
+									Hello {getUserData.name}, you are registered with the email id
+									- {getUserData.email} and phone number - {getUserData.contact}
+								</b>
+							</p>
 							{/* rendering information */}
 							<span>
 								Name: <b>{getUserData.name}</b>

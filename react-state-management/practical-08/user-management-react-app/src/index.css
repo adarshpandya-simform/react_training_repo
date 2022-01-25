@@ -1,9 +1,11 @@
+/* variable colors */
 :root{
 	--background-color:#FFFFFF;
 	--input-field-color:#FAEBD8;
 	--text-color:#24282B;
 }
 
+/* basic styles */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,4 +29,12 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* styles for pages */
+.page-container{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	border-radius: 5px;
 }

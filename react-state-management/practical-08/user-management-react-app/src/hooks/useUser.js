@@ -9,8 +9,10 @@ export const useUser = () => {
 	// get dispatcher
 	const dispatch = useDispatch();
 
+	// get user logged in status
 	const getUserLoggedInStatus = state.isLoggedIn;
 
+	// get user data
 	const getUserData = state.userData;
 
 	// dispatch setUserData

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./SignupPage.css";
 import { SignupForm, WorkingWoman } from "../../components";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../hooks/useUser";
@@ -20,7 +19,7 @@ const SignupPage = () => {
 	}, []);
 
 	return (
-		<div className="signup-page-container">
+		<div className="page-container">
 			{/* rendering SignupForm and WorkingWoman component */}
 			<SignupForm />
 			<WorkingWoman />
