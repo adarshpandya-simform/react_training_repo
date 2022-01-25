@@ -1,0 +1,51 @@
+/* style for form container div */
+.form-container{
+	flex: 6;
+	padding: 10px 20px;
+}
+
+/* util class to center the form (applied conditionally) */
+.form-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* styles for form header */
+.form-header{
+	font-weight: bolder;
+	font-size: 40px;
+	color: var(--text-color);
+}
+
+/* style for validation error in input field */
+.input-feedback{
+	color: red;
+}
+
+/* style for validation error msg */
+.error{
+	border-color: red;
+}
+
+/* styles for user input form */
+.main-form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* style for reset button */
+button.btn-danger{
+	margin-left: 30px;
+}
+
+/* styles for input type file */
+.file{
+	display: block;
+}
+
+/* style for input fields inside form */
+.main-form .form-control{
+	background: var(--input-field-color);
+}
