@@ -1,5 +1,10 @@
+/* basic stylings */
 body {
   margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +12,46 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* styles for paragraph */
+p{
+  margin: 0;
+}
+
+/* style for modal (globally accessible) */
+.modal-container{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+
+.modal{
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  width: 400px;
+  transition: all 300ms ease-in-out;
+}
+
+/* styles for modal buttons */
+.modal-buttons{
+  display: flex;
+  justify-content: right;
+}
+
+.modal-buttons button{
+  margin-left: 20px;
+  background: teal;
+  padding: 10px 10px;
+  font-size: 18px;
+  letter-spacing: .3px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
