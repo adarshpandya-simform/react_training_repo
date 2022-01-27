@@ -1,0 +1,104 @@
+/* style for list container */
+.list{
+    padding: 12px 0px;
+    display: flex;
+}
+
+
+/* style to apply on user-details */
+.user-details{
+    flex: 5;
+    display: flex;
+    align-items: center;
+}
+
+/* styles to apply on user-info */
+.user-info{
+    flex: 7;
+    display: flex;
+}
+
+/* container style for user-details */
+.user-details-container{
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+/* image container styles */
+.user-profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for image itself */
+.user-profile-img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+/* style for user's profile data [name,email] */
+.user-profile-data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+/* styles specific to user-name */
+.user-name{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* styles specific to user-email */
+.user-email{
+    color: var(--user-email);
+    font-size: 14px;
+}
+
+/* styles specific to user's status */
+.user-status{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* style for custom select tag */
+.user-status-select{
+    height: 100%;
+    width: 90px;
+    background: var(--select-bg);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid var(--select-shadow);
+}
+
+/* style for user-access tab */
+.user-access{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* style for icons tab */
+.user-access-auth{
+    flex: 1;
+    color: var(--icon-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* styles specific to first user in raw */
+.first-user-status,.first-user-access{
+    font-weight: bold;
+}
+
+.first-user-status{
+    color: var(--secondary-color);
+}
