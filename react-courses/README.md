@@ -1,4 +1,4 @@
-# React Beginner Courses (jan-25)
+# React Beginner Courses (jan-25,jan-27)
 
 <hr>
 Started on : jan-25<br>
@@ -20,3 +20,17 @@ updates for 25-jan: <br>
     - implemented ErrorBoundary component
     - implemented Error Boundary through 'react-error-boundary' component
     - sent PR for review
+
+updates for 27-jan: <br>
+
+    - completed frontend-master course
+    - started udemy course as mentioned in course
+    - learnt about react portals
+    - created custom modal with createPortal from react-dom
+    - learnt in depth about hooks and rules of hooks
+    - learnt about performance optimization in udemy course
+    - learnt about clean up method in useEffect
+    - learnt about life cycle methods of class components
+    - learnt about how to use context in class components
+    - implemented a basic todo list with class components and life cycle methods
+    - implemented simple counter context and used it in class component with static contextType
