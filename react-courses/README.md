@@ -20,3 +20,5 @@ updates for 25-jan: <br>
     - implemented ErrorBoundary component
     - implemented Error Boundary through 'react-error-boundary' component
     - sent PR for review
+
+updates for jan-27: <br>
