@@ -8,17 +8,21 @@ import {
 } from "firebase/firestore";
 import { db } from "../config/firebase.config";
 
+// defining initial state
 const initialState = { todos: [] };
 
+// creating a slice for todos
 export const todoSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
+    // reducers for loading todos,adding,deleting,checking
     loadTodos(state, action) {
       state.todos = action.payload;
     },
 
     deleteTodo(state, action) {
+      // using deleteDoc to delete record
       deleteDoc(doc(db, "todos", action.payload)).then(
         (state.todos = state.todos.filter(
           (todo) => todo.doc_id !== action.payload
@@ -27,6 +31,7 @@ export const todoSlice = createSlice({
     },
 
     checkTodo(state, action) {
+      // using updateDoc to delete record
       updateDoc(doc(db, "todos", action.payload.doc_id), {
         completed: action.payload.completed,
       }).then(
@@ -40,6 +45,7 @@ export const todoSlice = createSlice({
     },
 
     addTodo(state, action) {
+      // using addDoc to add record
       addDoc(collection(db, "todos"), {
         title: action.payload,
         completed: false,
@@ -54,6 +60,8 @@ export const todoSlice = createSlice({
   },
 });
 
+// exporting actions
 export const { loadTodos, addTodo, deleteTodo, checkTodo } = todoSlice.actions;
 
+// exporting reducer
 export const reducer = todoSlice.reducer;

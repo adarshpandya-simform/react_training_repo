@@ -5,9 +5,11 @@ import DisplayTodos from "./components/DisplayTodos";
 import { db } from "./config/firebase.config";
 import { useTodos } from "./hooks/useTodos";
 
+// App component which renders InputTodo and DisplayTodo
 const App = () => {
   const { loadTodosAction } = useTodos();
 
+  // dispatching loadTodosAction on app mount
   useEffect(() => {
     const myQuery = query(collection(db, "todos"));
     const unsub = onSnapshot(myQuery, (querySnapshot) => {
@@ -17,12 +19,15 @@ const App = () => {
       });
       loadTodosAction(todosArray);
     });
+
+    // cleanup fn
     return () => unsub();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div>
+      {/* rendering components */}
       <AddTodo />
       <DisplayTodos />
     </div>
