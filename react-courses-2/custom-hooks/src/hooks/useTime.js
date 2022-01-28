@@ -1,7 +1,6 @@
-// custom hook for showing current time
-
 import { useEffect, useState } from "react";
 
+// custom hook for showing current time
 export const useTime = () => {
   const [time, setTime] = useState(new Date());
 
@@ -14,5 +13,6 @@ export const useTime = () => {
     };
   });
 
+  // returning time in readable format
   return { time: time.toLocaleTimeString() };
 };

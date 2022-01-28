@@ -1,4 +1,4 @@
-//  a helper function for getting current date (forms closure)
+//  a helper custom hook for getting current date (forms closure)
 export const useDate = (() => {
   const monthNames = [
     "January",
@@ -15,10 +15,12 @@ export const useDate = (() => {
     "December",
   ];
   return (format, separator) => {
+    // getting date object
     const dateObj = new Date();
     const month = monthNames[dateObj.getMonth()];
     const day = String(dateObj.getDate()).padStart(2, "0");
     const year = dateObj.getFullYear();
+    // formating it using format and separator
     let askedDate = "";
     if (format === undefined || separator === undefined) {
       throw new Error("please pass the date format and separator");
@@ -31,6 +33,7 @@ export const useDate = (() => {
     if (format === "dd-mon-yyyy") {
       askedDate = `${day}${separator}${month.slice(0, 3)}${separator}${year}`;
     }
+    // returning date
     return { date: askedDate };
   };
 })();
