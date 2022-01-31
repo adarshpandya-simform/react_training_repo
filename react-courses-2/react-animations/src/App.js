@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "./components";
 
 const App = () => {
-  return <div>hello world</div>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onCloseHandler = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <div>
+      <Modal isOpen={isOpen} onClose={onCloseHandler} />
+      <button
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      >
+        open modal
+      </button>
+    </div>
+  );
 };
 
 export default App;
