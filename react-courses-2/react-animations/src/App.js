@@ -1,23 +1,33 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 import { Modal } from "./components";
+import { getDefaultStyle } from "./helpers/getDefaultStyle";
+import { getTransitionStyles } from "./helpers/getTransitionsStyles";
 
-const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
-  };
+export default function App() {
+  const [inProp, setInProp] = useState(false);
 
   return (
-    <div>
-      <Modal isOpen={isOpen} onClose={handleCloseModal} />
-      <button onClick={handleOpenModal}>open modal</button>
+    <div className="App">
+      <button
+        onClick={() => {
+          setInProp(true);
+        }}
+      >
+        show transition
+      </button>
+      <CSSTransition in={inProp} timeout={300}>
+        {(state) => (
+          <div
+            style={{
+              ...getDefaultStyle(),
+              ...getTransitionStyles()[state],
+            }}
+          >
+            <Modal onClose={() => setInProp(false)} />
+          </div>
+        )}
+      </CSSTransition>
     </div>
   );
-};
-
-export default App;
+}
