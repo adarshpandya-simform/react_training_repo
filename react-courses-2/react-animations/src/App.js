@@ -4,20 +4,18 @@ import { Modal } from "./components";
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const onCloseHandler = () => {
+  const handleOpenModal = () => {
+    setIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
     setIsOpen(false);
   };
 
   return (
     <div>
-      <Modal isOpen={isOpen} onClose={onCloseHandler} />
-      <button
-        onClick={() => {
-          setIsOpen(true);
-        }}
-      >
-        open modal
-      </button>
+      <Modal isOpen={isOpen} onClose={handleCloseModal} />
+      <button onClick={handleOpenModal}>open modal</button>
     </div>
   );
 };
