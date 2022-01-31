@@ -1,7 +1,7 @@
-# React Beginner Courses - 2(jan-28)
+# React Beginner Courses - 2(jan-28,jan-31)
 
 <hr>
-Started on : jan-28<br>
+Started on : jan-28,jan-31<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -23,4 +23,21 @@ updates for 28-jan: <br>
     - created project on firebase
     - created todo app with firebase as backend using firebase , redux toolkit
     - completed 4 more modules in course
+    - sent PR for review
+
+updates for 31-jan: <br>
+
+    - refactored old code
+    - watched tutorials on react-router-dom v6
+    - learnt about nested routing
+    - learnt about <Outlet/> component
+    - learnt about useNavigation hook and <Navigate> component
+    - made a multipage todo with react-router-v6
+    - learnt about deploying react app
+    - deployed todo app with firebase
+    - learnt about how to work with auth and how to secure routes
+    - learnt about setting tokens to authorize user before they access app
+    - learnt about react animations
+    - explored react-transition-group
+    - made simple animation modal with <CSSTransition> component from react-transition-group
     - sent PR for review
