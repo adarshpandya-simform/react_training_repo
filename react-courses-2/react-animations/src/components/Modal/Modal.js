@@ -9,8 +9,8 @@ const Modal = ({ isOpen, onClose }) => {
       }`}
     >
       <div className={`modal ${isOpen ? "modal-open" : "modal-close"}`}>
-        <p>a simple modal</p>
-        <button onClick={onClose}>close modal</button>
+        <h5>Alert</h5>
+        <button onClick={onClose}>close </button>
       </div>
     </div>
   );
