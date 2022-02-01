@@ -1,7 +1,7 @@
-# React Beginner Courses - 2(jan-28,jan-31)
+# React Beginner Courses - 2(jan-28,jan-31,feb-1)
 
 <hr>
-Started on : jan-28,jan-31<br>
+Started on : jan-28,jan-31,feb-1<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -40,4 +40,19 @@ updates for 31-jan: <br>
     - learnt about react animations
     - explored react-transition-group
     - made simple animation modal with <CSSTransition> component from react-transition-group
+    - sent PR for review
+
+updates for 01-feb: <br>
+
+    - continued with course
+    - revised all concepts
+    - learnt about testing
+    - learnt about react + TS
+    - learnt about performance optimizations and deployment
+    - started with next js module in course
+    - completed the udemy course
+    - created sample apps with next js
+    - learnt about routing , flow of app , SSR , SSG etc
+    - learnt about app structure
+    - learnt how to use layout and context in next app
     - sent PR for review
