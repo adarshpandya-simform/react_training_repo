@@ -1,3 +1,4 @@
+/* basic styles */
 html,
 body {
   padding: 0;
@@ -13,4 +14,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  padding: 30px;
+}
+
+p {
+  margin: 0;
 }
