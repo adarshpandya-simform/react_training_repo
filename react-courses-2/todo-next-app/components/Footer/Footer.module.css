@@ -1,0 +1,12 @@
+/* styles for todo-footer */
+.todo_footer {
+  background: orangered;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: sticky;
+  margin-top: 400px;
+}
