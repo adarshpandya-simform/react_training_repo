@@ -1,7 +1,7 @@
-# React Beginner Courses - 2(jan-28,jan-31,feb-1)
+# React Beginner Courses - 2(jan-28,31,feb-1,2)
 
 <hr>
-Started on : jan-28,jan-31,feb-1<br>
+Worked upon : jan-28,31,feb-1,2<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -55,4 +55,24 @@ updates for 01-feb: <br>
     - learnt about routing , flow of app , SSR , SSG etc
     - learnt about app structure
     - learnt how to use layout and context in next app
+    - sent PR for review
+
+updates for 02-feb: <br>
+    
+    - revised the udemy course
+    - read nextjs blog
+    - continued with next js
+    - learnt about getStaticProp and getStaticPath
+    - learnt how to dynamically generate pages with content and improved SEO
+    - explored how to render component library in app
+    - learnt about how to write API in next js 'api' folder
+    - learnt about mongoDB connection with next
+    - created account and connected nextjs app with next js
+    - wrote API endpoint to fetch/update/add data to the real database
+    - created a basic next app which renders todos from database and uses api
+    - learnt about deployment 
+    - deployed app on vercel
+    - customized each page's SEO tags with Head tag from 'next/head'
+    - completed the react intermediate suggested course
+    - started react-state management course suggested in LMS
     - sent PR for review
