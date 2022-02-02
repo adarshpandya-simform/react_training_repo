@@ -1,16 +1,45 @@
+/* loading roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
+/* styles for link */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* setting box sizing */
 * {
   box-sizing: border-box;
+}
+
+/* styles for todo-container */
+.todo-layout-container {
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* styles for todo-footer */
+.todo-header {
+  flex: 1;
+}
+
+/* styles for todo-footer */
+.todo-footer {
+  flex: 1;
+}
+
+.todo-content {
+  flex: 10;
+  padding: 24px;
 }
