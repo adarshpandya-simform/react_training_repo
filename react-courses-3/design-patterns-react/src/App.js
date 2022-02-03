@@ -3,6 +3,7 @@ import BasicCompoundPatternProblem from "./components/BasicCompoundPatternProble
 import BasicCompoundPatternSolution from "./components/BasicCompoundPatternSolution/BasicCompoundPatternSolution";
 import FlexibleCompoundPatternSolution from "./components/FlexibleCompoundPatternSolution/FlexibleCompoundPatternSolution";
 import PropCollectionPattern from "./components/PropCollectionPattern/PropCollectionPattern";
+import PropGettersPattern from "./components/PropGettersPattern/PropGettersPattern";
 import RenderPropsPatternProblem from "./components/RenderPropsPatternProblem/RenderPropsPatternProblem";
 import RenderPropsPatternSolution from "./components/RenderPropsPatternSolution/RenderPropsPatternSolution";
 
@@ -72,6 +73,13 @@ const App = () => {
       <br />
       <span>Prop Collection Pattern Solution</span>
       <PropCollectionPattern />
+      <br />
+      <hr />
+      <br />
+      <span>Prop Getters Pattern</span>
+      <PropGettersPattern />
+      <br />
+      <hr />
     </div>
   );
 };
