@@ -7,10 +7,12 @@ const BasicCompoundPatternSolution = ({ children }) => {
   const [toggle, setToggle] = useState(false);
 
   return React.Children.map(children, (childElement) => {
-    return React.cloneElement(childElement, {
-      toggle,
-      setToggle,
-    });
+    if (typeof childElement.type !== "string") {
+      return React.cloneElement(childElement, {
+        toggle,
+        setToggle,
+      });
+    }
   });
 };
 
