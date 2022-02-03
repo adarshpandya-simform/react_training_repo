@@ -1,0 +1,10 @@
+/* styles for footer component container */
+.todo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: royalblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

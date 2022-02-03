@@ -1,0 +1,19 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in !important;
+}
+
+.modal {
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  width: 400px;
+  transition: all 300ms ease-in !important;
+}

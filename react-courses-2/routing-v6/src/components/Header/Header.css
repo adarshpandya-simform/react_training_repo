@@ -1,0 +1,19 @@
+/* styles for header component container */
+.todo-header{
+    padding: 20px 60px;
+    display: flex;
+    background: royalblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* style for links */
+.menu a{ 
+    color: white;
+    margin-left: 10px;
+}
+
+/* style for logo text */
+.logo-text{
+    color: white !important;
+}
