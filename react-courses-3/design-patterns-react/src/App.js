@@ -2,6 +2,8 @@ import React from "react";
 import BasicCompoundPatternProblem from "./components/BasicCompoundPatternProblem/BasicCompoundPatternProblem";
 import BasicCompoundPatternSolution from "./components/BasicCompoundPatternSolution/BasicCompoundPatternSolution";
 import FlexibleCompoundPatternSolution from "./components/FlexibleCompoundPatternSolution/FlexibleCompoundPatternSolution";
+import RenderPropsPatternProblem from "./components/RenderPropsPatternProblem/RenderPropsPatternProblem";
+import RenderPropsPatternSolution from "./components/RenderPropsPatternSolution/RenderPropsPatternSolution";
 
 const App = () => {
   return (
@@ -54,6 +56,16 @@ const App = () => {
           flexible switch off
         </FlexibleCompoundPatternSolution.Off>
       </FlexibleCompoundPatternSolution>
+      <br />
+      <hr />
+      <br />
+      <span>Render Props Pattern Problem</span>
+      <RenderPropsPatternProblem />
+      <br />
+      <span>
+        Render Props Pattern Solution (props decides which component to render)
+      </span>
+      <RenderPropsPatternSolution />
       <br />
       <hr />
       <br />
