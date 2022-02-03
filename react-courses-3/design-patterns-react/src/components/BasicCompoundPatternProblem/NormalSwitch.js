@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./NormalSwitch.css";
+import "../../Switch.css";
 
 const NormalSwitch = ({ onToggle }) => {
   const [toggle, setToggle] = useState(false);

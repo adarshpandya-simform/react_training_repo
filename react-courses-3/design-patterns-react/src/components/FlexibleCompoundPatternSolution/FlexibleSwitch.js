@@ -1,4 +1,4 @@
-import "./FlexibleSwitch.css";
+import "../../Switch.css";
 
 const FlexibleSwitch = ({ toggle, setToggle }) => {
   const onToggleHandler = () => {
