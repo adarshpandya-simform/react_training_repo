@@ -2,6 +2,7 @@ import React from "react";
 import BasicCompoundPatternProblem from "./components/BasicCompoundPatternProblem/BasicCompoundPatternProblem";
 import BasicCompoundPatternSolution from "./components/BasicCompoundPatternSolution/BasicCompoundPatternSolution";
 import FlexibleCompoundPatternSolution from "./components/FlexibleCompoundPatternSolution/FlexibleCompoundPatternSolution";
+import PropCollectionPattern from "./components/PropCollectionPattern/PropCollectionPattern";
 import RenderPropsPatternProblem from "./components/RenderPropsPatternProblem/RenderPropsPatternProblem";
 import RenderPropsPatternSolution from "./components/RenderPropsPatternSolution/RenderPropsPatternSolution";
 
@@ -69,6 +70,8 @@ const App = () => {
       <br />
       <hr />
       <br />
+      <span>Prop Collection Pattern Solution</span>
+      <PropCollectionPattern />
     </div>
   );
 };
