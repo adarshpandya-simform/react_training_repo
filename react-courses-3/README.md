@@ -1,4 +1,4 @@
-# React Courses - 3(feb - 03)
+# React Courses - 3(feb - 03,feb - 04)
 
 <hr>
 Worked upon : feb-03<br>
@@ -21,3 +21,18 @@ updates for 03-feb: <br>
 - learnt and implemented Render Props Component Pattern
 - learnt and implemented Prop Collection and Prop Getters Pattern
 - sent PR for review
+
+<br/>
+
+updates for 04-feb:<br>
+- started with react animations
+- read blogs around animations
+- learnt about framer motion
+- learnt how and when to use it
+- watched youtube crash course for animating component
+- animated different component with motion
+- animated components which gets unmounted from dom when rendering conditionally
+- animated routes with AnimatePresence and Router dom
+- created tap and hover animations
+- tested deployment build
+- sent PR
