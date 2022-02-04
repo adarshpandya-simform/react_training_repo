@@ -5,28 +5,28 @@ const AnimatedComponent2 = () => {
     <div>
       <br />
       <motion.h4
-        initial={{ opacity: 0, y: -1000 }}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 2 }}
       >
         this text will come from top
       </motion.h4>
       <motion.h4
-        initial={{ opacity: 0, y: +1000 }}
+        initial={{ opacity: 0, y: +100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 2 }}
       >
         this text will come from bottom
       </motion.h4>
       <motion.h4
-        initial={{ opacity: 0, x: -1000 }}
+        initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.5, duration: 2 }}
       >
         this text will come from left
       </motion.h4>
       <motion.h4
-        initial={{ opacity: 0, x: +1000 }}
+        initial={{ opacity: 0, x: +100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.5, duration: 2 }}
       >
