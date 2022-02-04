@@ -1,10 +1,11 @@
 import React from "react";
-import { AnimatedComponent1 } from "./components";
+import { AnimatedComponent1, AnimatedComponent2 } from "./components";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <AnimatedComponent1 />
+      <AnimatedComponent2 />
     </div>
   );
 };
