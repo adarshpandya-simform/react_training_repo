@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { RouterAnimations } from "../Home/Home";
 
+// Contact component @ sitename.com/contact
 const Contact = () => {
 	return (
 		<motion.div

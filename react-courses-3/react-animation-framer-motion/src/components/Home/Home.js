@@ -9,6 +9,7 @@ import {
 	AnimatedModal,
 } from "..";
 
+// Route Animation variants
 export const RouterAnimations = {
 	hidden: {
 		opacity: 0,
@@ -23,9 +24,11 @@ export const RouterAnimations = {
 	},
 };
 
+// Home component to render all animated components
 const Home = () => {
 	const [showModal, setShowModal] = useState(false);
 
+	// helper fn for handling modal
 	const modalHandler = () => {
 		setShowModal(true);
 	};
@@ -46,6 +49,7 @@ const Home = () => {
 				<button onClick={modalHandler}>open modal</button>
 			</div>
 			<AnimatePresence exitBeforeEnter>
+				{/* conditionally rendering AnimatedModal */}
 				{showModal && <AnimatedModal setShowModal={setShowModal} />}
 			</AnimatePresence>
 		</motion.div>

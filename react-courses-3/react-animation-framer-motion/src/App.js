@@ -2,7 +2,9 @@ import { AnimatePresence } from "framer-motion";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { About, Contact, Home } from "./components";
 
+// App component with Routes and AnimatePresence
 const App = () => {
+	// extracting location
 	const location = useLocation();
 	return (
 		<>

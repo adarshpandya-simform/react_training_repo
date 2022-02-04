@@ -1,6 +1,7 @@
 import "./AnimatedComponent5.css";
 import { motion } from "framer-motion";
 
+// variants for svg
 const svgVariants = {
 	hidden: {
 		opacity: 0,
@@ -11,6 +12,7 @@ const svgVariants = {
 	},
 };
 
+// variants for path
 const pathVariants = {
 	hidden: {
 		opacity: 0,
@@ -24,6 +26,7 @@ const pathVariants = {
 	},
 };
 
+// AnimatedComponent5 for showing animated svgs
 const AnimatedComponent5 = () => {
 	return (
 		<div>

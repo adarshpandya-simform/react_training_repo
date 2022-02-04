@@ -1,3 +1,4 @@
+/* styles for switch container */
 .outer-switch {
 	width: 60px;
 	height: 30px;
@@ -6,6 +7,7 @@
 	align-items: center;
 }
 
+/* style for switch */
 .inner-switch {
 	background: white;
 	height: 23px;

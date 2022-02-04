@@ -1,10 +1,11 @@
+/* styles for button */
 .btn-primary {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.2px;
-  background: #3aa5ec;
-  font-weight: bold;
-  padding: 7px 25px;
-  border-radius: 5px;
-  border: none;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	background: #3aa5ec;
+	font-weight: bold;
+	padding: 7px 25px;
+	border-radius: 5px;
+	border: none;
 }

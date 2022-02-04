@@ -1,12 +1,14 @@
+/* styles for animated container */
 .animate-container {
-  background: rgb(121, 58, 204);
-  border-radius: 5px;
-  width: 100%;
-  height: 50px;
+	background: rgb(121, 58, 204);
+	border-radius: 5px;
+	width: 100%;
+	height: 50px;
 }
 
+/* styles for paragraph inside container */
 .animate-container p {
-  color: white;
-  line-height: 50px;
-  text-align: center;
+	color: white;
+	line-height: 50px;
+	text-align: center;
 }

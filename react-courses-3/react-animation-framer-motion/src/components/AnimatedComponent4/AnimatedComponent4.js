@@ -2,6 +2,7 @@ import "./AnimatedComponent4.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+// Switch variants
 const outerSwitchVariants = {
 	on: {
 		background: "rgb(15, 247, 15)",
@@ -20,6 +21,7 @@ const innerSwitchVariants = {
 	},
 };
 
+// AnimatedComponent4 for showing animated switch with variants
 const AnimatedComponent4 = () => {
 	const [toggle, setToggle] = useState(false);
 	return (

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./AnimatedModal.css";
 
+// Modal container variants
 const modalContainerVariants = {
 	hidden: {
 		opacity: 0,
@@ -10,6 +11,7 @@ const modalContainerVariants = {
 	},
 };
 
+// Modal variants
 const modalVariants = {
 	hidden: {
 		scale: 0,
@@ -19,6 +21,7 @@ const modalVariants = {
 	},
 };
 
+// AnimatedModal component for showing Animated modal with backdrop
 const AnimatedModal = ({ setShowModal }) => {
 	return (
 		<motion.div
