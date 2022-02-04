@@ -1,33 +1,22 @@
 import { AnimatePresence } from "framer-motion";
-import React, { useState } from "react";
-import {
-	AnimatedComponent1,
-	AnimatedComponent2,
-	AnimatedComponent3,
-	AnimatedComponent4,
-	AnimatedComponent5,
-	AnimatedModal,
-} from "./components";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { About, Contact, Home } from "./components";
 
 const App = () => {
-	const [showModal, setShowModal] = useState(false);
-
-	const modalHandler = () => {
-		setShowModal(true);
-	};
-
+	const location = useLocation();
 	return (
 		<>
-			<div className="container">
-				<AnimatedComponent1 />
-				<AnimatedComponent2 />
-				<AnimatedComponent3 />
-				<AnimatedComponent4 />
-				<AnimatedComponent5 />
-				<button onClick={modalHandler}>open modal</button>
+			<div>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+				<Link to="/contact">Contact</Link>
 			</div>
 			<AnimatePresence exitBeforeEnter>
-				{showModal && <AnimatedModal setShowModal={setShowModal} />}
+				<Routes location={location} key={location.key}>
+					<Route path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/about" element={<About />} />
+				</Routes>
 			</AnimatePresence>
 		</>
 	);
