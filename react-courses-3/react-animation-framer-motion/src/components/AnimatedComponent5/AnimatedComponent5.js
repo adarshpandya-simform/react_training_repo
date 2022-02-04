@@ -20,7 +20,7 @@ const pathVariants = {
 	visible: {
 		opacity: 1,
 		pathLength: 1,
-		transition: { duration: 2, ease: "easeInOut" },
+		transition: { duration: 2, ease: "easeInOut", yoyo: Infinity },
 	},
 };
 
