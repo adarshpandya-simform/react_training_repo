@@ -4,3 +4,6 @@ export { default as AnimatedComponent3 } from "./AnimatedComponent3/AnimatedComp
 export { default as AnimatedComponent4 } from "./AnimatedComponent4/AnimatedComponent4";
 export { default as AnimatedComponent5 } from "./AnimatedComponent5/AnimatedComponent5";
 export { default as AnimatedModal } from "./AnimatedModal/AnimatedModal";
+export { default as Home } from "./Home/Home";
+export { default as About } from "./About/About";
+export { default as Contact } from "./Contact/Contact";
