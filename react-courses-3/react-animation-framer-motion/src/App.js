@@ -3,6 +3,7 @@ import {
   AnimatedComponent1,
   AnimatedComponent2,
   AnimatedComponent3,
+  AnimatedComponent4,
 } from "./components";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <AnimatedComponent1 />
       <AnimatedComponent2 />
       <AnimatedComponent3 />
+      <AnimatedComponent4 />
     </div>
   );
 };
