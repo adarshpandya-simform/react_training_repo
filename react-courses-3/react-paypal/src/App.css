@@ -1,3 +1,4 @@
+/* basic styles for item-card */
 .item-card {
   background: yellow;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
@@ -7,6 +8,7 @@
   justify-content: space-between;
 }
 
+/* basic styles for div which contains button */
 .item-quantity-btns {
   width: 50px;
 }
