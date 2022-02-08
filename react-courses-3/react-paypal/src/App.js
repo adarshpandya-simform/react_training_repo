@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import PaypalComponent from "./components/PaypalComponent";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [isDisabled, setIsDisabled] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="item-card">
+        <span className="item-desc">the cool book</span>
+        <div className="item-buy-btn">
+          <button
+            onClick={() => {
+              setIsDisabled(false);
+            }}
+          >
+            buy
+          </button>
+        </div>
+      </div>
+      <div>{!isDisabled && <PaypalComponent />}</div>
     </div>
   );
-}
+};
 
 export default App;
