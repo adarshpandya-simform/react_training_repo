@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,feb - 04)
+# React Courses - 3(feb - 03,feb - 04,feb - 08)
 
 <hr>
-Worked upon : feb-03<br>
+Worked upon : feb-03,04,08<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -21,7 +21,7 @@ updates for 03-feb: <br>
 - learnt and implemented Render Props Component Pattern
 - learnt and implemented Prop Collection and Prop Getters Pattern
 - sent PR for review
-
+ 
 <br/>
 
 updates for 04-feb:<br>
@@ -35,4 +35,20 @@ updates for 04-feb:<br>
 - animated routes with AnimatePresence and Router dom
 - created tap and hover animations
 - tested deployment build
+- sent PR
+
+<br/>
+
+updates for 08-feb:<br>
+- practised more react animations
+- created animated drawer with attractive visual effects
+- learnt about memo (HOC) component in react
+- practised memo component with useMemo()
+- read blog on createAsyncThunk (redux toolkit)
+- read blogs around payment gateways
+- gone through docs of stripe and paypal
+- created stripe and paypal developer account
+- watched tutorials and blogs on how to integrate payment gateways with react
+- integrated stripe and paypal in react app in test mode
+- got familiar with test and production mode in payment gateways
 - sent PR
