@@ -1,0 +1,19 @@
+.menu-btn {
+  background: var(--white-color);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-btn-line {
+  width: 20px;
+  height: 2px;
+  background: var(--black-color);
+  margin: 5px 0px;
+  border-radius: 5px;
+}
