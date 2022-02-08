@@ -1,11 +1,15 @@
 import axios from "axios";
 import { useState } from "react";
 
+// App component
 const App = () => {
+  // maintaining state for react and css course
   const [reactCourse, setReactCourse] = useState(0);
   const [cssCourse, setCssCourse] = useState(0);
+  // maintaining state for error
   const [error, setError] = useState(false);
 
+  // helper function to make post request to server with item ids in body
   const paymentAcceptHandler = async () => {
     await axios
       .post(
@@ -19,6 +23,7 @@ const App = () => {
         { headers: { "Content-Type": "application/json" } }
       )
       .then((res) => {
+        // handling response
         if (res.data) {
           if (res.data.success) {
             window.location = res.data.url;
@@ -35,22 +40,26 @@ const App = () => {
       });
   };
 
+  // helper fn to increse amount of react course
   const handleReactCourseIncrement = () => {
     setReactCourse((prevCourse) => prevCourse + 1);
   };
 
+  // helper fn to decrese amount of react course
   const handleReactCourseDecrement = () => {
     if (reactCourse !== 0) {
       setReactCourse((prevCourse) => prevCourse - 1);
     }
   };
 
+  // helper fn to increse amount of css course
   const handleCssCourseDecrement = () => {
     if (cssCourse !== 0) {
       setCssCourse((prevCourse) => prevCourse - 1);
     }
   };
 
+  // helper fn to decrese amount of css course
   const handleCssCourseIncrement = () => {
     setCssCourse((prevCourse) => prevCourse + 1);
   };
@@ -74,6 +83,7 @@ const App = () => {
       <button onClick={paymentAcceptHandler}>pay using stripe</button>
       <br />
       <br />
+      {/* conditionally rendering error */}
       {error && (
         <p>unexpected error occured while paying. try again later...</p>
       )}
