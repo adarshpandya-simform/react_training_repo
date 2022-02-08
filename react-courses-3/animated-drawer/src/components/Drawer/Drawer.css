@@ -1,0 +1,15 @@
+.menu-drawer {
+  padding: 10px;
+  background: var(--white-color) !important;
+  height: 100%;
+  width: 300px;
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+.menu-drawer button {
+  float: right;
+}
