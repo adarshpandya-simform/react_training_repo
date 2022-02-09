@@ -20,7 +20,11 @@ const deleteTodo = async (req, res) => {
 
 const updateTodo = async (req, res) => {
   const { title, completed, id } = req.body;
-  const data = await todoModel.findByIdAndUpdate(id, { title, completed });
+  const data = await todoModel.findByIdAndUpdate(
+    id,
+    { title, completed },
+    { new: true }
+  );
   return res.json({ success: true, data });
 };
 
