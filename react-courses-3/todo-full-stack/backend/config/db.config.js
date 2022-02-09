@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 import { config } from "dotenv";
 
+// for accesing env vars
 config();
 
+// exporting connect to db helper function
 export const connectDB = () => {
   try {
     mongoose.connect(
