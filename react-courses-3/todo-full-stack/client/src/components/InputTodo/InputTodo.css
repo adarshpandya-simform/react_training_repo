@@ -1,0 +1,34 @@
+/* styles for input container */
+.todo-input-container {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+/* styles for div which containes input and btn */
+.todo-input-and-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+/* styles for input inside 'todo-input-and-btn' */
+.todo-input-and-btn input {
+  width: 70%;
+  height: 30px;
+  font-size: 20px;
+  outline: none;
+}
+
+/* styles for button inside 'todo-input-and-btn' */
+.todo-input-and-btn button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  color: var(--black-color);
+  background: var(--button-color);
+  font-weight: bold;
+}
