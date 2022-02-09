@@ -6,6 +6,9 @@ import {
   updateTodoAsyncThunk,
 } from "../features/todo.slice";
 
+// custom helper hook for all operations related to todos
+// exports pieces of state and
+// state related dispatchers
 export const useTodos = () => {
   const { loading, todos } = useSelector((state) => state.todos);
   const dispatch = useDispatch();

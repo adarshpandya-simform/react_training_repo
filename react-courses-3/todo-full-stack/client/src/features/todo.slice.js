@@ -8,6 +8,7 @@ import {
 
 const initialState = { todos: [], loading: false };
 
+// AsyncThunk for getting all todos
 export const getTodosAsyncThunk = createAsyncThunk(
   "todos/getTodos",
   async (_, { rejectWithValue }) => {
@@ -20,6 +21,7 @@ export const getTodosAsyncThunk = createAsyncThunk(
   }
 );
 
+// AsyncThunk for adding todos
 export const addTodoAsyncThunk = createAsyncThunk(
   "todos/addTodo",
   async ({ title }, { rejectWithValue }) => {
@@ -32,6 +34,7 @@ export const addTodoAsyncThunk = createAsyncThunk(
   }
 );
 
+// AsyncThunk for deleting all todos
 export const deleteTodoAsyncThunk = createAsyncThunk(
   "todos/deleteTodo",
   async ({ id }, { rejectWithValue }) => {
@@ -44,6 +47,7 @@ export const deleteTodoAsyncThunk = createAsyncThunk(
   }
 );
 
+// AsyncThunk for updating all todos
 export const updateTodoAsyncThunk = createAsyncThunk(
   "todos/updateTodo",
   async ({ id, title, completed }, { rejectWithValue }) => {
@@ -56,12 +60,14 @@ export const updateTodoAsyncThunk = createAsyncThunk(
   }
 );
 
+// todoSlice
 const { reducer } = createSlice({
   name: "todos",
   initialState,
   reducers: {},
+  // async reducers which handlers fulfilled,pending,rejected
   extraReducers: {
-    [getTodosAsyncThunk.fulfilled]: (state, { meta, payload }) => {
+    [getTodosAsyncThunk.fulfilled]: (state, { payload }) => {
       state.todos = payload.data;
       state.loading = false;
     },
@@ -115,4 +121,5 @@ const { reducer } = createSlice({
   },
 });
 
+// exporting reducers and all AsyncThunks
 export default reducer;
