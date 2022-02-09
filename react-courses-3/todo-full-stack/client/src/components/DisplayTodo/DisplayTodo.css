@@ -1,0 +1,31 @@
+/* styles for display container */
+.todo-display-container {
+  flex: 10;
+  overflow: scroll;
+  padding: 0px 10px;
+}
+
+/* styles for todo card container */
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--todo-tiles-color);
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+/* styles for button inside 'todo-span' */
+.todo-info span {
+  margin-left: 15px;
+}
+
+/* styles for button inside 'todo-card' */
+.todo-card button {
+  border: none;
+  background: var(--delete-button-color);
+  color: var(--white-color);
+  padding: 5px 10px;
+  cursor: pointer;
+}
