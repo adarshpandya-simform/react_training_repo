@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,feb - 04,feb - 08)
+# React Courses - 3(feb - 03,04,08,09)
 
 <hr>
-Worked upon : feb-03,04,08<br>
+Worked upon : feb-03,04,08,09<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -52,3 +52,22 @@ updates for 08-feb:<br>
 - integrated stripe and paypal in react app in test mode
 - got familiar with test and production mode in payment gateways
 - sent PR
+
+<br/>
+
+updates for 09-feb:<br>
+- started learning about full stack app
+- watched blogs around fullstack app creation
+- learnt how to create MERN stack apps
+- read blogs and watched videos around MERN stack
+- created todo backend with mongodb and express
+- created todo frontend with react
+- learnt about routes and controllers in express
+- connected frontend to backend with api
+- used redux toolkit for state management
+- created async thunks for async actions
+- created heroku account and deployed backend
+- deployed frontend on netlify
+- frontend link :- [todo app](https://todo-fullstack-app.netlify.app/)
+- backend api lint :- [backend api](https://blooming-chamber-21116.herokuapp.com/api/todos)
+- sent PR for review
