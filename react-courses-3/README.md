@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,04,08,09)
+# React Courses - 3(feb - 03,04,08,09,10)
 
 <hr>
-Worked upon : feb-03,04,08,09<br>
+Worked upon : feb-03,04,08,09,10<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -70,4 +70,19 @@ updates for 09-feb:<br>
 - deployed frontend on netlify
 - frontend link :- [todo app](https://todo-fullstack-app.netlify.app/)
 - backend api lint :- [backend api](https://blooming-chamber-21116.herokuapp.com/api/todos)
+- sent PR for review
+
+<br/>
+
+updates for 10-feb:<br>
+- revised old concepts
+- watched tutorial on how to deploy react app with node
+- read blogs on how to deploy react app from node js
+- deployed react build from node
+- read blogs on component libraries
+- started with chakra ui
+- read docs of chakra ui
+- learnt about design principles and theming hooks in chakra ui
+- watched crash course of crash course
+- practiced and used chakra ui components
 - sent PR for review
