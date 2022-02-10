@@ -6,6 +6,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
+// DarkModeComponent: for demonstrating
+// how we can set a component to react
+// on a theme change
 const DarkModeButton = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("gray.300", "#262626");

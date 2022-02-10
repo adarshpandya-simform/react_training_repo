@@ -1,5 +1,10 @@
 import { Flex, Center, Square, Text, Box } from "@chakra-ui/react";
 
+/**
+ * FlexComponent: for demonstrating Flex component
+ * and designing Flex box layout without even using
+ * css or set of classes
+ */
 const FlexComponent = () => {
   return (
     <>

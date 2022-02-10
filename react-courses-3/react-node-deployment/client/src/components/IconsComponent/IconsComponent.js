@@ -1,6 +1,7 @@
 import { SunIcon, MoonIcon, SearchIcon, PhoneIcon } from "@chakra-ui/icons";
 import { IconButton, HStack, useColorMode } from "@chakra-ui/react";
 
+// IconsComponent: for demonstrating IconButton component
 const IconsComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (

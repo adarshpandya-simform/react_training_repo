@@ -15,6 +15,8 @@ import {
   TabsComponent,
 } from "../components";
 
+// creating and exporting an array which contains
+// path,name and core component for routes and links
 export const links = [
   { path: "/", name: "Box", component: <BoxComponent /> },
   { path: "/dark-mode", name: "Dark Mode", component: <DarkModeButton /> },

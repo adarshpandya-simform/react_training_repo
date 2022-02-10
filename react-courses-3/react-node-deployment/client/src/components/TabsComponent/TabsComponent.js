@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+// TabsComponent for rendering Tab styled layout
 const TabsComponent = () => {
   return (
     <Tabs>

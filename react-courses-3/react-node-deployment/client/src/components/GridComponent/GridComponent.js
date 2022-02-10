@@ -1,5 +1,10 @@
 import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
 
+/**
+ * Grid component: for rendering a full
+ * layout with header, footer and other
+ * sections without manually using flex or grid
+ */
 const GridComponent = () => {
   return (
     <Grid

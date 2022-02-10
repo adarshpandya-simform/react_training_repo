@@ -1,8 +1,10 @@
+/* styles for app container */
 .app-container {
   height: 100vh;
   display: flex;
 }
 
+/* styles for links */
 .links {
   flex: 3;
   display: flex;
@@ -12,12 +14,14 @@
   overflow: scroll;
 }
 
+/* styles for components */
 .components {
   flex: 9;
   padding: 20px;
   overflow: scroll;
 }
 
+/* styles for a tags inside 'links' */
 .links a {
   margin: 5px;
 }

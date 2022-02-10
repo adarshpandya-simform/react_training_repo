@@ -1,3 +1,4 @@
+// exporting all components from index
 export { default as BoxComponent } from "./BoxComponent/BoxComponent";
 export { default as DarkModeButton } from "./DarkMode/DarkModeButton";
 export { default as DarkModeComponent } from "./DarkModeComponent/DarkModeComponent";

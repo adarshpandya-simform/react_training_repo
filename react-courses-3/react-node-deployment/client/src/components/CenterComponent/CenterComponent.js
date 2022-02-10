@@ -1,6 +1,11 @@
 import { Center, HStack, Button } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
 
+/**
+ * CenterComponent: for demonstrating
+ * usage of 'Center' component which
+ * centers the passed children
+ */
 const CenterComponent = () => {
   return (
     <HStack>

@@ -6,6 +6,10 @@ import {
   DarkMode,
 } from "@chakra-ui/react";
 
+/**
+ * ForcedModeComponents: for demonstrating
+ * usage of LightMode and DarkMode component
+ */
 const ForcedModeComponents = () => {
   const { toggleColorMode, colorMode } = useColorMode();
   return (

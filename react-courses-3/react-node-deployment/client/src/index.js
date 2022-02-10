@@ -6,6 +6,7 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import "./index.css";
 import { theme } from "./theme/theme";
 
+// Wrapping App inside BrowserRouter and ChakraProvider
 ReactDOM.render(
   <React.StrictMode>
     <Router>

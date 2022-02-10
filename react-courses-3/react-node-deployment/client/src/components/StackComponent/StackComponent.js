@@ -1,6 +1,7 @@
 import { Button, Heading, HStack, VStack } from "@chakra-ui/react";
 import { PhoneIcon, SunIcon, ChatIcon } from "@chakra-ui/icons";
 
+// StackComponent: for demonstrating Horizontal and vertical stack
 const StackComponent = () => {
   return (
     <>

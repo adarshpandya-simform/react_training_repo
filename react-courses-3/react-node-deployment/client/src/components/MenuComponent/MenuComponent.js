@@ -1,5 +1,6 @@
 import { Menu, MenuItem, MenuDivider } from "@chakra-ui/react";
 
+// MenuComponent: for rendering Menu
 const MenuComponent = () => {
   return (
     <Menu size="sm" isOpen={false}>

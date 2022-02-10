@@ -2,6 +2,11 @@ import { AspectRatio, Image, Heading } from "@chakra-ui/react";
 import picture1 from "../../assets/p1.jpg";
 import picture2 from "../../assets/p2.jpg";
 
+/**
+ * AspectRatio: for demonstrating
+ * different ratios for given
+ * children inside <AspectRatio></AspectRatio>
+ */
 const AspectRatioComponent = () => {
   return (
     <div>

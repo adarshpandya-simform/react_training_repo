@@ -1,5 +1,9 @@
 import { Box, Text } from "@chakra-ui/react";
 
+/**
+ * BoxComponent for demonstrating usage
+ * of 'Box' component
+ */
 const BoxComponent = () => {
   return (
     <Box p={4} bgColor={"blackAlpha.900"}>
