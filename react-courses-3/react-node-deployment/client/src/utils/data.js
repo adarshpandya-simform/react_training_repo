@@ -6,9 +6,12 @@ import {
   CustomStylesComponent,
   DarkModeButton,
   DarkModeComponent,
+  FlexComponent,
   ForcedModeComponents,
+  GridComponent,
   IconsComponent,
   MenuComponent,
+  StackComponent,
   TabsComponent,
 } from "../components";
 
@@ -59,5 +62,20 @@ export const links = [
     path: "/center-component",
     name: "Center Component",
     component: <CenterComponent />,
+  },
+  {
+    path: "/flex-component",
+    name: "Flex Component",
+    component: <FlexComponent />,
+  },
+  {
+    path: "/grid-component",
+    name: "Grid Component",
+    component: <GridComponent />,
+  },
+  {
+    path: "/stack-component",
+    name: "Stack Component",
+    component: <StackComponent />,
   },
 ];
