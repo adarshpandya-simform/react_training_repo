@@ -7,37 +7,51 @@ import {
   DarkModeComponent,
   ForcedModeComponents,
 } from "./components";
+import { Button } from "@chakra-ui/react";
 import "./App.css";
+
+const links = [
+  { path: "/", name: "Box", component: <BoxComponent /> },
+  { path: "/dark-mode", name: "Dark Mode", component: <DarkModeButton /> },
+  {
+    path: "/dark-mode-component",
+    name: "Component Reacting to dark mode",
+    component: <DarkModeComponent />,
+  },
+  {
+    path: "/forced-mode-components",
+    name: "Component With forced modes",
+    component: <ForcedModeComponents />,
+  },
+  {
+    path: "/custom-styled-components",
+    name: "Custom Styled components",
+    component: <CustomStylesComponent />,
+  },
+  {
+    path: "/customized-component",
+    name: "Custom Style Override Component",
+    component: <CustomizedComponent />,
+  },
+];
 
 const App = () => {
   return (
-    <div>
-      <br />
+    <div className="app-container">
       <div className="links">
-        <Link to={"/"}>Box</Link>
-        <Link to={"/dark-mode"}>Dark Mode</Link>
-        <Link to={"/dark-mode-component"}>Component Reacting to dark mode</Link>
-        <Link to={"/forced-mode-components"}>Component With forced modes</Link>
-        <Link to={"/custom-styled-components"}>Custom Styled components</Link>
-        <Link to={"/customized-component"}>
-          Custom Style Override Component
-        </Link>
+        {links.map((link) => (
+          <Link key={link.path} to={link.path}>
+            <Button variant={"link"}>{link.name}</Button>
+          </Link>
+        ))}
       </div>
-      <br />
-      <Routes>
-        <Route path="/" element={<BoxComponent />} />
-        <Route path="/dark-mode" element={<DarkModeButton />} />
-        <Route path="/dark-mode-component" element={<DarkModeComponent />} />
-        <Route
-          path="/forced-mode-components"
-          element={<ForcedModeComponents />}
-        />
-        <Route
-          path="/custom-styled-components"
-          element={<CustomStylesComponent />}
-        />
-        <Route path="/customized-component" element={<CustomizedComponent />} />
-      </Routes>
+      <div className="components">
+        <Routes>
+          {links.map((link) => (
+            <Route key={link.name} path={link.path} element={link.component} />
+          ))}
+        </Routes>
+      </div>
     </div>
   );
 };
