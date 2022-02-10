@@ -1,6 +1,7 @@
 import {
   AspectRatioComponent,
   BoxComponent,
+  ButtonComponent,
   CenterComponent,
   CustomizedComponent,
   CustomStylesComponent,
@@ -79,5 +80,10 @@ export const links = [
     path: "/stack-component",
     name: "Stack Component",
     component: <StackComponent />,
+  },
+  {
+    path: "/button-component",
+    name: "Button Component",
+    component: <ButtonComponent />,
   },
 ];

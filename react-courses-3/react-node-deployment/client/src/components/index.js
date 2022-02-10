@@ -13,3 +13,4 @@ export { default as CenterComponent } from "./CenterComponent/CenterComponent";
 export { default as FlexComponent } from "./FlexComponent/FlexComponent";
 export { default as GridComponent } from "./GridComponent/GridComponent";
 export { default as StackComponent } from "./StackComponent/StackComponent";
+export { default as ButtonComponent } from "./ButtonComponent/ButtonComponent";
