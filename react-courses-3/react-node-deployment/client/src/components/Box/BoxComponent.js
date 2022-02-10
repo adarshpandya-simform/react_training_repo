@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 
 const BoxComponent = () => {
   return (
-    <Box bgColor={"blackAlpha.900"}>
+    <Box p={4} bgColor={"blackAlpha.900"}>
       <Text
         bgGradient="linear(to-l, #7928CA, #FF0080)"
         bgClip="text"
