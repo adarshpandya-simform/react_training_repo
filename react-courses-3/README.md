@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,04,08,09,10)
+# React Courses - 3(feb - 03,04,08,09,10,11)
 
 <hr>
-Worked upon : feb-03,04,08,09,10<br>
+Worked upon : feb-03,04,08,09,10,11<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -85,4 +85,19 @@ updates for 10-feb:<br>
 - learnt about design principles and theming hooks in chakra ui
 - watched crash course of crash course
 - practiced and used chakra ui components
+- sent PR for review
+
+<br/>
+
+updates for 11-feb: <br>
+- read blogs on how to do pagination
+- learnt how pagination can be useful when there is too much data
+- watched crash course on how to do frontend pagination
+- watched tutorial on how to do frontend pagination
+- created a backend api with proper input validation which serves fixed amount of user as response
+- learnt and implemented <b>limit</b> and <b>skip</b> functions with mongoose to control and get only data
+- watched videos on making MERN stack apps
+- continued with chakra ui
+- read chakra ui docs
+- learnt new components from chakra ui
 - sent PR for review
