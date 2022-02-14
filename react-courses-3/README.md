@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,04,08,09,10,11)
+# React Courses - 3(feb - 03,04,08,09,10,11,14)
 
 <hr>
-Worked upon : feb-03,04,08,09,10,11<br>
+Worked upon : feb-03,04,08,09,10,11,14<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -100,4 +100,20 @@ updates for 11-feb: <br>
 - continued with chakra ui
 - read chakra ui docs
 - learnt new components from chakra ui
+- sent PR for review
+
+<br/>
+
+updates for 14-feb: <br>
+- revised backend pagination
+- read chakra ui docs
+- revised chakra ui
+- read about frontend pagination
+- watched tutorials on frontend pagination
+- implemented frontend and backend implementation
+- memoized data to reduce the number of requests
+- learnt about open source SQL databases
+- read blogs on supabase
+- watched supabase tutorial
+- implemented a todo app with supabase in react with context
 - sent PR for review
