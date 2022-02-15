@@ -1,7 +1,7 @@
-# React Courses - 3(feb - 03,04,08,09,10,11,14)
+# React Courses - 3(feb - 03,04,08,09,10,11,14,15)
 
 <hr>
-Worked upon : feb-03,04,08,09,10,11,14<br>
+Worked upon : feb-03,04,08,09,10,11,14,15<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -116,4 +116,18 @@ updates for 14-feb: <br>
 - read blogs on supabase
 - watched supabase tutorial
 - implemented a todo app with supabase in react with context
+- sent PR for review
+
+<br/>
+
+updates for 15-feb: <br>
+- revised pagination
+- read blogs on web rtc
+- read about usage of socket.io
+- watched tutorial on socket.io
+- learnt about socket.io
+- watched course on web RTC with react
+- learnt about simple-peer and web rtc
+- learnt about navigator permissions
+- implemented small real time video calling app
 - sent PR for review
