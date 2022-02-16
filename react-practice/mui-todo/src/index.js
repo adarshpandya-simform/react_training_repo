@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { TodoProvider } from "./context/TodoContext";
+import { DarkThemeProvider, TodoProvider } from "./context";
 import "./index.css";
 
+// Wrapped App inside Todo and DarkTheme Providers
 ReactDOM.render(
   <React.StrictMode>
     <TodoProvider>
-      <App />
+      <DarkThemeProvider>
+        <App />
+      </DarkThemeProvider>
     </TodoProvider>
   </React.StrictMode>,
   document.getElementById("root")
