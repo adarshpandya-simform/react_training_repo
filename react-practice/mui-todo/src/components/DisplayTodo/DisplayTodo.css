@@ -1,0 +1,22 @@
+/* styles for list container */
+.todo-list-container {
+  padding: 0px 20px;
+  height: 300px;
+  overflow: scroll;
+  scrollbar-width: none !important;
+}
+
+/* styles for todo item */
+.todo-item {
+  margin: 10px 0px;
+}
+
+/* styles for making a dark card */
+.dark-card {
+  background: var(--dark-card) !important;
+}
+
+/* styles for empty todo msg */
+.empty-todos {
+  margin: 10px 0px;
+}

@@ -1,0 +1,22 @@
+/* styles for todo input container */
+.todo-input-container {
+  padding: 0 20px;
+  padding-top: 10px;
+  display: flex;
+}
+
+/* styles for todo input */
+.todo-input {
+  flex: 9;
+}
+
+/* styles for todo submit btn */
+.todo-submit-button {
+  flex: 3;
+  margin-left: 20px !important;
+}
+
+/* styles for darkmode icon btn */
+.todo-darkmode-button {
+  margin-left: 10px !important;
+}
