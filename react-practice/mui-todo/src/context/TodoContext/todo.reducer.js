@@ -1,6 +1,7 @@
 import { ADD_TODO, CHECK_TODO, DELETE_TODO } from "./todo.actions";
 import { nanoid } from "nanoid";
 
+// reducer for todos
 export const todoReducer = (state, { type, payload }) => {
   switch (type) {
     case ADD_TODO:
