@@ -1,7 +1,12 @@
 import { useContext } from "react";
-import { addTodo, checkTodo, deleteTodo } from "../context/todo.actions";
-import { TodoContext } from "../context/TodoContext";
+import {
+  addTodo,
+  checkTodo,
+  deleteTodo,
+} from "../context/TodoContext/todo.actions";
+import { TodoContext } from "../context/";
 
+// custom hook for all todo operations
 export const useTodos = () => {
   const { state, dispatch } = useContext(TodoContext);
 
