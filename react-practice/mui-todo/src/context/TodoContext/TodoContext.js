@@ -7,6 +7,7 @@ const initialState = { todos: [] };
 // creating empty context
 export const TodoContext = createContext(initialState);
 
+// defining and exporting provider
 export const TodoProvider = ({ children }) => {
   const [state, dispatch] = useReducer(todoReducer, initialState);
   return (
