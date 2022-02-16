@@ -1,0 +1,27 @@
+/* styles for modal container */
+.modal-container {
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* styles for modal */
+.modal {
+	width: 500px;
+	height: 300px;
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/* style for paragraph */
+.text-justify {
+	text-align: justify;
+	color: rgb(168, 168, 168);
+}

@@ -1,0 +1,27 @@
+/* loading fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* declaring variables */
+:root {
+  --bg-color: #22cc88;
+  --todo-tiles-color: rgba(102, 236, 182, 0.473);
+  --white-color: #fff;
+  --black-color: #262626;
+  --button-color: #ffac33;
+  --delete-button-color: rgb(204, 55, 18);
+}
+
+/* global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

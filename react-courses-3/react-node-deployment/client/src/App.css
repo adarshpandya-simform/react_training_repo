@@ -1,0 +1,27 @@
+/* styles for app container */
+.app-container {
+  height: 100vh;
+  display: flex;
+}
+
+/* styles for links */
+.links {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(182, 182, 182, 0.39);
+  padding: 10px;
+  overflow: scroll;
+}
+
+/* styles for components */
+.components {
+  flex: 9;
+  padding: 20px;
+  overflow: scroll;
+}
+
+/* styles for a tags inside 'links' */
+.links a {
+  margin: 5px;
+}
