@@ -1,0 +1,15 @@
+/* styles for app container */
+.app-container {
+  width: 500px;
+  transition: all 300ms ease-in-out !important;
+}
+
+/* styles for light paper bg */
+.light-paper {
+  background: var(--paper-light) !important;
+}
+
+/* styles for dark paper bg */
+.dark-paper {
+  background: var(--paper-dark) !important;
+}
