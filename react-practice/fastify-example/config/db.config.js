@@ -1,8 +1,10 @@
 import { config } from "dotenv";
 import mongoose from "mongoose";
 
+// accessing env vars
 config();
 
+// exporting connectDB helper fn
 export const connectDB = () => {
   try {
     mongoose.connect(process.env.MONGO_URL, {}, (err) => {
