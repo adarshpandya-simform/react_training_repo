@@ -1,3 +1,4 @@
+// dummy users data
 const people = [
 	{
 		name: "Jane Cooper",
@@ -37,6 +38,7 @@ const people = [
 	},
 ];
 
+// List component : for rendering list of users
 const List = () => {
 	return (
 		<div className="flex flex-col">
@@ -76,6 +78,7 @@ const List = () => {
 								</tr>
 							</thead>
 							<tbody className="bg-slate-700 divide-y divide-gray-200">
+								{/* mapping through peoples */}
 								{people.map((person) => (
 									<tr key={person.email}>
 										<td className="px-6 py-4 whitespace-nowrap">

@@ -1,6 +1,8 @@
+// UsersChip component: takes users as props, maps though them and displays chips
 const UsersChip = ({ users }) => {
 	return (
 		<div className="mt-3 flex -space-x-2 overflow-hidden">
+			{/* conditional rendering */}
 			{users.length > 0 &&
 				users.map(({ profile }) => (
 					<img

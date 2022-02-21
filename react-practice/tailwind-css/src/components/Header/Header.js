@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { classNames } from "../../utils/getClassNames";
 
+// data for navigation tabs
 const navigation = [
 	{ name: "Dashboard", href: "#", current: true },
 	{ name: "Team", href: "#", current: false },
@@ -11,8 +12,10 @@ const navigation = [
 	{ name: "Calendar", href: "#", current: false },
 ];
 
+// items for menu
 const menuItems = ["Your Profile", "Settings", "Logout"];
 
+// Header component : renders menu with profile dropdown
 const Header = () => {
 	return (
 		<Disclosure as="nav" className="bg-gray-800">
@@ -32,6 +35,7 @@ const Header = () => {
 								</Disclosure.Button>
 							</div>
 							<div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+								{/* brand icon */}
 								<div className="flex-shrink-0 flex items-center">
 									<img
 										className="block lg:hidden h-8 w-auto"
@@ -46,6 +50,7 @@ const Header = () => {
 								</div>
 								<div className="hidden sm:block sm:ml-6">
 									<div className="flex space-x-4">
+										{/* mapping through different tabs */}
 										{navigation.map((item) => (
 											<a
 												key={item.name}
@@ -56,7 +61,6 @@ const Header = () => {
 														: "text-gray-300 hover:bg-gray-700 hover:text-white",
 													"px-3 py-2 rounded-md text-sm font-medium"
 												)}
-												aria-current={item.current ? "page" : undefined}
 											>
 												{item.name}
 											</a>
@@ -108,7 +112,7 @@ const Header = () => {
 							</div>
 						</div>
 					</div>
-
+					{/* panel for showing menu when used in mobile */}
 					<Disclosure.Panel className="sm:hidden">
 						<div className="px-2 pt-2 pb-3 space-y-1">
 							{navigation.map((item) => (
@@ -122,7 +126,6 @@ const Header = () => {
 											: "text-gray-300 hover:bg-gray-700 hover:text-white",
 										"block px-3 py-2 rounded-md text-base font-medium"
 									)}
-									aria-current={item.current ? "page" : undefined}
 								>
 									{item.name}
 								</Disclosure.Button>

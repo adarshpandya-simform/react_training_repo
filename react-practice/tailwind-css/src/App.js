@@ -1,5 +1,6 @@
 import { Buttons, Dropdown, Header, List, UsersChip } from "./components";
 
+// dummy user data for showing chips
 const users = [
 	{
 		profile:
@@ -23,7 +24,9 @@ const users = [
 	},
 ];
 
+// App component (renders other tailwind designed components)
 const App = () => {
+	// rendering Buttons,UsersChip,List,Header,Dropdown
 	return (
 		<div>
 			<p className="underline text-gray-800">Buttons</p>

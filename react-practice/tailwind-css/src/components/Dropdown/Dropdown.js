@@ -3,6 +3,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { classNames } from "../../utils/getClassNames";
 
+// dummy data for dropdown
 const designations = [
 	{ id: 1, name: "Junior Developer" },
 	{ id: 2, name: "Senior Developer" },
@@ -10,6 +11,7 @@ const designations = [
 	{ id: 4, name: "CTO" },
 ];
 
+// Dropdown component: for showing designation dropdown
 const Dropdown = () => {
 	return (
 		<Menu as="div" className="relative inline-block text-left">
@@ -31,6 +33,7 @@ const Dropdown = () => {
 			>
 				<Menu.Items className="origin-bottom-left absolute mt-2 w-56 rounded-md shadow-lg bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none">
 					<div className="py-1">
+						{/* mapping through different designations */}
 						{designations.map((designation) => (
 							<Menu.Item key={designation.id}>
 								{({ active }) => (

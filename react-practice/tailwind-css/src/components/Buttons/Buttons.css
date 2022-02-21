@@ -1,5 +1,6 @@
-.btn-container{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
+/* styles for button container */
+.btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
