@@ -2,6 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +18,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.page-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
