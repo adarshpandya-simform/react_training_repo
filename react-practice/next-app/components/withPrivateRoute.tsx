@@ -5,12 +5,14 @@ const checkUserAuth = () => {
   return { auth: true };
 };
 
+// HOC component for private routing, takes another component as param
 const withPrivateRoute = (WrappedComponent: NextComponentType) => {
   const hocComponent = ({ ...props }) => <WrappedComponent {...props} />;
 
   hocComponent.getInitialProps = async (context: NextPageContext) => {
     const userAuth = checkUserAuth();
 
+    // checking auth and redirecting if not authorized
     if (!userAuth.auth) {
       if (context.res) {
         context.res?.writeHead(302, {

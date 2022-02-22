@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { DarkThemeProvider } from "../context/DarkModeContext";
 import { SnackbarProvider } from "notistack";
 
+// wrapping Component with various providers
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <DarkThemeProvider>

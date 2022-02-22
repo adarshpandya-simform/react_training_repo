@@ -1,5 +1,7 @@
 import { createTheme, Theme } from "@mui/material";
 
+// custom themes according to theme mode
+
 const lightMode: Theme = createTheme({
   palette: {
     mode: "light",
@@ -24,6 +26,7 @@ const darkMode: Theme = createTheme({
   },
 });
 
+// returns theme based on mode
 export const getTheme = (mode: "light" | "dark"): Theme => {
   return mode === "light" ? lightMode : darkMode;
 };

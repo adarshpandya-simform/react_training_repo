@@ -9,9 +9,11 @@ import {
 import { FC } from "react";
 import { IUser } from "../utils/userData";
 
+// UserList component for mapping and rendering users
 const UserList: FC<{ users: IUser[] }> = ({ users = [] }) => {
   return (
     <List>
+      {/* rendering users */}
       {users.map((user: IUser) => (
         <>
           <ListItem button key={user.dob.date}>
