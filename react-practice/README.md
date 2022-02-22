@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21)
+# React Practice (feb - 16,21,22)
 
 <hr>
-Worked upon : feb-16,21<br>
+Worked upon : feb-16,21,22<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -38,4 +38,20 @@ updates for 21-feb: <br/>
 - read blog on nextjs 12.1 new features
 - read blogs around how to communicate as a developer
 - watched youtube tutorials on how to comminucate better as developer (as shared by Training Coordinator)
+- sent PR for review
+
+<br>
+
+updates for 22-feb: <br/>
+- read blogs on react performance
+- read next js blogs
+- read blogs on next js
+- read what's new in next js version@12.x
+- gone through next js docs
+- created next js app with typescript
+- learnt about how to create private routes with next
+- implemented HOC for private routes in next js
+- fetched and rendered user data in component
+- got familiar with `getInitialProps`
+- watched tutorials on next js
 - sent PR for review
