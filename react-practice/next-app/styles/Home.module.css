@@ -1,0 +1,9 @@
+.chat_users {
+  flex: 4;
+  border-right: 1px solid rgba(128, 128, 128, 0.301);
+  overflow: scroll;
+}
+
+.chat_area {
+  flex: 8;
+}
