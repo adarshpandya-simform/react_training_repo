@@ -25,16 +25,20 @@ let initialTodos = [
 ];
 
 // handlers
+
+// @get /todos
 router.get("/todos/", (req, res) => {
   res.json({ todos: initialTodos, success: true });
 });
 
+// @post /add-todo
 router.post("/add-todo", (req, res) => {
   const todo = { id: nanoid(), title: req.body.title };
   initialTodos.push(todo);
   res.json({ todo, success: true });
 });
 
+// @delete /delete-todo/:id
 router.delete("/delete-todo/:id", (req, res) => {
   const { id } = req.params;
   initialTodos = initialTodos.filter((todo) => todo.id !== id);
