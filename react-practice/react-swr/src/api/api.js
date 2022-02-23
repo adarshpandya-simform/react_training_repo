@@ -17,3 +17,5 @@ export const deleteTodo = async (id) => {
   const { data } = await axios.delete(`/delete-todo/${id}`);
   return data;
 };
+
+export const GET_TODOS_URL = "http://localhost:2000/api/todos";
