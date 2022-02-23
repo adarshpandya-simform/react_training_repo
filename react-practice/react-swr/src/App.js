@@ -6,6 +6,7 @@ import { Link as MLink } from "@mui/material";
 import axios from "axios";
 import "./App.css";
 
+// navigation links
 const navLinks = [
   {
     to: "/",
@@ -21,6 +22,8 @@ const navLinks = [
   },
 ];
 
+// App component: renders component on their
+// respective routes
 const App = () => {
   return (
     <div className="container">

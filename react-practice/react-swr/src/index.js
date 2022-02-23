@@ -4,6 +4,7 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 
+// Wrapped App component inside BrowserRouter
 ReactDOM.render(
   <React.StrictMode>
     <Router>

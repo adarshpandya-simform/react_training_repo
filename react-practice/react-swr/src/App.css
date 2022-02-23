@@ -1,7 +1,9 @@
+/* styles for container */
 .container {
   padding: 20px;
 }
 
+/* styles for link inside header */
 header a {
   margin-right: 20px;
 }

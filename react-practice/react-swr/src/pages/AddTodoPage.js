@@ -3,9 +3,11 @@ import { addTodo, GET_TODOS_URL } from "../api/api";
 import { Button, TextField } from "@mui/material";
 import { mutate } from "swr";
 
+// AeddTodoPage renders @ /add-todo
 const AddTodoPage = () => {
   const [title, setTitle] = useState("");
 
+  // helper fn to add todo
   const handleAddTodo = async () => {
     if (title !== "") {
       await addTodo(title);

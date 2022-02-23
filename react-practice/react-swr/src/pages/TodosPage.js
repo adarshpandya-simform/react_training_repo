@@ -10,10 +10,14 @@ import {
 } from "@mui/material";
 import { Delete } from "@mui/icons-material";
 
+// TodosPage: renders @ /todos
 const TodosPage = () => {
+  // using useSWR hook with url
   const { data, error } = useSWR(GET_TODOS_URL);
 
+  // helper fn to delete todo
   const handleDeleteTodo = async (id) => {
+    //   mutate first policy
     mutate(
       GET_TODOS_URL,
       {
@@ -25,10 +29,12 @@ const TodosPage = () => {
     await deleteTodo(id);
   };
 
+  // if data is loading
   if (!data) {
     return <p>loading...</p>;
   }
 
+  // if error occures
   if (error) {
     return (
       <p>
@@ -41,6 +47,7 @@ const TodosPage = () => {
     <div>
       <br />
       <List>
+        {/* Mapping through all the fetched todos */}
         {data.todos.map((todo) => (
           <Paper sx={{ marginBottom: 2 }} variant="outlined">
             <ListItem button key={todo.id}>
