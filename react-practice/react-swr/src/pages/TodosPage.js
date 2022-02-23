@@ -1,40 +1,63 @@
-import { useEffect, useState } from "react";
-import { deleteTodo, fetchTodos } from "../api/api";
+import { deleteTodo, GET_TODOS_URL } from "../api/api";
+import useSWR, { mutate } from "swr";
+import {
+  IconButton,
+  List,
+  ListItem,
+  ListItemSecondaryAction,
+  ListItemText,
+  Paper,
+} from "@mui/material";
+import { Delete } from "@mui/icons-material";
 
 const TodosPage = () => {
-  const [todos, setTodos] = useState([]);
-
-  useEffect(() => {
-    const fetchTodosAsync = async () => {
-      const data = await fetchTodos();
-      if (data.success) {
-        setTodos(data.todos);
-      }
-    };
-    fetchTodosAsync();
-    console.log("TodosPage Rendered");
-  }, []);
+  const { data, error } = useSWR(GET_TODOS_URL);
 
   const handleDeleteTodo = async (id) => {
-    const data = await deleteTodo(id);
-    console.log(data);
+    mutate(
+      GET_TODOS_URL,
+      {
+        ...data,
+        todos: data.todos.filter((todo) => todo.id !== id),
+      },
+      false
+    );
+    await deleteTodo(id);
   };
+
+  if (!data) {
+    return <p>loading...</p>;
+  }
+
+  if (error) {
+    return (
+      <p>
+        Error Occured: <code>{JSON.stringify(error)}</code>
+      </p>
+    );
+  }
 
   return (
     <div>
       <br />
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <span>{todo.title}</span>
-          <button
-            onClick={() => {
-              handleDeleteTodo(todo.id);
-            }}
-          >
-            x
-          </button>
-        </div>
-      ))}
+      <List>
+        {data.todos.map((todo) => (
+          <Paper sx={{ marginBottom: 2 }} variant="outlined">
+            <ListItem button key={todo.id}>
+              <ListItemText primary={todo.title} />
+              <ListItemSecondaryAction>
+                <IconButton
+                  onClick={() => {
+                    handleDeleteTodo(todo.id);
+                  }}
+                >
+                  <Delete />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </ListItem>
+          </Paper>
+        ))}
+      </List>
     </div>
   );
 };
