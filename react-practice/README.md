@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22)
+# React Practice (feb - 16,21,22,23,24)
 
 <hr>
-Worked upon : feb-16,21,22<br>
+Worked upon : feb-16,21,22,23,24<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -54,4 +54,31 @@ updates for 22-feb: <br/>
 - fetched and rendered user data in component
 - got familiar with `getInitialProps`
 - watched tutorials on next js
+- sent PR for review
+
+<br>
+
+updates for 23-feb: <br/>
+- read blogs on performance optimization
+- learnt about useSWR hook
+- fetched data with useSWR, learn about SWRConfig component
+- created backend for swr demo
+- created simple next js app and used swr for fetching data
+- started aws course
+- watched tutorial on aws
+- read blogs on aws
+- completed fundamentals of web course
+- sent PR for review
+
+<br>
+
+updates for 24-feb: <br/>
+- read blogs on react performance
+- learnt about optimizing api call
+- learnt about caching api calls
+- created simple next app with cached calls
+- revised next concepts
+- read next docs
+- watched aws tutorial
+- learnt about various trends in frontend 2022
 - sent PR for review
