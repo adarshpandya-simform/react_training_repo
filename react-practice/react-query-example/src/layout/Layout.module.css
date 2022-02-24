@@ -1,0 +1,13 @@
+/* styles for layout parent container */
+.layout-parent {
+  display: flex;
+  height: 100vh;
+}
+
+/* styles for layout content container */
+.layout-content {
+  background: #161a1ff3;
+  flex: 10;
+  padding: 20px;
+  overflow: scroll;
+}
