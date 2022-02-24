@@ -1,0 +1,18 @@
+/* styles related to card */
+.card {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  background: #121518;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+/* hover effects */
+.card:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
