@@ -1,6 +1,10 @@
 import express from "express";
 import cors from "cors";
 import { router } from "./routes/todo.routes.js";
+import { connectDB } from "./config/db.config.js";
+
+// calling connect DB
+connectDB();
 
 // setting port
 const PORT = process.env.PORT || 2000;
