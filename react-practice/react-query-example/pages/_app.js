@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Layout } from "../src/layout";
+import { ReactQueryDevtools } from "react-query/devtools";
 import "../styles/globals.css";
 
 // initializing and exporting queryClient
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
+        <ReactQueryDevtools />
       </QueryClientProvider>
     </Layout>
   );
