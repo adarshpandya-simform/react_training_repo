@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24)
+# React Practice (feb - 16,21,22,23,24,25)
 
 <hr>
-Worked upon : feb-16,21,22,23,24<br>
+Worked upon : feb-16,21,22,23,24,25<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -82,3 +82,14 @@ updates for 24-feb: <br/>
 - watched aws tutorial
 - learnt about various trends in frontend 2022
 - sent PR for review
+
+<br>
+
+updates for 25-feb: <br/>
+- read apollo docs
+- watched graphql tutorial
+- read blog on apollo-server
+- continued with aws tutorial
+- created a simple backend with apollo-server
+- attended onboarding meeting
+- sent PR for review.
