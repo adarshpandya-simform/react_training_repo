@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25)
+# React Practice (feb - 16,21,22,23,24,25,28)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25<br>
+Worked upon : feb-16,21,22,23,24,25,28<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -93,3 +93,15 @@ updates for 25-feb: <br/>
 - created a simple backend with apollo-server
 - attended onboarding meeting
 - sent PR for review.
+
+<br>
+
+updates for 28-feb: <br/>
+- revised old concepts
+- had meeting with mentor
+- had meeting with meet patel
+- started working on apollo server
+- read blogs on graphql
+- watched tutorials on graphql- server
+- created a graphql server with mutation and nested queries
+- sent PR for review
