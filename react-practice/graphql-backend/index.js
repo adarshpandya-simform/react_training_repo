@@ -1,6 +1,10 @@
 import { ApolloServer } from "apollo-server";
+import { connectDB } from "./config/db.config.js";
 import { resolvers } from "./graphql/resolvers.js";
 import { typeDefs } from "./graphql/typeDefs.js";
+
+// connecting to db
+connectDB();
 
 // defining PORT
 const PORT = process.env.PORT || 2000;
