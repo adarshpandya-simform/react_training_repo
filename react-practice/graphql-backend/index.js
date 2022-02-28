@@ -1,39 +1,9 @@
-import { ApolloServer, gql } from "apollo-server";
+import { ApolloServer } from "apollo-server";
+import { resolvers } from "./graphql/resolvers.js";
+import { typeDefs } from "./graphql/typeDefs.js";
 
+// defining PORT
 const PORT = process.env.PORT || 2000;
-
-// books
-const books = [
-  {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
-  },
-];
-
-// type defination
-const typeDefs = gql`
-  # this is comment
-  type Book {
-    title: String
-    author: String
-  }
-
-  # array of books
-  type Query {
-    books: [Book]
-  }
-`;
-
-// resolvers
-const resolvers = {
-  Query: {
-    books: () => books,
-  },
-};
 
 // creating server
 const server = new ApolloServer({ typeDefs, resolvers });
