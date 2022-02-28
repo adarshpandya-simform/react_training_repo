@@ -1,24 +1,26 @@
-import { authorsArr, booksArr } from "../data/data.js";
+import { getAuthor, getAuthors } from "../helpers/author.helper.js";
+import { getBook, getBooks } from "../helpers/book.helper.js";
 import { mutations } from "./mutations.js";
 
 // resolvers for gql
 export const resolvers = {
   Query: {
-    books: () => booksArr,
-    book: (_, args) => booksArr.find((book) => book.bookId === args.id),
-    authors: () => authorsArr,
-    author: (_, args) =>
-      authorsArr.find((author) => author.authorId === args.id),
+    books: async () => await getBooks(),
+    book: async (_, args) => await getBook(args.id),
+    authors: async () => await getAuthors(),
+    author: async (_, args) => await getAuthor(args.id),
   },
   Mutation: mutations,
   Book: {
-    author(parent) {
-      return authorsArr.find((author) => author.authorId === parent.id);
+    async author(parent) {
+      const fetchedAuthor = await getAuthor(parent.id);
+      return fetchedAuthor;
     },
   },
   Author: {
-    books(parent) {
-      return booksArr.filter((book) => book.id === parent.authorId);
+    async books(parent) {
+      const fetchedBook = await getBook(parent.authorId);
+      return fetchedBook;
     },
   },
 };
