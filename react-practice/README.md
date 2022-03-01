@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28<br>
+Worked upon : feb-16,21,22,23,24,25,28,1<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -104,4 +104,16 @@ updates for 28-feb: <br/>
 - read blogs on graphql
 - watched tutorials on graphql- server
 - created a graphql server with mutation and nested queries
+- sent PR for review
+
+<br>
+
+updates for 01-mar: <br/>
+- worked with graphql Query relationships
+- worked with mutations
+- learnt about apollo-express-server
+- watched crash course on graphql subscription
+- learnt how to setup graphql for subscription
+- added subscriptions in existing app
+- read doc/blogs on subscription
 - sent PR for review
