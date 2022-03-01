@@ -1,9 +1,9 @@
-import { gql } from "apollo-server";
-import { nanoid } from "nanoid";
+import { gql } from "apollo-server-express";
 
-// type definations for graphql
+// type definations for graphql schema
 export const typeDefs = gql`
   # this is comment
+  # Book Type
   type Book {
     id: ID!
     title: String!
@@ -11,13 +11,14 @@ export const typeDefs = gql`
     author: Author!
   }
 
+  # Author Type
   type Author {
     authorId: ID!
     name: String!
     books: [Book!]!
   }
 
-  # array of books
+  # Query type
   type Query {
     books: [Book!]!
     book(id: ID!): Book!
@@ -25,6 +26,7 @@ export const typeDefs = gql`
     author(id: ID!): Author!
   }
 
+  # mutations
   type Mutation {
     createBook(id: ID!, title: String!): Book!
     updateBook(bookId: ID!, title: String!, authorId: String!): Book
@@ -32,5 +34,15 @@ export const typeDefs = gql`
     createAuthor(name: String!): Author!
     updateAuthor(authorId: ID!, name: String!): Author
     deleteAuthor(authorId: ID!): Author
+  }
+
+  # subscriptions
+  type Subscription {
+    bookCreated: Book
+    bookDeleted: Book
+    bookUpdated: Book
+    authorCreated: Author
+    authorDeleted: Author
+    authorUpdated: Author
   }
 `;
