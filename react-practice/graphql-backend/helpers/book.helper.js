@@ -19,6 +19,12 @@ export const getBook = async (bookId) => {
   return book;
 };
 
+// helper fn to get a book by authorId
+export const getBookByAuthor = async (authorId) => {
+  const book = await bookModel.find({ id: authorId });
+  return book;
+};
+
 // helper fn to delete a book
 export const deleteBook = async (bookId) => {
   const deletedBook = await bookModel.findOneAndDelete({ bookId });
