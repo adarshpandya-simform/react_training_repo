@@ -1,9 +1,9 @@
-import { getBook } from "../../helpers/book.helper.js";
+import { getBookByAuthor } from "../../helpers/book.helper.js";
 
 // parent Author query resolver
 export const authorQueryResolver = {
   async books(parent) {
-    const fetchedBook = await getBook(parent.authorId);
+    const fetchedBook = await getBookByAuthor(parent.authorId);
     return fetchedBook;
   },
 };
