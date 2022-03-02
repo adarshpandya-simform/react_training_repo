@@ -1,7 +1,13 @@
+/* roboto fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* global styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scrollbar-width: none;
 }
 
 body {
@@ -12,4 +18,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* styles for link */
+a {
+  text-decoration: none;
 }
