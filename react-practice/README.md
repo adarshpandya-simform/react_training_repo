@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28,1<br>
+Worked upon : feb-16,21,22,23,24,25,28,march- 1,2<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -116,4 +116,19 @@ updates for 01-mar: <br/>
 - learnt how to setup graphql for subscription
 - added subscriptions in existing app
 - read doc/blogs on subscription
+- sent PR for review
+
+<br>
+
+updates for 02-mar: <br/>
+- started with apollo client (frontend)
+- read apollo client docs
+- read blogs on apollo client
+- watched tutorials on grahql
+- learnt how to use queries,mutation in frontend
+- learnt about fetching policies
+- learnt about caching
+- learnt about graphql-yoga package
+- implemented CRUD app using graphql
+- implemented material ui v5 in project
 - sent PR for review
