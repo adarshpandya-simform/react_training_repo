@@ -46,8 +46,8 @@ export const mutations = {
     return insertedAuthor;
   },
 
-  updateBook: async (_, { id, title, bookId }) => {
-    const updatedBook = await updateBook(bookId, id, title);
+  updateBook: async (_, { authorId, title, bookId }) => {
+    const updatedBook = await updateBook(bookId, authorId, title);
 
     pubsub.publish(BOOK_UPDATED, {
       bookUpdated: updatedBook,
