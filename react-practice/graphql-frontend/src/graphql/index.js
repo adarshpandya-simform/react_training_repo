@@ -1,0 +1,18 @@
+// exporting all queries,mutations,subscriptions
+export { GET_AUTHOR, GET_AUTHORS, GET_BOOK, GET_BOOKS } from "./queries";
+export {
+  CREATE_AUTHOR,
+  CREATE_BOOK,
+  DELETE_AUTHOR,
+  DELETE_BOOK,
+  UPDATE_AUTHOR,
+  UPDATE_BOOK,
+} from "./mutations";
+export {
+  SUBSCRIBE_TO_CREATE_BOOK,
+  SUBSCRIBE_TO_CREATE_AUTHOR,
+  SUBSCRIBE_TO_DELETE_AUTHOR,
+  SUBSCRIBE_TO_DELETE_BOOK,
+  SUBSCRIBE_TO_UPDATE_AUTHOR,
+  SUBSCRIBE_TO_UPDATE_BOOK,
+} from "./subscriptions";
