@@ -24,3 +24,7 @@ body {
 a {
   text-decoration: none;
 }
+
+.MuiTypography-h6 a {
+  color: white;
+}
