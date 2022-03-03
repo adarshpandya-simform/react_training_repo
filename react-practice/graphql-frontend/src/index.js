@@ -15,7 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <ApolloProvider client={client}>
-        <SnackbarProvider>
+        <SnackbarProvider max={4}>
           <ThemeProvider theme={theme}>
             <Layout>
               <App />
