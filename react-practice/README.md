@@ -1,4 +1,4 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3)
 
 <hr>
 Worked upon : feb-16,21,22,23,24,25,28,march- 1,2<br>
@@ -131,4 +131,15 @@ updates for 02-mar: <br/>
 - learnt about graphql-yoga package
 - implemented CRUD app using graphql
 - implemented material ui v5 in project
+- sent PR for review
+
+<br>
+
+updates for 03-mar: <br/>
+- learnt about apollo subscriptions
+- learnt how subscription works under the hood with websocket
+- implemented realtime updates in frontend with graphql subscriptions
+- learnt how to split the network request in http and websocket protocol
+- watched graphql summit videos to learn about concepts
+- watched api call optimization in react tutorials
 - sent PR for review
