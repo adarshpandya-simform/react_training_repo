@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import "./App.css";
 import {
   AddAuthor,
   AddBook,
@@ -10,9 +9,26 @@ import {
   UpdateAuthor,
   UpdateBook,
 } from "./components";
+import {
+  SUBSCRIBE_TO_CREATE_AUTHOR,
+  SUBSCRIBE_TO_CREATE_BOOK,
+  SUBSCRIBE_TO_DELETE_AUTHOR,
+  SUBSCRIBE_TO_DELETE_BOOK,
+  SUBSCRIBE_TO_UPDATE_AUTHOR,
+  SUBSCRIBE_TO_UPDATE_BOOK,
+} from "./graphql";
+import { useCustomSubscription } from "./hooks/useCustomSubscription";
+import "./App.css";
 
 // App component with all the routes
 const App = () => {
+  useCustomSubscription(SUBSCRIBE_TO_CREATE_BOOK);
+  useCustomSubscription(SUBSCRIBE_TO_CREATE_AUTHOR);
+  useCustomSubscription(SUBSCRIBE_TO_DELETE_BOOK);
+  useCustomSubscription(SUBSCRIBE_TO_DELETE_AUTHOR);
+  useCustomSubscription(SUBSCRIBE_TO_UPDATE_AUTHOR);
+  useCustomSubscription(SUBSCRIBE_TO_UPDATE_BOOK);
+
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/books" />} />
