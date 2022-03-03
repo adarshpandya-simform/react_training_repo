@@ -48,7 +48,7 @@ const Header = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
-              GQL BOOK APP
+              <Link to="/">GQL BOOK APP</Link>
             </Typography>
 
             <Box
@@ -100,7 +100,7 @@ const Header = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
-              GQL BOOK APP
+              <Link to="/">GQL BOOK APP</Link>
             </Typography>
             <Box
               sx={{
