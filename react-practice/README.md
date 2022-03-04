@@ -1,4 +1,4 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4)
 
 <hr>
 Worked upon : feb-16,21,22,23,24,25,28,march- 1,2<br>
@@ -142,4 +142,17 @@ updates for 03-mar: <br/>
 - learnt how to split the network request in http and websocket protocol
 - watched graphql summit videos to learn about concepts
 - watched api call optimization in react tutorials
+- sent PR for review
+
+<br/>
+
+updates for 4-mar: <br/>
+- read blogs on performance
+- watched React+ TS tutorials
+- revised TS
+- created backend with TS
+- watched video on api testing
+- learnt testing api with mocha and chai
+- implemented api testing
+- used api in frontend
 - sent PR for review
