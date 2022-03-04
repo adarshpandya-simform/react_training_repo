@@ -21,6 +21,6 @@ app.use(cors());
 app.use("/api", todoRouter);
 
 // listening on port
-app.listen(PORT, () => {
+export const server = app.listen(PORT, () => {
 	console.log(`app is running on port ${PORT}`);
 });
