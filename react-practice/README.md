@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28,march- 1,2<br>
+Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -155,4 +155,17 @@ updates for 4-mar: <br/>
 - learnt testing api with mocha and chai
 - implemented api testing
 - used api in frontend
+- sent PR for review
+
+<br/>
+
+updates for 7-mar: <br/>
+- read react state management blogs
+- explored react-query
+- watched tutorials of optimized api call
+- created cached frontend app with minimal api calls
+- learnt about prefetching
+- learnt about optimistic updates
+- explored and learnt about populate and refs in mongo db
+- implemented basic api with refs and populate
 - sent PR for review
