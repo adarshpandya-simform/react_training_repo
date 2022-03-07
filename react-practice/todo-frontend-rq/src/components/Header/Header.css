@@ -1,0 +1,22 @@
+/* styles related to header container */
+.header-container {
+  flex: 1;
+  background: var(--primary-color);
+}
+
+/* styles for links container */
+.links-container {
+  padding: 20px;
+}
+
+/* styles for the links inside link container */
+.links-container a {
+  color: var(--secondary-color);
+  font-size: 20px;
+  transition: all 300ms ease-in-out;
+  margin-right: 20px;
+}
+
+.links-container a:hover {
+  color: var(--white-color);
+}
