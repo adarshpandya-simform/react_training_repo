@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #00a8ff;
+  --secondary-color: #eee;
+  --white-color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,9 +11,15 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.page-container {
+  padding: 10px 20px;
 }
