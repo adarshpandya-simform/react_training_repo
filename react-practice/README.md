@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7,8)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7<br>
+Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7,8<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -168,4 +168,17 @@ updates for 7-mar: <br/>
 - learnt about optimistic updates
 - explored and learnt about populate and refs in mongo db
 - implemented basic api with refs and populate
+- sent PR for review
+
+<br/>
+
+updates for 8-mar: <br/>
+- read blogs around nodemailer
+- learnt about nodemailer
+- implemented nodemailer
+- learnt how to send attachments and embed html in node mail
+- watched videos on state management libararies
+- learnt about recoil
+- learnt about zustand
+- implemented simple todo app async (fullstack) with zustand
 - sent PR for review
