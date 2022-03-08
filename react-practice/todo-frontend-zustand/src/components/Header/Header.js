@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Header component with all links
 const Header = () => {
   return (
     <div>

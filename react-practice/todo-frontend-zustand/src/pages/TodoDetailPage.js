@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useStore } from "../store/useStore";
 
+// TodoDetailPage for showing all details of todo
 const TodoDetailPage = () => {
   const { id } = useParams();
   const { todos, isLoading, getTodos, updateTodo, deleteTodo } = useStore(
@@ -12,10 +13,12 @@ const TodoDetailPage = () => {
   const [completed, setCompleted] = useState(false);
   const navigate = useNavigate();
 
+  // helper fn to handle update of todo
   const handleUpdateTodo = async () => {
     await updateTodo({ id, title, description, completed });
   };
 
+  // helper fn to handle deletion of todo
   const handleDeleteTodo = async () => {
     await deleteTodo({ id });
     navigate("/todos");
@@ -37,6 +40,7 @@ const TodoDetailPage = () => {
     }
   }, [todos]);
 
+  // showing loading state
   if (isLoading) {
     return <p>loading...</p>;
   }

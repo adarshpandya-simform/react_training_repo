@@ -6,6 +6,7 @@ import {
 } from "../api/todo.api.js";
 import create from "zustand";
 
+// creating and exporting a store hook with zustand
 export const useStore = create((set, get) => ({
   todos: [],
   isLoading: false,

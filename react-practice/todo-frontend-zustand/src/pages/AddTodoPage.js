@@ -2,12 +2,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../store/useStore";
 
+// AddTodoPage for adding todo
 const AddTodoPage = () => {
   const { addTodo, isLoading } = useStore((state) => state);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const navigate = useNavigate();
 
+  // helper fn to handle add todos
   const handleAddTodos = async () => {
     if (title !== "" && description !== "") {
       await addTodo({ title, description });
@@ -17,9 +19,11 @@ const AddTodoPage = () => {
     }
   };
 
+  // showing loading state
   if (isLoading) {
     return <p>loading...</p>;
   }
+
   return (
     <div>
       <input

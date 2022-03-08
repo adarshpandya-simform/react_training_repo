@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useStore } from "../store/useStore";
 
+// TodosPage for showing all todos
 const TodosPage = () => {
   const { isLoading, todos } = useStore((state) => state);
 
+  // showing loading state
   if (isLoading) {
     return <p>loading...</p>;
   }
