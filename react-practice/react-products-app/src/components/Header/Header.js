@@ -19,12 +19,13 @@ export const Header = () => {
         <Box
           display={"flex"}
           marginLeft={5}
-          w={300}
+          w={400}
           justifyContent={"space-between"}
         >
           <Link to={"/"}>Home Page</Link>
           <Link to={"/products"}>Products Page</Link>
           <Link to={"/add-product"}>Add Products</Link>
+          <Link to={"/edit-product"}>Modify Product</Link>
         </Box>
       </Box>
       <div>
