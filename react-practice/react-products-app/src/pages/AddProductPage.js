@@ -1,6 +1,6 @@
 import { Box, Button, Heading, Input, Textarea } from "@chakra-ui/react";
-import axios from "axios";
 import React, { useState } from "react";
+import { uploadFile, uploadFiles } from "../api/products.api";
 import { useProduct } from "../hooks/useProduct";
 
 export const AddProductPage = () => {
@@ -12,48 +12,19 @@ export const AddProductPage = () => {
   const [isImagesLoading, setIsImagesLoading] = useState(false);
   const { addProduct } = useProduct();
 
-  console.log(thumbnail);
-  console.log(images);
-
   const handleOnChangeThumbnail = async (files) => {
     setIsImageLoading(true);
-    const data = new FormData();
-    data.append("file", files[0]);
-    data.append("upload_preset", process.env.REACT_APP_CLOUDINARY_PRESET_NAME);
-    data.append("cloud_name", process.env.REACT_APP_CLOUDINARY_CLOUD_NAME);
-    await axios
-      .post(
-        `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`,
-        data
-      )
-      .then((res) => {
-        setThumbnail(res.data.secure_url);
-      })
-      .catch((err) => console.log(err));
+    const responseThumbnail = await uploadFile({ file: files[0] });
+    setThumbnail(responseThumbnail);
     setIsImageLoading(false);
   };
 
   const handleOnChangeImages = async (imageFiles) => {
     setIsImagesLoading(true);
-    [...imageFiles].forEach(async (file) => {
-      const data = new FormData();
-      data.append("file", file);
-      data.append(
-        "upload_preset",
-        process.env.REACT_APP_CLOUDINARY_PRESET_NAME
-      );
-      data.append("cloud_name", process.env.REACT_APP_CLOUDINARY_CLOUD_NAME);
-      await axios
-        .post(
-          `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`,
-          data
-        )
-        .then((res) => {
-          setImages((prev) => [...prev, res.data.secure_url]);
-        })
-        .catch((err) => console.log(err));
+    await uploadFiles({ files: imageFiles }).then((data) => {
+      setImages(data);
+      setIsImagesLoading(false);
     });
-    setIsImagesLoading(false);
   };
 
   const handleAddProduct = () => {
@@ -103,7 +74,7 @@ export const AddProductPage = () => {
         onChange={(e) => {
           handleOnChangeImages(e.target.files);
         }}
-        name="product-images"
+        accept="image/png, image/jpeg"
         multiple
         placeholder="Enter Product thumbnail"
       />
