@@ -48,5 +48,36 @@ export const updateProductRequest = async ({
     images,
     thumbnail,
   });
-  return res.data.products;
+  return res.data.product;
+};
+
+export const uploadFile = async ({ file }) => {
+  const data = new FormData();
+  data.append("file", file);
+  data.append("upload_preset", process.env.REACT_APP_CLOUDINARY_PRESET_NAME);
+  data.append("cloud_name", process.env.REACT_APP_CLOUDINARY_CLOUD_NAME);
+
+  const res = await axios.post(
+    `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`,
+    data
+  );
+
+  return res.data.secure_url;
+};
+
+export const uploadFiles = async ({ files }) => {
+  const images = [];
+  [...files].map(async (file) => {
+    const data = new FormData();
+    data.append("file", file);
+    data.append("upload_preset", process.env.REACT_APP_CLOUDINARY_PRESET_NAME);
+    data.append("cloud_name", process.env.REACT_APP_CLOUDINARY_CLOUD_NAME);
+
+    const res = await axios.post(
+      `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload`,
+      data
+    );
+    images.push(res.data.secure_url);
+  });
+  return images;
 };
