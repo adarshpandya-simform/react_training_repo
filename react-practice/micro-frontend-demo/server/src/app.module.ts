@@ -3,7 +3,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 
 import { AuthorizedModule } from './modules/authorized/authorized.module';
-import { UnauthorizedModule } from './modules/unauthorized/unauthorized.module';
+import { ProductModule } from './modules/products/products.module';
 import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
 import { UsersService } from './users/users.service';
@@ -15,8 +15,8 @@ import { UsersService } from './users/users.service';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
+    ProductModule,
     AuthorizedModule,
-    UnauthorizedModule,
     AuthModule,
   ],
 })
