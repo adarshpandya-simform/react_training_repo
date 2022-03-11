@@ -43,7 +43,10 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "product_detail_page",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        // home@ comes from home app webpack config-> app name
+        home: "home@http://localhost:3000/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
