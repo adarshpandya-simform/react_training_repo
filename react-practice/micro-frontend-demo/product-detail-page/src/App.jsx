@@ -5,6 +5,7 @@ import Header from "home/Header";
 import ErrorBoundary from "./components/ErrorBoundary";
 import PDPContent from "./components/PDPContent";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "remixicon/fonts/remixicon.css";
 import "./index.scss";
 
 const App = () => {
