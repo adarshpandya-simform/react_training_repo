@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7,8,10)
+# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7,8,10,14)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7,8,10<br>
+Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7,8,10,14<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -193,4 +193,17 @@ updates for 10-march: <br>
 - watched react best recipes video
 - learnt about node scheduling cron job tasks
 - read firebase storage with react blogs
+- sent PR for review
+
+<br/>
+
+updates for 14-march: <br>
+- read react scalable architecture blogs
+- read single-spa docs
+- explored flint js
+- watched O'Reilly Talk on microfronted
+- continued with microfrontend crash course
+- learnt benefits of mfe
+- learnt about cons of mfe
+- explored different implementations of mfe
 - sent PR for review
