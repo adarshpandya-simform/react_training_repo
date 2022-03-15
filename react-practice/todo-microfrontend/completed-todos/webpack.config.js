@@ -43,8 +43,12 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "completed_todos",
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: {
+        add_todo: "add_todo@http://localhost:3002/remoteEntry.js",
+      },
+      exposes: {
+        "./CompletedTodos": "./src/components/CompletedTodos.jsx",
+      },
       shared: {
         ...deps,
         react: {
