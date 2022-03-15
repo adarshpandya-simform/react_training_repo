@@ -43,7 +43,13 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "home",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        layout: "layout@http://localhost:3001/remoteEntry.js",
+        add_todo: "add_todo@http://localhost:3002/remoteEntry.js",
+        completed_todos: "completed_todos@http://localhost:3003/remoteEntry.js",
+        incompleted_todos:
+          "incompleted_todos@http://localhost:3004/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
