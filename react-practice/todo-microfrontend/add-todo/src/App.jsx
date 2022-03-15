@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import AddTodo from "add_todo/AddTodo";
+import ReduxWrapper from "add_todo/ReduxWrapper";
 
 import "./index.css";
 
 const App = () => (
-  <div className="container">
-    <div>Name: add-todo</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+  <div>
+    <AddTodo />
   </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <ReduxWrapper>
+    <App />
+  </ReduxWrapper>,
+  document.getElementById("app")
+);
