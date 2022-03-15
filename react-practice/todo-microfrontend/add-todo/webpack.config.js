@@ -43,8 +43,15 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "add_todo",
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: {
+        add_todo: "add_todo@http://localhost:3002/remoteEntry.js",
+      },
+      exposes: {
+        "./useTodos": "./src/hooks/useTodos.js",
+        "./ReduxWrapper": "./src/components/ReduxWrapper.jsx",
+        "./AddTodo": "./src/components/AddTodo.jsx",
+        "./store": "./src/app/store.js",
+      },
       shared: {
         ...deps,
         react: {
