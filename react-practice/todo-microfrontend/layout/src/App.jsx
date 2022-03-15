@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ReduxWrapper from "add_todo/ReduxWrapper";
 
 import "./index.css";
 
 const App = () => (
-  <div className="container">
-    <div>Name: layout</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+  <div>
+    <Header />
+    <Footer />
   </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <ReduxWrapper>
+    <App />
+  </ReduxWrapper>,
+  document.getElementById("app")
+);
