@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import ReduxWrapper from "add_todo/ReduxWrapper";
 import "./index.css";
 
 const App = () => (
@@ -11,4 +11,9 @@ const App = () => (
     <div>CSS: Empty CSS</div>
   </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <ReduxWrapper>
+    <App />
+  </ReduxWrapper>,
+  document.getElementById("app")
+);
