@@ -1,7 +1,7 @@
-# React Practice (feb - 16,21,22,23,24,25,28, march - 1,2,3,4,7,8,10,14)
+# React Practice (feb - 16 to 28, march - 1 to 15)
 
 <hr>
-Worked upon : feb-16,21,22,23,24,25,28,march- 1,2,3,4,7,8,10,14<br>
+Worked upon : feb - 16 to 28, march - 1 to 15<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -206,4 +206,14 @@ updates for 14-march: <br>
 - learnt benefits of mfe
 - learnt about cons of mfe
 - explored different implementations of mfe
+- sent PR for review
+
+<br/>
+
+updates for 15-march: <br>
+- read react blogs
+- learnt more about micro frontends
+- watched microfrontend talks
+- read micro frontend blogs
+- implemented a todo app with 5 mfs (shared state)
 - sent PR for review
