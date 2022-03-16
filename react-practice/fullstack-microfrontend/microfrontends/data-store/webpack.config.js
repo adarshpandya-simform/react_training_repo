@@ -43,8 +43,13 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "data_store",
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: {
+        data_store: "data_store@http://localhost:3001/remoteEntry.js",
+      },
+      exposes: {
+        "./RQWrapper": "./src/components/QueryClientWrapper.jsx",
+        "./hooks": "./src/hooks/index.js",
+      },
       shared: {
         ...deps,
         react: {
