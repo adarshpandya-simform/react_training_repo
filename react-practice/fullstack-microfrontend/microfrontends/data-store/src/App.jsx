@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import QueryClientWrapper from "data_store/RQWrapper";
 import "./index.css";
 
-const App = () => (
-  <div className="container">
-    <div>Name: data-store</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
+const App = () => {
+  return <div className="container"></div>;
+};
+
+ReactDOM.render(
+  <QueryClientWrapper>
+    <App />
+  </QueryClientWrapper>,
+  document.getElementById("app")
 );
-ReactDOM.render(<App />, document.getElementById("app"));
