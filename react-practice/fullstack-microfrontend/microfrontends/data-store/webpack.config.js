@@ -48,7 +48,13 @@ module.exports = {
       },
       exposes: {
         "./RQWrapper": "./src/components/QueryClientWrapper.jsx",
-        "./hooks": "./src/hooks/index.js",
+        "./useCreateUser": "./src/hooks/useCreateUser.js",
+        "./useDeleteUser": "./src/hooks/useDeleteUser.js",
+        "./useMarriedUsers": "./src/hooks/useMarriedUsers.js",
+        "./useNotMarriedUsers": "./src/hooks/useNotMarriedUsers.js",
+        "./useUpdateUser": "./src/hooks/useUpdateUser.js",
+        "./useUser": "./src/hooks/useUser.js",
+        "./useUsers": "./src/hooks/useUsers.js",
       },
       shared: {
         ...deps,
