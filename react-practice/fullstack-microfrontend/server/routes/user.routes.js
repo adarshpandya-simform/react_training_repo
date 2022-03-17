@@ -8,6 +8,18 @@ userRouter.get("/users", async (req, res) => {
 	return res.json({ success: true, users });
 });
 
+userRouter.get("/users/married", async (req, res) => {
+	const usersCount = await userModel.find({ isMarried: true }).countDocuments();
+	return res.json({ success: true, count: usersCount });
+});
+
+userRouter.get("/users/notmarried", async (req, res) => {
+	const usersCount = await userModel
+		.find({ isMarried: false })
+		.countDocuments();
+	return res.json({ success: true, count: usersCount });
+});
+
 userRouter.get("/user/:id", async (req, res) => {
 	const { id } = req.params;
 	const user = await userModel.findById(id);
