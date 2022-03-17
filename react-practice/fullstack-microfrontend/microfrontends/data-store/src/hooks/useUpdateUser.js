@@ -1,6 +1,6 @@
 import { updateUser } from "../api/user.api";
 import { useMutation } from "react-query";
-import { queryClient } from "data_store/QueryClientWrapper";
+import { queryClient } from "data_store/RQWrapper";
 
 export const useUpdateUser = () => {
   return useMutation(
@@ -26,6 +26,8 @@ export const useUpdateUser = () => {
       },
       onSettled: () => {
         queryClient.invalidateQueries("users");
+        queryClient.invalidateQueries("married_user_count");
+        queryClient.invalidateQueries("not_married_user_count");
       },
     }
   );

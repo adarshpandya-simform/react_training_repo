@@ -28,3 +28,13 @@ export const updateUser = async ({ id, isMarried }) => {
   const res = await instance.patch(`/update-marital-status`, { id, isMarried });
   return res.data.user;
 };
+
+export const getMarriedUsers = async () => {
+  const res = await instance.get(`/users/married`);
+  return res.data.count;
+};
+
+export const getNotMarriedUsers = async () => {
+  const res = await instance.get(`/users/notmarried`);
+  return res.data.count;
+};

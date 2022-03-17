@@ -1,6 +1,6 @@
 import { deleteUser } from "../api/user.api";
 import { useMutation } from "react-query";
-import { queryClient } from "data_store/QueryClientWrapper";
+import { queryClient } from "data_store/RQWrapper";
 
 export const useDeleteUser = () => {
   return useMutation(
@@ -20,6 +20,8 @@ export const useDeleteUser = () => {
       },
       onSettled: () => {
         queryClient.invalidateQueries("users");
+        queryClient.invalidateQueries("married_user_count");
+        queryClient.invalidateQueries("not_married_user_count");
       },
     }
   );
