@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.chat-bubble {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.me {
+  background: rgb(82, 82, 243);
+  color: white;
+  float: left;
+  clear: both;
+}
+
+.others {
+  background: rgb(173, 173, 173);
+  color: black;
+  float: right;
+  clear: both;
+}
