@@ -6,10 +6,12 @@ import { Server } from "socket.io";
 const PORT = process.env.PORT || 2000;
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(server, { cors: { origin: "*" } });
 
 io.on("connection", (socket) => {
-  console.log(socket.id);
+  socket.on("send_msg", ({ message, roomId, name }) => {
+    io.sockets.emit("new_msg", { message, name, roomId });
+  });
 });
 
 app.use(express.json());
