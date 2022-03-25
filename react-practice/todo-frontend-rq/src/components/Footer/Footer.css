@@ -1,0 +1,8 @@
+/* styles related to footer */
+.footer-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+}

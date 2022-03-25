@@ -1,0 +1,15 @@
+.layout-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container,
+.footer-container {
+  flex: 1;
+}
+
+.main-content {
+  flex: 10;
+}

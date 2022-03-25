@@ -1,0 +1,11 @@
+/* styles for card container */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* style for paragraph tag inside .card-container */
+.card-container p {
+  color: white;
+}

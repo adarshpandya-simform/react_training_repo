@@ -1,0 +1,9 @@
+/* styles for todo-details container */
+.todo-details-container {
+  background: #121518;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
